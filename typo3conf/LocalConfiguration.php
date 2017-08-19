@@ -1,0 +1,118 @@
+<?php
+return [
+    'BE' => [
+        'debug' => '',
+        'explicitADmode' => 'explicitAllow',
+        'installToolPassword' => '$P$CP7yd7U8Q/p09AJhi/QBFjIwRRQ//A0',
+        'loginSecurityLevel' => 'rsa',
+        'versionNumberInFilename' => '0',
+    ],
+    'DB' => [
+        'database' => 'giennale',
+        'host' => 'localhost',
+        'password' => 'giennale',
+        'port' => 3306,
+        'username' => 'giennale',
+    ],
+    'EXT' => [
+        'extConf' => [
+            'backend' => '',
+            'dce' => 'a:4:{s:17:"enableUpdateCheck";i:0;s:21:"disableAutoClearCache";i:1;s:29:"disableAutoClearFrontendCache";i:0;s:17:"disableCodemirror";i:0;}',
+            'drc_instagramfeed' => 'a:0:{}',
+            'indexed_search' => 'a:18:{s:8:"pdftools";s:9:"/usr/bin/";s:8:"pdf_mode";i:20;s:5:"unzip";s:9:"/usr/bin/";s:6:"catdoc";s:9:"/usr/bin/";s:6:"xlhtml";s:9:"/usr/bin/";s:7:"ppthtml";s:9:"/usr/bin/";s:5:"unrtf";s:9:"/usr/bin/";s:9:"debugMode";i:0;s:18:"fullTextDataLength";i:0;s:23:"disableFrontendIndexing";i:0;s:21:"enableMetaphoneSearch";i:1;s:6:"minAge";i:0;s:6:"maxAge";i:0;s:16:"maxExternalFiles";i:5;s:26:"useCrawlerForExternalFiles";i:0;s:11:"flagBitMask";i:192;s:16:"ignoreExtensions";s:0:"";s:17:"indexExternalURLs";i:0;}',
+            'medgooglemaps' => 'a:0:{}',
+            'news' => 'a:14:{s:11:"archiveDate";s:4:"date";s:12:"rteForTeaser";i:0;s:6:"tagPid";i:1;s:13:"prependAtCopy";i:1;s:19:"categoryRestriction";s:4:"none";s:34:"categoryBeGroupTceFormsRestriction";i:0;s:22:"contentElementRelation";i:0;s:13:"manualSorting";i:1;s:19:"dateTimeNotRequired";i:0;s:24:"showAdministrationModule";i:0;s:35:"hidePageTreeForAdministrationModule";i:0;s:12:"showImporter";i:0;s:18:"storageUidImporter";i:1;s:22:"resourceFolderImporter";s:12:"/news_import";}',
+            'pagenotfoundhandling' => 'a:9:{s:18:"defaultLanguageKey";s:2:"de";s:16:"default403Header";i:4;s:13:"languageParam";s:1:"L";s:14:"default404Page";i:8;s:14:"default403Page";i:0;s:19:"disableDomainConfig";i:0;s:28:"passthroughContentTypeHeader";i:0;s:14:"ignoreLanguage";i:0;s:13:"forceLanguage";i:0;}',
+            'razor' => 'a:48:{s:16:"basedomain_local";s:18:"giennale.localhost";s:27:"basedomain_local_additional";s:0:"";s:10:"local_name";s:5:"Local";s:18:"basedomain_staging";s:19:"testproject.staging";s:12:"staging_name";s:7:"Staging";s:16:"staging_username";s:0:"";s:16:"staging_password";s:0:"";s:12:"staging_host";s:0:"";s:16:"staging_database";s:0:"";s:18:"staging_colorspace";s:3:"RGB";s:13:"staging_https";i:0;s:13:"staging_hefix";i:0;s:18:"staging_hefix_mail";s:0:"";s:16:"staging_1and1fix";i:0;s:15:"staging_mittfix";i:0;s:15:"basedomain_live";s:16:"testproject.live";s:26:"basedomain_live_additional";s:0:"";s:9:"live_name";s:4:"Live";s:13:"live_username";s:0:"";s:13:"live_password";s:0:"";s:9:"live_host";s:0:"";s:13:"live_database";s:0:"";s:15:"live_colorspace";s:3:"RGB";s:10:"live_https";i:0;s:10:"live_hefix";i:0;s:15:"live_hefix_mail";s:0:"";s:13:"live_1and1fix";i:0;s:12:"live_mittfix";i:0;s:18:"basedomain_feature";s:19:"testproject.feature";s:12:"feature_name";s:7:"Feature";s:16:"feature_username";s:0:"";s:16:"feature_password";s:0:"";s:12:"feature_host";s:0:"";s:16:"feature_database";s:0:"";s:18:"feature_colorspace";s:3:"RGB";s:13:"feature_https";i:0;s:13:"feature_hefix";i:0;s:18:"feature_hefix_mail";s:0:"";s:16:"feature_1and1fix";i:0;s:15:"feature_mittfix";i:0;s:11:"show_module";i:1;s:17:"show_tools_module";i:1;s:17:"headline_required";i:1;s:14:"headline_multi";i:0;s:14:"default404Page";i:8;s:7:"tinyPng";i:0;s:14:"gridBackground";s:10:"razor_wrap";s:6:"maxAge";i:604800;}',
+            'realurl' => 'a:5:{s:10:"configFile";s:26:"typo3conf/realurl_conf.php";s:14:"enableAutoConf";i:0;s:14:"autoConfFormat";i:0;s:12:"enableDevLog";i:0;s:10:"moduleIcon";i:1;}',
+            'rsaauth' => 'a:1:{s:18:"temporaryDirectory";s:0:"";}',
+            'saltedpasswords' => 'a:2:{s:3:"BE.";a:4:{s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}s:3:"FE.";a:5:{s:7:"enabled";i:1;s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}}',
+            'ws_instagram' => 'a:3:{s:8:"clientId";s:32:"e5db2f342b0446439d92a3c9d9a110b3";s:12:"clientSecret";s:32:"4e0dd5e5c06847feb87fd3d4edebfd38";s:14:"clientCallback";s:0:"";}',
+        ],
+    ],
+    'EXTCONF' => [
+        'lang' => [
+            'availableLanguages' => [
+                'de',
+            ],
+        ],
+    ],
+    'FE' => [
+        'cHashIncludePageId' => true,
+        'compressionLevel' => 9,
+        'debug' => '',
+        'loginSecurityLevel' => 'rsa',
+    ],
+    'GFX' => [
+        'colorspace' => 'sRGB',
+        'gdlib_png' => 1,
+        'im' => 1,
+        'im_mask_temp_ext_gif' => 1,
+        'im_path' => '/usr/bin/',
+        'im_path_lzw' => '/usr/bin/',
+        'im_stripProfileCommand' => '-strip',
+        'im_v5effects' => 1,
+        'im_version_5' => 'im6',
+        'image_processing' => 1,
+        'imagefile_ext' => 'gif,jpg,jpeg,png,pdf,svg',
+        'jpg_quality' => 100,
+    ],
+    'HTTP' => [
+        'adapter' => 'curl',
+    ],
+    'INSTALL' => [
+        'wizardDone' => [
+            'TYPO3\CMS\Install\Updates\AccessRightParametersUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\BackendUserStartModuleUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\Compatibility6ExtractionUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\ContentTypesToTextMediaUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\FileListIsStartModuleUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\FilesReplacePermissionUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\LanguageIsoCodeUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\MediaceExtractionUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\MigrateMediaToAssetsForTextMediaCe' => 1,
+            'TYPO3\CMS\Install\Updates\MigrateShortcutUrlsAgainUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\OpenidExtractionUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\PageShortcutParentUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\ProcessedFileChecksumUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\TableFlexFormToTtContentFieldsUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\WorkspacesNotificationSettingsUpdate' => 1,
+            'TYPO3\CMS\Rtehtmlarea\Hook\Install\DeprecatedRteProperties' => 1,
+            'TYPO3\CMS\Rtehtmlarea\Hook\Install\RteAcronymButtonRenamedToAbbreviation' => 1,
+        ],
+    ],
+    'MAIL' => [
+        'transport_sendmail_command' => '/usr/sbin/sendmail -t -i ',
+    ],
+    'SYS' => [
+        'caching' => [
+            'cacheConfigurations' => [
+                'extbase_object' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'frontend' => 'TYPO3\\CMS\\Core\\Cache\\Frontend\\VariableFrontend',
+                    'groups' => [
+                        'system',
+                    ],
+                    'options' => [
+                        'defaultLifetime' => 0,
+                    ],
+                ],
+            ],
+        ],
+        'clearCacheSystem' => '1',
+        'curlUse' => 1,
+        'devIPmask' => '',
+        'displayErrors' => '1',
+        'enableDeprecationLog' => '',
+        'encryptionKey' => '4d39cf651ab9481c6d6ae9f0667bea8908936f986cafac1631268e892f972ab6f4c8fca72d6081ada3f05fb6ac47c869',
+        'exceptionalErrors' => 20480,
+        'isInitialDatabaseImportDone' => true,
+        'isInitialInstallationInProgress' => false,
+        'sitename' => 'GIENNALE',
+        'sqlDebug' => '0',
+        'systemLocale' => 'en_US.utf-8',
+        'systemLogLevel' => '2',
+        't3lib_cs_convMethod' => 'mbstring',
+        't3lib_cs_utils' => 'mbstring',
+    ],
+];

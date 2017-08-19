@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+
+<f:if condition="{tsSetup.razor.misc.showWrap}">
+  <div id="c{data.uid}">
+</f:if>
+
+  <f:if condition="{gallery.position.noWrap} != 1">
+    <f:render partial="Header" arguments="{_all}" />
+  </f:if>
+
+  <f:if condition="{gallery.position.vertical} != 'below'">
+    <f:render partial="MediaGallery" arguments="{_all}" />
+  </f:if>
+
+  <f:if condition="{gallery.position.noWrap}">
+    <f:render partial="Header" arguments="{_all}" />
+  </f:if>
+  <f:format.html>{data.bodytext}</f:format.html>
+
+  <f:if condition="{gallery.position.vertical} == 'below'">
+    <f:render partial="MediaGallery" arguments="{_all}" />
+  </f:if>
+
+  <f:render partial="Footer" arguments="{_all}" />
+
+<f:if condition="{tsSetup.razor.misc.showWrap}">
+  </div>
+</f:if>
+</html>

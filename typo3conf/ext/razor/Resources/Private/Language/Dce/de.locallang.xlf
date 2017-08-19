@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="razor">
+    <header />
+    <body>
+      <!-- Titles and descriptions -->
+      <trans-unit id="galleryCe">
+        <target>Galerie</target>
+      </trans-unit>
+      <trans-unit id="galleryCeDesc">
+        <target>Fügt eine Galerie hinzu</target>
+      </trans-unit>
+      <trans-unit id="downloads">
+        <target>Downloads</target>
+      </trans-unit>
+      <trans-unit id="downloadsDesc">
+        <target>Fügt Downloads hinzu</target>
+      </trans-unit>
+      <trans-unit id="buttons">
+        <target>Buttons</target>
+      </trans-unit>
+      <trans-unit id="buttonsDesc">
+        <target>Fügt flexible Buttons hinzu</target>
+      </trans-unit>
+      <trans-unit id="icon">
+        <target>Icon</target>
+      </trans-unit>
+      <trans-unit id="iconDesc">
+        <target>Fügt ein Icon hinzu</target>
+      </trans-unit>
+      <trans-unit id="headerWithImage">
+        <target>Überschrift mit optionalem Bild oder Icon</target>
+      </trans-unit>
+      <trans-unit id="headerWithImageDesc">
+        <target>Fügt eine Überschrift mit optionalem Bild oder Icon hinzu</target>
+      </trans-unit>
+      <trans-unit id="image">
+        <target>Bilder</target>
+      </trans-unit>
+      <trans-unit id="imageSingle">
+        <target>Bild</target>
+      </trans-unit>
+      <trans-unit id="imageDesc">
+        <target>Fügt Bilder hinzu</target>
+      </trans-unit>
+      <trans-unit id="spacer">
+        <target>Trenner</target>
+      </trans-unit>
+      <trans-unit id="spacerDesc">
+        <target>Fügt einen Trenner hinzu</target>
+      </trans-unit>
+      <trans-unit id="youtubevimeovideo">
+        <target>YouTube/Vimeo/HTML5 Video</target>
+      </trans-unit>
+      <trans-unit id="youtubevimeovideoDesc">
+        <target>Fügt ein YouTube, Vimeo oder HTML5 Video hinzu</target>
+      </trans-unit>
+      <trans-unit id="alert">
+        <target>Alert</target>
+      </trans-unit>
+      <trans-unit id="alertDesc">
+        <target>Fügt einen Alert hinzu</target>
+      </trans-unit>
+      <trans-unit id="contactButton">
+        <target>Kontaktbutton</target>
+      </trans-unit>
+      <trans-unit id="contactButtonDesc">
+        <target>Fügt einen Kontaktbutton hinzu</target>
+      </trans-unit>
+      <trans-unit id="typoscript">
+        <target>TypoScript</target>
+      </trans-unit>
+      <trans-unit id="typoscriptDesc">
+        <target>Fügt ein TypoScript Content Element hinzu</target>
+      </trans-unit>
+      <trans-unit id="teaserbox">
+        <target>Teaserbox</target>
+      </trans-unit>
+      <trans-unit id="teaserboxDesc">
+        <target>Fügt eine Teaserbox hinzu</target>
+      </trans-unit>
+      <trans-unit id="blockquote">
+        <target>Zitat</target>
+      </trans-unit>
+      <trans-unit id="blockquoteDesc">
+        <target>Fügt ein Zitat hinzu</target>
+      </trans-unit>
+      <!-- Common -->
+      <trans-unit id="general">
+        <target>Allgemein</target>
+      </trans-unit>
+      <trans-unit id="options">
+        <target>Optionen</target>
+      </trans-unit>
+      <trans-unit id="link">
+        <target>Link</target>
+      </trans-unit>
+      <trans-unit id="size">
+        <target>Größe</target>
+      </trans-unit>
+      <trans-unit id="type">
+        <target>Typ</target>
+      </trans-unit>
+      <trans-unit id="width">
+        <target>Breite</target>
+      </trans-unit>
+      <trans-unit id="height">
+        <target>Höhe</target>
+      </trans-unit>
+      <trans-unit id="crop">
+        <target>Beschneiden</target>
+      </trans-unit>
+      <trans-unit id="position">
+        <target>Position</target>
+      </trans-unit>
+      <trans-unit id="left">
+        <target>Links</target>
+      </trans-unit>
+      <trans-unit id="center">
+        <target>Mitte</target>
+      </trans-unit>
+      <trans-unit id="right">
+        <target>Rechts</target>
+      </trans-unit>
+      <trans-unit id="enlarge">
+        <target>Klickvergrößerung?</target>
+      </trans-unit>
+      <trans-unit id="gallery">
+        <target>Zur Galerie hinzufügen?</target>
+      </trans-unit>
+      <trans-unit id="responsive">
+        <target>Responsive?</target>
+      </trans-unit>
+      <trans-unit id="classes">
+        <target>CSS Klassen</target>
+      </trans-unit>
+      <trans-unit id="color">
+        <target>Farbe</target>
+      </trans-unit>
+      <trans-unit id="text">
+        <target>Text</target>
+      </trans-unit>
+      <trans-unit id="block">
+        <target>Volle Breite vom Elternelement</target>
+      </trans-unit>
+      <trans-unit id="disabled">
+        <target>Deaktiviert?</target>
+      </trans-unit>
+      <trans-unit id="iconPos">
+        <target>Icon Position</target>
+      </trans-unit>
+      <trans-unit id="default">
+        <target>Standard</target>
+      </trans-unit>
+      <trans-unit id="large">
+        <target>Groß</target>
+      </trans-unit>
+      <trans-unit id="small">
+        <target>Klein</target>
+      </trans-unit>
+      <trans-unit id="extraSmall">
+        <target>Sehr klein</target>
+      </trans-unit>
+      <trans-unit id="primary">
+        <target>Primär</target>
+      </trans-unit>
+      <trans-unit id="success">
+        <target>Erfolg</target>
+      </trans-unit>
+      <trans-unit id="info">
+        <target>Info</target>
+      </trans-unit>
+      <trans-unit id="warning">
+        <target>Warnung</target>
+      </trans-unit>
+      <trans-unit id="danger">
+        <target>Gefahr</target>
+      </trans-unit>
+      <trans-unit id="beforeText">
+        <target>Vor dem Text</target>
+      </trans-unit>
+      <trans-unit id="afterText">
+        <target>Nach dem Text</target>
+      </trans-unit>
+      <trans-unit id="additionalOptions">
+        <target>Weitere Optionen</target>
+      </trans-unit>
+      <trans-unit id="wrapText">
+        <target>Text umbrechen?</target>
+      </trans-unit>
+      <trans-unit id="wrap">
+        <target>Wrap?</target>
+      </trans-unit>
+      <trans-unit id="viewport">
+        <target>Viewport</target>
+      </trans-unit>
+      <!-- Gallery -->
+      <trans-unit id="images">
+        <target>Bilder</target>
+      </trans-unit>
+      <trans-unit id="cols">
+        <target>Spalten</target>
+      </trans-unit>
+      <!-- Downloads -->
+      <trans-unit id="files">
+        <target>Dateien</target>
+      </trans-unit>
+      <trans-unit id="filesize">
+        <target>Dateigröße anzeigen?</target>
+      </trans-unit>
+      <trans-unit id="addFile">
+        <target>Datei hinzufügen</target>
+      </trans-unit>
+      <!-- Buttons -->
+      <trans-unit id="button">
+        <target>Button</target>
+      </trans-unit>
+      <trans-unit id="linktitle">
+        <target>Linktitel</target>
+      </trans-unit>
+      <trans-unit id="buttonGroup">
+        <target>Buttons gruppieren?</target>
+      </trans-unit>
+      <!-- Image -->
+      <trans-unit id="thumbnail">
+        <target>Alternatives Thumbnail</target>
+      </trans-unit>
+      <trans-unit id="appearance">
+        <target>Aussehen</target>
+      </trans-unit>
+      <trans-unit id="appearance.1">
+        <target>abgerundet</target>
+      </trans-unit>
+      <trans-unit id="appearance.2">
+        <target>rund</target>
+      </trans-unit>
+      <trans-unit id="appearance.3">
+        <target>thumbnail</target>
+      </trans-unit>
+      <!-- Spacer -->
+      <trans-unit id="spaceTop">
+        <target>Oben</target>
+      </trans-unit>
+      <trans-unit id="spaceBottom">
+        <target>Unten</target>
+      </trans-unit>
+      <trans-unit id="noLine">
+        <target>Keine Linie</target>
+      </trans-unit>
+      <!-- Video -->
+      <trans-unit id="videoId">
+        <target>Video ID</target>
+      </trans-unit>
+      <trans-unit id="file">
+        <target>Video Datei</target>
+      </trans-unit>
+      <trans-unit id="html5Video">
+        <target>HTML5 Video</target>
+      </trans-unit>
+      <trans-unit id="autoplay">
+        <target>Autoplay?</target>
+      </trans-unit>
+      <trans-unit id="byline">
+        <target>Verfasserangabe anzeigen?</target>
+      </trans-unit>
+      <trans-unit id="related">
+        <target>Ähnliche Videos am Ende anzeigen?</target>
+      </trans-unit>
+      <trans-unit id="loop">
+        <target>Loop?</target>
+      </trans-unit>
+      <trans-unit id="portrait">
+        <target>Portrait anzeigen?</target>
+      </trans-unit>
+      <trans-unit id="title">
+        <target>Titel anzeigen?</target>
+      </trans-unit>
+      <trans-unit id="aspectRatio">
+        <target>Seitenverhältnis</target>
+      </trans-unit>
+      <trans-unit id="aspectRatio.1">
+        <target>16:9</target>
+      </trans-unit>
+      <trans-unit id="aspectRatio.2">
+        <target>4:3</target>
+      </trans-unit>
+      <trans-unit id="aspectRatio.3">
+        <target>Frei</target>
+      </trans-unit>
+      <trans-unit id="youtube">
+        <target>YouTube</target>
+      </trans-unit>
+      <trans-unit id="vimeo">
+        <target>Vimeo</target>
+      </trans-unit>
+      <trans-unit id="hideInfo">
+        <target>Info verbergen?</target>
+      </trans-unit>
+      <trans-unit id="video.addFileReference">
+        <target>Video hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="poster">
+        <target>Poster</target>
+      </trans-unit>
+      <!-- Alert -->
+      <trans-unit id="close">
+        <target>Schließen?</target>
+      </trans-unit>
+      <!-- Contact button -->
+      <trans-unit id="powermail">
+        <target>powermail Feld</target>
+      </trans-unit>
+      <trans-unit id="param">
+        <target>Wird an powermail Formular übertragen (wenn leer, wird Seitentitel genommen)</target>
+      </trans-unit>
+        <!-- TypoScript -->
+      <trans-unit id="objectPath">
+        <target>TypoScript Objektpfad</target>
+      </trans-unit>
+      <trans-unit id="noObjectPath">
+        <target>Kein TypoScript Objektpfad <![CDATA[<strong>%s</strong>]]> verfügbar</target>
+      </trans-unit>
+      <!-- Teaserbox -->
+      <trans-unit id="theTitle">
+        <target>Titel</target>
+      </trans-unit>
+      <!-- Blockquote -->
+      <trans-unit id="footer">
+        <target>Footer</target>
+      </trans-unit>
+      <trans-unit id="header">
+        <target>Überschrift</target>
+      </trans-unit>
+      <trans-unit id="layout">
+        <target>Layout</target>
+      </trans-unit>
+      <trans-unit id="headerPosition">
+        <target>Überschrift Position</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

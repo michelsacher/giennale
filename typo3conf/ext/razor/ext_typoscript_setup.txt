@@ -1,0 +1,51 @@
+# # Config
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/Config.ts">
+
+# # Settings
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/Settings.ts">
+
+# # Picture
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/Picture.ts">
+
+# # Language
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/Language.ts">
+
+# # Templates
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/Templates.ts">
+
+# # CSS Includes
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/CSSIncludes.ts">
+
+# # JavaScript Includes
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/JavaScriptIncludes.ts">
+
+# # Fancybox
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/Fancybox.ts">
+
+# # Search
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/Search.ts">
+
+# # Extensions
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/Extensions.ts">
+
+# # SEO
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/Seo.ts">
+
+# # Cookie Consent
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/CookieConsent.ts">
+
+# # Lib
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/Lib.ts">
+
+# # Helper
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/Helper.ts">
+
+# # Sitemap
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/Sitemap.ts">
+
+# # RSS
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/setup/Rss.ts">
+
+
+# # Custom
+<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/razor/TypoScript/setup.ts">

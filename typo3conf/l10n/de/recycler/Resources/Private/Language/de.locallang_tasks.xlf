@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2017-05-22T03:15:47Z" product-name="recycler">
+		<header/>
+		<body>
+			<trans-unit id="cleanerTaskDescription" approved="yes">
+				<source>Deletes rows from the database which are flagged "deleted"</source>
+				<target state="translated">Löscht Zeilen, die als gelöscht markiert sind, aus der Datenbank</target>
+			</trans-unit>
+			<trans-unit id="cleanerTaskDescriptionDays" approved="yes">
+				<source>Older than %d days(s)</source>
+				<target state="translated">Älter als %d Tag(e)</target>
+			</trans-unit>
+			<trans-unit id="cleanerTaskDescriptionTables" approved="yes">
+				<source>Tables: %s</source>
+				<target state="translated">Tabellen: %s</target>
+			</trans-unit>
+			<trans-unit id="cleanerTaskErrorPeriod" approved="yes">
+				<source>The period has to be an integer and greater than zero.</source>
+				<target state="translated">Der Zeitraum muss eine ganze Zahl und größer als Null sein.</target>
+			</trans-unit>
+			<trans-unit id="cleanerTaskErrorTCAempty" approved="yes">
+				<source>You have to select at least one table.</source>
+				<target state="translated">Es muss mindestens eine Tabelle ausgewählt werden.</target>
+			</trans-unit>
+			<trans-unit id="cleanerTaskErrorTCANotSet" approved="yes">
+				<source>The table "%s" is not in the TCA.</source>
+				<target state="translated">Die Tabelle "%s" ist nicht in $GLOBALS['TCA'] definiert.</target>
+			</trans-unit>
+			<trans-unit id="cleanerTaskPeriod" approved="yes">
+				<source>Delete entries older than (in days)</source>
+				<target state="translated">Einträge löschen, die älter sind als ... Tage</target>
+			</trans-unit>
+			<trans-unit id="cleanerTaskTCA" approved="yes">
+				<source>Tables</source>
+				<target state="translated">Tabellen</target>
+			</trans-unit>
+			<trans-unit id="cleanerTaskTitle" approved="yes">
+				<source>Remove deleted records</source>
+				<target state="translated">Gelöschte Datensätze entfernen</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

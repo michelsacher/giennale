@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="mlang_tabs_tab">DCE</label>
+      <label index="mlang_labels_tablabel">DCE - Dynamische Inhaltselemente</label>
+      <label index="mlang_labels_tabdescr">Modul für schnelleren Zugriff auf DCE-Elemente.</label>
+      <label index="createNewDce">Neues DCE erstellen</label>
+      <label index="previewOverHeadline">DCE-Vorschau</label>
+      <label index="previewOverText"/>
+      <label index="previewSaveFirst">Bitte erst das DCE speichern. Nach einem initialem Speichern ist die Vorschau verfügbar. Um die Vorschau zu aktualisieren, nicht vergessen nach Änderungen an den DCE-Feldern zu speichern.</label>
+      <label index="createNewDce">Neues DCE erstellen</label>
+      <label index="goToListView">Die Listenansicht aufrufen</label>
+      <label index="clearCaches"/>
+      <label index="clearCachesFlashMessage"/>
+      <label index="hallOfFame"/>
+      <label index="hallOfFameIntroText"/>
+      <label index="donate">Spenden</label>
+      <label index="donateText">Wenn Ihnen die DCE-Extension gefällt, können Sie die weitere Entwicklung der Extension mit einer Spende unterstützen.</label>
+      <label index="help"/>
+      <label index="help.manual"/>
+      <label index="help.wiki"/>
+      <label index="help.facebook"/>
+      <label index="help.bitbucket"/>
+      <label index="caution"/>
+      <label index="hideContentElementsBasedOnDce"/>
+      <label index="ok"/>
+      <label index="edit"/>
+      <label index="info"/>
+      <label index="enabled"/>
+      <label index="disabled"/>
+      <label index="back"/>
+      <label index="noDcesFound"/>
+      <label index="fields"/>
+      <label index="tca"/>
+      <label index="tcaplus"/>
+      <label index="relatedContentElements"/>
+      <label index="usage"/>
+      <label index="fieldStats"/>
+      <label index="dceStats"/>
+      <label index="dceContainerEnabled"/>
+      <label index="limitedToItems"/>
+      <label index="actions"/>
+      <label index="updateTcaMappings"/>
+      <label index="updateTcaMappingsMessage"/>
+      <label index="updateTcaMappingsDone"/>
+      <label index="updateOk"/>
+      <label index="updateAbort"/>
+    </languageKey>
+  </data>
+</T3locallangExt>

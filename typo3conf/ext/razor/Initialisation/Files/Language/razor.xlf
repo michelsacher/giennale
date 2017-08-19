@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="razor">
+    <header />
+    <body>
+      <trans-unit id="searchTerm">
+        <source>Enter search term</source>
+      </trans-unit>
+      <trans-unit id="search">
+        <source>Search</source>
+      </trans-unit>
+      <trans-unit id="cookieMessage">
+        <source>This website uses cookies to ensure you get the best experience on our website.</source>
+      </trans-unit>
+      <trans-unit id="cookieDismiss">
+        <source>Got it!</source>
+      </trans-unit>
+      <trans-unit id="cookieLink">
+        <source>Learn more</source>
+      </trans-unit>
+      <trans-unit id="cookieHref">
+        <source>http://cookiesandyou.com</source>
+      </trans-unit>
+      <trans-unit id="cookieRevoke">
+        <source>Cookie Policy</source>
+      </trans-unit>
+      <trans-unit id="more">
+        <source>more</source>
+      </trans-unit>
+      <trans-unit id="subject">
+        <source>Look at this page</source>
+      </trans-unit>
+      <trans-unit id="body">
+        <source><![CDATA[Look at this page: %1$s]]></source>
+      </trans-unit>
+      <trans-unit id="closeLabel">
+        <source>Close</source>
+      </trans-unit>
+      <trans-unit id="nextLabel">
+        <source>Next</source>
+      </trans-unit>
+      <trans-unit id="prevLabel">
+        <source>Previous</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

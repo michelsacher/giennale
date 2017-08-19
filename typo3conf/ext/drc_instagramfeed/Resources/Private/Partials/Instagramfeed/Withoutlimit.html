@@ -1,0 +1,34 @@
+<div class="col-sm-{settings.row}">
+		<a href="{instagramfeed.images.standard_resolution.url}" data-effect="mfp-zoom-in">
+		<div class="grid-block standard">
+	    	<div class="caption">	
+	    		<f:if condition="{instagramfeed.likes.count}>=1">
+	    		<f:then>
+		    		<span class="glyphicon glyphicon-heart-empty">
+		    			<i class="ing-icon-heart"></i>{instagramfeed.likes.count}
+		    		</span>
+		    	</f:then>
+		    	<f:else>
+		    		<span class="glyphicon glyphicon-heart-empty">
+		    			<i class="ing-icon-heart"></i>0
+		    		</span>
+		    	</f:else>	
+	    		</f:if>
+	    		<f:if condition="{instagramfeed.comments.count}>=1">
+	    		<f:then>
+		    		<span class="glyphicon glyphicon-comment">
+		    			<i class="ing-icon-comment"></i>{instagramfeed.comments.count}
+		    		</span>
+		    	</f:then>
+		    	<f:else>
+		    		<span class="glyphicon glyphicon-comment">
+		    			<i class="ing-icon-comment"></i>0
+		    		</span>
+		    	</f:else>	
+	    		</f:if>
+	            <br/><p><f:format.crop maxCharacters="50">{instagramfeed.caption.text}</f:format.crop></p>
+	        </div>
+	        <img src="{instagramfeed.images.standard_resolution.url}" class="img-responsive  {settings.shape}">
+	    </div>
+	    </a>
+	    </div>

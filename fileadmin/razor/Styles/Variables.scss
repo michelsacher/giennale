@@ -1,0 +1,44 @@
+/* --------------------------------------------------------
+Variables
+
+version: 1.0
+last modified: 23.05.2017 by Michel Sacher
+author: Michel Sacher
+email: michelsacher@googlemail.com
+website: www.michelsacher.de
+----------------------------------------------------------*/
+
+/* Colors BEGIN */
+
+$black:                 #000;
+$white:                 #fff;
+$grey:                  #222;
+$lightgrey:				#9d9d9d;
+
+$color-text:            $white;
+$color-ci-1:            #934647;
+$color-ci-2:            #37224f;
+$color-ci-2-alpha:		rgba($color-ci-2, 0.5);
+
+$color-error:           #b94a48;
+
+$color-selection-back:  $color-ci-1;
+$color-selection:       $white;
+
+/* Colors END */
+
+/* Fonts BEGIN */
+
+$font-1:                "Lato", sans-serif;
+$font-2:                $font-1;
+
+$font-size-1:           1.6rem;
+$font-size-2:           1.4rem;
+
+/* Fonts BEGIN */
+
+/* Settings BEGIN */
+
+$borderRadius:          0;
+
+/* Settings END */

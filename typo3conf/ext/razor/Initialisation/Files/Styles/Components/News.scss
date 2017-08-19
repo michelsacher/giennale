@@ -1,0 +1,60 @@
+/* --------------------------------------------------------
+Component: News
+
+version: 1.0
+last modified: ###DATE### by ###AUTHOR###
+author: ###AUTHOR###
+email: ###EMAIL###
+website: ###WEBSITE###
+----------------------------------------------------------*/
+
+.razor {
+  &--news {
+    &-list {
+      margin-bottom: 1.5rem;
+
+      h3 {
+        a {
+          color: $black;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-image {
+      margin-bottom: 1.5rem;
+    }
+
+    &-teaser {
+      margin-top: 1rem;
+    }
+
+    &-filesize {
+      font-style: italic;
+    }
+  }
+
+  &--share {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+    a {
+      @include states {
+        text-decoration: none;
+      }
+
+      margin-right: .5rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

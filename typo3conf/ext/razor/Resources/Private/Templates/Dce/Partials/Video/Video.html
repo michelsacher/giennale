@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:dce="http://typo3.org/ns/ArminVieweg/Dce/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:for each="{field.videoFile}" as="fileReference" iteration="i">
+  <v:variable.set name="video{i.index}" value="fileadmin{fileReference.originalFile.identifier}" />
+</f:for>
+
+<f:if condition="{poster}">
+  <f:for each="{field.poster}" as="posterImage">
+    <v:variable.set name="posterFinal" value="{f:uri.image(src: '{posterImage.uid}', treatIdAsReference: 1)}" />
+  </f:for>
+</f:if>
+
+<v:variable.set name="videos" value='<razor:filter arr="{0: video0, 1: video1, 2: video2}" />' />
+
+<v:media.video src="{videos}" width="{width}" height="{height}" controls="1" autoplay="{autoplay}" poster="{posterFinal}" additionalAttributes="{class: '{classes}'}" />
+</html>

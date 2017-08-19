@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2015-09-20T08:51:56Z" product-name="razornews">
+    <header/>
+    <body>
+      <trans-unit id="tx_razornews_domain_model_newscontent">
+        <source>News Content</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.type">
+        <source>Type</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.type.text">
+        <source>Text</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.type.image">
+        <source>Image</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.type.gallery">
+        <source>Gallery</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.type.video">
+        <source>Video</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.type.audio">
+        <source>Audio</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.type.content">
+        <source>Content</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.video_type">
+        <source>Video type</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.video_type.youtube">
+        <source>YouTube</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.video_type.vimeo">
+        <source>Vimeo</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.video_type.html5Video">
+        <source>HTML5 Video</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.ratio">
+        <source>Aspect ratio</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.ratio.1">
+        <source>16:9</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.ratio.2">
+        <source>4:3</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.ratio.3">
+        <source>Free</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.text">
+        <source>Text</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.image">
+        <source>Image</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.poster">
+        <source>Poster</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.mp3">
+        <source>MP3</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.ogg">
+        <source>Ogg</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.gallery">
+        <source>Gallery</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.width">
+        <source>Width</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.height">
+        <source>Height</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.crop">
+        <source>Crop?</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.click_enlarge">
+        <source>Click enlarge?</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.video_id">
+        <source>Video ID (YouTube / Vimeo)</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.video_file">
+        <source>Video file</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.video_file.add">
+        <source>Add video</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.content">
+        <source>Content</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_news">
+        <source>News</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_news.newscontent">
+        <source>Newscontent</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_news.ogimage">
+        <source>facebook image (og:image)</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_news.city">
+        <source>City</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_news.datetimeend">
+        <source>End date</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_news.ogimage_add">
+        <source>Add media file</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.addOggFile">
+        <source>Add Ogg</source>
+      </trans-unit>
+      <trans-unit id="tx_razornews_domain_model_newscontent.addMp3File">
+        <source>Add MP3</source>
+      </trans-unit>
+      <trans-unit id="tx_news_domain_model_media.hideindetail">
+        <source>Hide in detail view?</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

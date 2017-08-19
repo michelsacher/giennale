@@ -1,0 +1,9 @@
+<f:render partial="Header" arguments="{layout: contentObject.header_layout, header: contentObject.header, link: contentObject.header_link, default: tsSetup.razor.misc.defaultHeaderType, position: contentObject.header_position, style: contentObject.header_style}" />
+
+<blockquote class="quote{f:if(condition: field.cssClasses, then: ' {field.cssClasses}')}">
+  <p class="quote__content"><f:format.nl2br>{field.text}</f:format.nl2br></p>
+
+  <f:if condition="{field.footer}">
+    <footer class="quote__footer">{field.footer}</footer>
+  </f:if>
+</blockquote>

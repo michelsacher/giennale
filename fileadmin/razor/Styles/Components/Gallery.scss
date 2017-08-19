@@ -1,0 +1,46 @@
+/* --------------------------------------------------------
+Component: Gallery
+
+version: 1.0
+last modified: 23.05.2017 by Michel Sacher
+author: Michel Sacher
+email: michelsacher@googlemail.com
+website: www.michelsacher.de
+----------------------------------------------------------*/
+
+.gallery {
+  $self: &;
+
+  .row {
+    #{$self}__single {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__single {
+    &.fade {
+      opacity: 1;
+      transition: opacity .25s ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    &.bw {
+      transition: all 1s ease;
+
+      &:hover {
+        filter: grayscale(100%);
+      }
+    }
+
+    &.zoom {
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

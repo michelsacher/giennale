@@ -1,0 +1,6 @@
+{
+  "directory": "Resources/Public/Bower",
+  "ignoredDependencies": [
+    "jquery"
+  ]
+}

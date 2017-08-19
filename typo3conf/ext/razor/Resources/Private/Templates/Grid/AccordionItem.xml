@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <meta type="array">
+    <langDisable>1</langDisable>
+    <langDatabaseOverlay>1</langDatabaseOverlay>
+  </meta>
+  <sheets>
+    <general>
+      <ROOT type="array">
+        <TCEforms>
+          <sheetTitle>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:general</sheetTitle>
+        </TCEforms>
+        <el type="array">
+          <toggle>
+            <TCEforms>
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:toggle</label>
+              <config>
+                <type>check</type>
+                <default>1</default>
+              </config>
+            </TCEforms>
+          </toggle>
+        </el>
+      </ROOT>
+    </general>
+  </sheets>
+</T3DataStructure>

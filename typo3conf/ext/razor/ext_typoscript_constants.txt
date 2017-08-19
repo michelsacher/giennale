@@ -1,0 +1,18 @@
+# # Config
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/constants/Config.ts">
+
+# # Settings
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/constants/Settings.ts">
+
+# # Extensions
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/constants/Extensions.ts">
+
+# # SEO
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/constants/Seo.ts">
+
+# # Fancybox
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:razor/Configuration/TypoScript/constants/Fancybox.ts">
+
+
+# # Custom
+<INCLUDE_TYPOSCRIPT: source="FILE:fileadmin/razor/TypoScript/constants.ts">

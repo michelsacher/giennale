@@ -1,0 +1,122 @@
+/* --------------------------------------------------------
+Component: Razor
+
+version: 1.0
+last modified: ###DATE### by ###AUTHOR###
+author: ###AUTHOR###
+email: ###EMAIL###
+website: ###WEBSITE###
+----------------------------------------------------------*/
+
+@font-face {
+  font-family: "razor";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Fonts/razor/razor.eot?87295660");
+  src: url("../Fonts/razor/razor.eot?87295660#iefix") format("embedded-opentype"),
+  url("../Fonts/razor/razor.woff2?87295660") format("woff2"),
+  url("../Fonts/razor/razor.woff?87295660") format("woff"),
+  url("../Fonts/razor/razor.ttf?87295660") format("truetype"),
+  url("../Fonts/razor/razor.svg?87295660#razor") format("svg");
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'razor';
+    src: url('../font/razor.svg?87295660#razor') format('svg');
+  }
+}
+*/
+
+[class^="rz-"]:before, [class*=" rz-"]:before {
+  display: inline-block;
+  width: 1em;
+  margin-right: .2em;
+  font-family: "razor";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: inherit;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  // margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+  font-variant: normal;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.rz-digg:before {
+  content: "\e800";
+}
+
+.rz-email:before {
+  content: "\e801";
+}
+
+.rz-evernote:before {
+  content: "\e802";
+}
+
+.rz-facebook:before {
+  content: "\e803";
+}
+
+.rz-google-plus:before {
+  content: "\e804";
+}
+
+.rz-linkedin:before {
+  content: "\e805";
+}
+
+.rz-pinterest:before {
+  content: "\e806";
+}
+
+.rz-pocket:before {
+  content: "\e807";
+}
+
+.rz-reddit:before {
+  content: "\e808";
+}
+
+.rz-tumblr:before {
+  content: "\e809";
+}
+
+.rz-twitter:before {
+  content: "\e810";
+}
+
+.rz-xing:before {
+  content: "\e811";
+}
+
+.rz-buffer:before {
+  content: "\e812";
+}
+
+.rz-stumble-upon:before {
+  content: "\e813";
+}

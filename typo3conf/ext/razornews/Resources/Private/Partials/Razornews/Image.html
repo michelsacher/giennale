@@ -1,0 +1,28 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+
+<v:variable.set name="selector" value="{tsSetup.razor.fancybox.selector}" />
+
+<f:if condition="{newsContent.title}">
+  <h2>{newsContent.title}</h2>
+</f:if>
+
+<f:if condition="{newsContent.crop}">
+  <v:variable.set name="crop" value="c" />
+</f:if>
+
+<f:if condition="{newsContent.clickEnlarge}">
+  <f:then>
+    <a href="<f:uri.image src="{newsContent.image.uid}" treatIdAsReference="1" />" title="{newsContent.image.originalResource.title}" class="{selector}" data-fancybox="group">
+      <f:image image="{newsContent.image}" alt="{newsContent.image.originalResource.title}" class="img-responsive razor--mb" width="{newsContent.width}{crop}" height="{newsContent.height}{crop}" />
+    </a>
+  </f:then>
+  <f:else>
+    <f:image image="{newsContent.image}" alt="{newsContent.image.originalResource.title}" class="img-responsive razor--mb" width="{newsContent.width}{crop}" height="{newsContent.height}{crop}" />
+  </f:else>
+</f:if>
+</html>

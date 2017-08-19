@@ -1,0 +1,102 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:render partial="Header" arguments="{layout: contentObject.header_layout, header: contentObject.header, link: contentObject.header_link, default: tsSetup.razor.misc.defaultHeaderType, position: contentObject.header_position, style: contentObject.header_style}" />
+
+<f:if condition="{field.button}">
+  <div class="{field.position}">
+    <f:if condition="{field.buttonWrap}">
+      <f:else>
+        <f:if condition="{field.group}">
+          <f:then>
+            <div class="btn-group" role="group">
+          </f:then>
+          <f:else>
+            <p>
+          </f:else>
+        </f:if>
+      </f:else>
+    </f:if>
+
+    <f:for each="{field.button}" as="button" iteration="iterator">
+      <f:if condition="{field.buttonWrap}">
+        <p>
+      </f:if>
+
+      <v:variable.set name="state" value="" />
+      <f:if condition="{button.type}">
+        <v:variable.set name="state" value="{v:content.resources(table:'tx_razor_domain_model_state', field:'value', uid:'{button.type}')}" />
+      </f:if>
+
+      <v:variable.set name="block" value="" />
+      <f:if condition="{button.block}">
+        <v:variable.set name="block" value=' btn-block' />
+      </f:if>
+
+      <v:variable.set name="wrap" value="" />
+      <f:if condition="{button.wrap}">
+        <v:variable.set name="wrap" value=' btn-wrap' />
+      </f:if>
+
+      <f:if condition="{button.size}">
+        <v:variable.set name="theSize" value="" />
+        <v:variable.set name="size" value="{v:content.resources(table:'tx_razor_domain_model_size', field:'value', uid:'{button.size}')}" />
+
+        <f:if condition="{size.0}">
+          <v:variable.set name="theSize" value=" btn-{size.0}" />
+        </f:if>
+      </f:if>
+
+      <v:variable.set name="icon" value="" />
+      <f:if condition="{button.icon}">
+        <v:variable.set name="icon" value="{v:content.resources(table:'tx_razor_domain_model_icon', field:'value', uid:'{button.icon}')}" />
+      </f:if>
+
+      <f:if condition="{button.disabled}">
+        <f:then>
+          <f:link.typolink parameter="{button.link}" class="btn btn-{state.0}{theSize}{block}{wrap}" additionalAttributes="{disabled: 'disabled'}">
+            <f:if condition="{button.iconPos} == 0">
+              <f:then>
+                <f:if condition="{button.icon}"><i class="{icon.0} razor--fa-left"></i> </f:if>{button.title}
+              </f:then>
+              <f:else>
+                {button.title}<f:if condition="{button.icon}"> <i class="{icon.0} razor--fa-right"></i></f:if>
+              </f:else>
+            </f:if>
+          </f:link.typolink>
+        </f:then>
+        <f:else>
+          <f:link.typolink parameter="{button.link}" class="btn btn-{state.0}{theSize}{block}{wrap}">
+            <f:if condition="{button.iconPos} == 0">
+              <f:then>
+                <f:if condition="{button.icon}"><i class="{icon.0} razor--fa-left"></i> </f:if>{button.title}
+              </f:then>
+              <f:else>
+                {button.title}<f:if condition="{button.icon}"> <i class="{icon.0} razor--fa-right"></i></f:if>
+              </f:else>
+            </f:if>
+          </f:link.typolink>
+        </f:else>
+      </f:if>
+
+      <f:if condition="{field.buttonWrap}">
+        </p>
+      </f:if>
+    </f:for>
+
+    <f:if condition="{field.buttonWrap}">
+      <f:else>
+        <f:if condition="{field.group}">
+          <f:then>
+            </div>
+          </f:then>
+          <f:else>
+            </p>
+          </f:else>
+        </f:if>
+      </f:else>
+    </f:if>
+  </div>
+</f:if>
+</html>

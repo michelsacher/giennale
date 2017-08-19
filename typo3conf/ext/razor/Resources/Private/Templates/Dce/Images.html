@@ -1,0 +1,111 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:dce="http://typo3.org/ns/ArminVieweg/Dce/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:render partial="Header" arguments="{layout: contentObject.header_layout, header: contentObject.header, link: contentObject.header_link, default: tsSetup.razor.misc.defaultHeaderType, position: contentObject.header_position, style: contentObject.header_style}" />
+
+<v:variable.set name="selector" value="{tsSetup.razor.fancybox.selector}" />
+
+<f:if condition="{field.responsive}">
+  <v:variable.set name="responsive" value='img-responsive ' />
+</f:if>
+
+<v:variable.set name="crop" value="" />
+<f:if condition="{field.crop}">
+  <v:variable.set name="crop" value="c" />
+</f:if>
+
+<v:variable.set name="gallery" value="" />
+<f:if condition="{field.gallery}">
+  <v:variable.set name="gallery" value='gallery-{page.uid}' />
+</f:if>
+
+<f:for each="{field.image}" as="fileReference" iteration="c">
+  <razor:row items="{field.image}" iteration="{c}" cols="{field.cols}" maxCols="{tsSetup.razor.bootstrap.cols}" classes="row-{field.position}">
+    <v:variable.set name="width" value="" />
+    <v:variable.set name="height" value="" />
+
+    <div class="col-{field.viewport}-{colSize} col-{field.position}">
+      <v:if stack="{0: field.width, 1: 'AND', 2: field.height, 3: 'AND', 4: crop}">
+        <f:then>
+          <v:variable.set name="width" value="{field.width}" />
+          <v:variable.set name="height" value="{field.height}" />
+        </f:then>
+        <f:else>
+          <f:if condition="{field.width}">
+            <f:then>
+              <v:variable.set name="width" value="{field.width}" />
+            </f:then>
+            <f:else>
+              <f:if condition="{field.height}">
+                <v:variable.set name="height" value="{field.height}" />
+              </f:if>
+            </f:else>
+          </f:if>
+        </f:else>
+      </v:if>
+
+      <v:variable.set name="imageLink" value='<v:format.url.decode content="{f:uri.image(src: fileReference.uid, treatIdAsReference: 1)}" />' />
+      <v:variable.set name="imageAlt" value="{fileReference.alternative}" />
+      <v:variable.set name="imageTitle" value="{fileReference.title}" />
+      <v:variable.set name="imageDesc" value="{fileReference.description}" />
+      <v:variable.set name="widthCrop" value="{width}{crop}" />
+      <v:variable.set name="heightCrop" value="{height}{crop}" />
+
+      <v:variable.set name="image" value='<v:format.url.decode content="{f:uri.image(src: fileReference.uid, treatIdAsReference: 1, width: widthCrop, height: heightCrop)}" />' />
+
+      <v:condition.variable.isNull value="{width}">
+        <v:variable.set name="width" value='<v:media.image.width src="{fileReference.uid}" treatIdAsReference="1" />' />
+      </v:condition.variable.isNull>
+
+      <v:variable.set name="thumbnail" value='<razor:array obj="{field.thumbnail}" prop="{c.index}" />' />
+
+      <f:if condition="{thumbnail}">
+        <v:variable.set name="imageAlt" value="{thumbnail.alternative}" />
+        <v:variable.set name="imageTitle" value="{thumbnail.title}" />
+        <v:variable.set name="imageDesc" value="{thumbnail.description}" />
+
+        <v:variable.set name="image" value='<v:format.url.decode content="{f:uri.image(src: thumbnail.uid, treatIdAsReference: 1, width: widthCrop, height: heightCrop)}" />' />
+
+        <v:condition.variable.isNull value="{width}">
+          <v:variable.set name="width" value='<v:media.image.width src="{thumbnail.uid}" treatIdAsReference="1" />' />
+        </v:condition.variable.isNull>
+      </f:if>
+
+      <f:if condition="{field.enlarge}">
+        <f:then>
+          <a href="{imageLink}" class="{selector}" data-fancybox="{gallery}">
+            <f:render partial="Image/Image" arguments="{image: image, responsive: responsive, classes: field.classes, imageAlt: imageAlt, imageTitle: imageTitle, appearance: field.appearance, tsSetup: tsSetup}" />
+          </a>
+
+          <f:if condition="{imageDesc}">
+            <p class="image-desc">{imageDesc}</p>
+          </f:if>
+        </f:then>
+        <f:else>
+          <f:if condition="{fileReference.link}">
+            <f:then>
+              <f:link.typolink parameter="{fileReference.link}">
+                <f:render partial="Image/Image" arguments="{image: image, responsive: responsive, classes: field.classes, imageAlt: imageAlt, imageTitle: imageTitle, appearance: field.appearance, tsSetup: tsSetup}" />
+              </f:link.typolink>
+
+              <f:if condition="{imageDesc}">
+                <p class="image-desc">{imageDesc}</p>
+              </f:if>
+            </f:then>
+            <f:else>
+              <f:render partial="Image/Image" arguments="{image: image, responsive: responsive, classes: field.classes, imageAlt: imageAlt, imageTitle: imageTitle, appearance: field.appearance, tsSetup: tsSetup}" />
+
+              <f:if condition="{imageDesc}">
+                <p class="image-desc">{imageDesc}</p>
+              </f:if>
+            </f:else>
+          </f:if>
+        </f:else>
+      </f:if>
+    </div>
+  </razor:row>
+</f:for>
+</html>

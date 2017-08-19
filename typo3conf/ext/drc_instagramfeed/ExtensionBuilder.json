@@ -1,0 +1,108 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    246,
+                    65
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": [
+
+                    ]
+                },
+                "name": "Instagramfeed",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "1460665732540"
+                },
+                "propertyGroup": {
+                    "properties": [
+
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+
+                    ]
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [
+            {
+                "actions": {
+                    "controllerActionCombinations": ""
+                },
+                "description": "DRC Instagram Feed",
+                "key": "drcinstagramfeed",
+                "mainModule": "web",
+                "name": "DRC Instagram Feed ",
+                "tabLabel": "DRC Instagram Feed"
+            }
+        ],
+        "description": "DRC Instagram Feed. Its will get the images from the instagram acount",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-7.6.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "beta",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "drc_instagramfeed",
+        "name": "DRC Instagram Feed ",
+        "originalExtensionKey": "drc_instagramfeed",
+        "originalVendorName": "DRCSYSTEMS",
+        "persons": [
+            {
+                "company": "DRC SYSTEMS INDIA PVT. LTD.",
+                "email": "info@drcsystems.com",
+                "name": "DRC Systems",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "drcinstagramfeed",
+                "name": "DRC Instagram Feed"
+            }
+        ],
+        "vendorName": "DRCSYSTEMS"
+    },
+    "wires": [
+
+    ],
+    "log": {
+        "last_modified": "2016-09-28 11:16",
+        "extension_builder_version": "7.6.0",
+        "be_user": " (1)"
+    }
+}

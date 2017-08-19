@@ -1,0 +1,75 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="theTop" value="" />
+<f:if condition="{data.flexform_top}">
+  <v:variable.set name="top" value="{v:content.resources(table:'tx_razor_domain_model_padding', field:'title', uid:'{data.flexform_top}')}" />
+
+  <f:if condition="{top.0}">
+    <v:variable.set name="theTop" value=" razor--padding-top-{top.0}" />
+  </f:if>
+</f:if>
+
+<v:variable.set name="theBottom" value="" />
+<f:if condition="{data.flexform_bottom}">
+  <v:variable.set name="bottom" value="{v:content.resources(table:'tx_razor_domain_model_padding', field:'title', uid:'{data.flexform_bottom}')}" />
+
+  <f:if condition="{bottom.0}">
+    <v:variable.set name="theBottom" value=" razor--padding-bottom-{bottom.0}" />
+  </f:if>
+</f:if>
+
+<f:if condition="{data.flexform_backgroundColor}">
+  <v:variable.set name="class" value="{v:content.resources(table:'tx_razor_domain_model_color', field:'value', uid:'{data.flexform_backgroundColor}')}" />
+
+  <v:variable.set name="color" value="{v:content.resources(table:'tx_razor_domain_model_color', field:'color', uid:'{data.flexform_backgroundColor}')}" />
+
+  <f:if condition="{class.0}">
+    <f:if condition="{data.flexform_useSection}">
+      <f:then>
+        <v:variable.set name="theClass" value=" razor--section-{class.0}" />
+      </f:then>
+      <f:else>
+        <v:variable.set name="theClass" value=" razor--wrap-{class.0}" />
+      </f:else>
+    </f:if>
+  </f:if>
+</f:if>
+
+<f:if condition="{data.tx_razor_gridbackground}">
+  <v:variable.set name="image" value='<razor:fileReference table="tt_content" field="tx_razor_gridbackground" uid="{data.uid}" />' />
+  <v:variable.set name="theImage" value='<v:uri.image src="{image.0.reference.uid}" treatIdAsReference="1" />' />
+</f:if>
+
+<f:if condition="{theImage}">
+  <v:variable.set name="theStyle" value="background-color: {color.0}; background-image: url('{theImage}'); background-position: {data.flexform_backgroundPosition};" />
+</f:if>
+
+<f:if condition="{data.flexform_id}">
+  <f:then>
+    <v:variable.set name="id" value="{data.flexform_id}" />
+  </f:then>
+  <f:else>
+    <v:variable.set name="id" value="wrap-{data.uid}" />
+  </f:else>
+</f:if>
+
+<f:if condition="{data.flexform_useSection}">
+  <f:then>
+    <section id="{id}" class="section-background {data.flexform_classes}{theTop}{theBottom}{theClass}" style="{theStyle}">
+      <f:format.raw>
+        {data.tx_gridelements_view_column_1}
+      </f:format.raw>
+    </section>
+  </f:then>
+  <f:else>
+    <div id="{id}" class="wrap-background {data.flexform_classes}{theTop}{theBottom}{theClass}" style="{theStyle}">
+      <f:format.raw>
+        {data.tx_gridelements_view_column_1}
+      </f:format.raw>
+    </div>
+  </f:else>
+</f:if>
+</html>

@@ -1,0 +1,51 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+
+<v:variable.set name="selector" value="{tsSetup.razor.fancybox.selector}" />
+
+<f:if condition="{tsSetup.razor.bootstrap.cols}">
+  <f:then>
+    <v:variable.set name="cols" value='<razor:cols cols="{tsSetup.razor.bootstrap.cols}" divider="3" />' />
+  </f:then>
+  <f:else>
+    <v:variable.set name="cols" value="12" />
+  </f:else>
+</f:if>
+
+<f:if condition="{newsContent.title}">
+  <h2>{newsContent.title}</h2>
+</f:if>
+
+<f:if condition="{newsContent.crop}">
+  <v:variable.set name="crop" value="c" />
+</f:if>
+
+<f:for each="{newsContent.gallery}" as="image" iteration="i">
+  <v:variable.set name="row" value='<v:math.modulo a="{i.cycle}" fail="0" b="3" />' />
+
+  <v:if stack="{0: i.isFirst, 1: 'OR', 2: row, 3: '==', 4: 1}">
+    <div class="row razor--mt">
+  </v:if>
+
+    <div class="col-xs-{cols}">
+      <f:if condition="{newsContent.clickEnlarge}">
+        <f:then>
+          <a href="<f:uri.image src="{image.uid}" treatIdAsReference="1" />" title="{image.originalResource.title}" class="{selector}" data-fancybox="group">
+            <f:image image="{image}" alt="{image.originalResource.title}" class="img-responsive razor--mb" width="{newsContent.width}{crop}" height="{newsContent.height}{crop}" />
+          </a>
+        </f:then>
+        <f:else>
+          <f:image image="{image}" alt="{image.originalResource.title}" class="img-responsive razor--mb" width="{newsContent.width}{crop}" height="{newsContent.height}{crop}" />
+        </f:else>
+      </f:if>
+    </div>
+
+  <v:if stack="{0: i.isLast, 1: 'OR', 2: row, 3: '==', 4: 0}">
+    </div>
+  </v:if>
+</f:for>
+</html>

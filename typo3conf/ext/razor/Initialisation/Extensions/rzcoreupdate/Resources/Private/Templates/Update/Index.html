@@ -1,0 +1,98 @@
+<f:layout name="Main" />
+
+<f:section name="docHeaderRow1"></f:section>
+<f:section name="docHeaderRow2"></f:section>
+<f:section name="Content">
+
+  <f:flashMessages />
+
+  <div class="rzcoreupdateContainer">
+    <h1><f:translate key="infoInstallation" /></h1>
+    <table class="rzcoreupdateTable">
+      <tr>
+        <td><f:translate key="versionInstalled" /></td>
+        <td>{versionInformation.installed}</td>
+      </tr>
+      <tr>
+        <td><f:translate key="versionAvailable" /></td>
+        <td>{versionInformation.latest_installed_branch}</td>
+      </tr>
+      <tr>
+        <td>
+          PATH_site (TYPO3 Document Root)
+        </td>
+        <td>
+          {calculatedPaths.PATH_site}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <f:translate key="pathTo" />
+        </td>
+        <td>
+          {calculatedPaths.realSourceLocation}
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="rzcoreupdateContainer">
+    <h1><f:translate key="versionsInstallation" /></h1>
+    <table class="rzcoreupdateTable">
+      <f:for each="{availableVersionSources}" as="version" key="number" iteration="itemIteration">
+        <tr>
+          <td>
+            TYPO3 v{version}
+          </td>
+          <td>
+            <f:if condition="{version}=={versionInformation.installed}">
+              <f:then>
+
+              </f:then>
+              <f:else>
+                <f:link.action action="switch" arguments="{version: version}">
+                  <span class="t3-icon t3-icon-actions t3-icon-actions-version t3-icon-version-workspace-sendtostage">&nbsp;</span><f:translate key="switch" />
+                </f:link.action>
+              </f:else>
+            </f:if>
+          </td>
+          <td>
+            <f:if condition="{version}=={versionInformation.installed}">
+              <f:then>
+
+              </f:then>
+              <f:else>
+                <f:link.action action="delete" arguments="{version: version}">
+                  <span class="t3-icon t3-icon-actions t3-icon-actions-edit t3-icon-edit-delete">&nbsp;</span><f:translate key="delete" />
+                </f:link.action>
+              </f:else>
+            </f:if>
+          </td>
+        </tr>
+      </f:for>
+    </table>
+  </div>
+
+  <div class="rzcoreupdateContainer">
+
+    <h1><f:translate key="versionsDownload" /></h1>
+    <table class="rzcoreupdateTable">
+      <f:for each="{branchDownloads}" as="version" key="number" iteration="itemIteration">
+        <tr class="marker-{version.type}" title="{version.date}">
+          <td>
+            TYPO3 v{version.version}<br>
+          </td>
+          <td>
+            <span class="marker-{version.type}">{version.type}</span>
+          </td>
+          <td>
+            <f:link.action action="import" arguments="{version: version.version}">
+              <span class="t3-icon t3-icon-actions t3-icon-actions-edit t3-icon-edit-add">&nbsp;</span><f:translate key="get" />
+            </f:link.action>
+          </td>
+        </tr>
+      </f:for>
+    </table>
+  </div>
+
+</f:section>

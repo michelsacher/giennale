@@ -1,0 +1,75 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+
+<f:render partial="Head/Head" arguments="{data: data}" />
+
+<f:render partial="MainMenu" arguments="{data: data}" />
+
+<f:if condition="{tsSetup.razor.site.breadcrumb}">
+  <f:if condition="{data.uid} != 1">
+    <f:then>
+      <f:render partial="Breadcrumb" />
+    </f:then>
+    <f:else>
+      <f:if condition="{tsSetup.razor.site.breadcrumbOnHomepage}">
+        <f:render partial="Breadcrumb" />
+      </f:if>
+    </f:else>
+  </f:if>
+</f:if>
+
+<div class="head">
+
+  <div class="fetch">
+    <div class="fetch__item fetch__item--left">
+      <div class="fetch__item--left__inner">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+        <svg version="1.1" id="fetch-claim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           width="421.645px" height="618.347px" viewBox="0 0 421.645 618.347" enable-background="new 0 0 421.645 618.347"
+           xml:space="preserve">
+        <polygon fill="#FFFFFF" points="0,0 0,618.347 421.645,618.347 421.645,281.091 281.101,281.091 281.101,479.74 140.556,479.74 
+          140.556,140.547 421.645,140.547 421.645,0 "/>
+        </svg>
+      </div>
+    </div>
+    <div class="fetch__item fetch__item--center">
+      <video loop muted autoplay poster="" class="video-bg">
+        <source src="fileadmin/razor/Videos/fetch-bg.mp4" type="video/mp4">
+      </video>
+      <div class="fetch__item--center__inner">
+        <div class="fetch-date">
+          <h1>Giennale</h1>
+          <p><span>22/09 – 30/09</span><br>2017</p>
+          <p>
+            <f:link.page pageUid="28" class="btn btn-primary">Info</f:link.page>
+            <f:link.page pageUid="26" class="btn btn-primary">Programm</f:link.page>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="fetch__item fetch__item--right">
+      <h2>Festival für<br><span id="js-rotating">Kunst, Kultur</span><br>in Gießen</h2>
+    </div>    
+  </div>
+
+  <!--TYPO3SEARCH_begin-->
+    <f:cObject typoscriptObjectPath="lib.head" />
+  <!--TYPO3SEARCH_end-->
+</div>
+
+<div class="page">
+  <!--TYPO3SEARCH_begin-->
+    <f:cObject typoscriptObjectPath="lib.content" />
+  <!--TYPO3SEARCH_end-->
+</div>
+
+<f:render partial="Footer" />
+<f:render partial="FooterMenu" />
+
+</html>

@@ -1,0 +1,95 @@
+/* --------------------------------------------------------
+Responsive
+
+version: 1.0
+last modified: 23.05.2017 by Michel Sacher
+author: Michel Sacher
+email: michelsacher@googlemail.com
+website: www.michelsacher.de
+----------------------------------------------------------*/
+
+/* Bootstrap3 media queries BEGIN */
+
+@media (min-width: 768px) {
+
+	.fetch {
+		display: flex;
+		align-items: stretch;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&__item {
+
+			&--left {
+				width: calc(100% / 3);
+			}
+
+			&--center {
+				width: calc(100% / 3);
+
+				.video-bg {
+					height: 100%;
+					width: auto;
+				}				
+			}
+
+			&--right {
+				width: calc(100% / 3);
+			}
+		}
+	}
+
+	.insta--item {
+		width: calc(100% / 4);
+	}
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+	.navbar-inverse .container {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.navbar-inverse .navbar-header {
+		width: auto;
+	}
+
+	.navbar-nav>li>.dropdown-menu {
+		padding: 0 0 .5rem 0;
+		background-color: $color-ci-1;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li {
+		border: none;
+	}
+
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+		@include buttonStates {
+			color: $lightgrey;
+			text-align: left;
+			border: none;
+			background-color: $color-ci-1;
+		}
+
+		border: none;
+		color: $white;
+		text-align: left;
+		background-color: $color-ci-1;
+	}
+}
+
+/* Bootstrap3 media queries END */
+
+/* Custom queries BEGIN */
+
+
+/* Custom queries END */

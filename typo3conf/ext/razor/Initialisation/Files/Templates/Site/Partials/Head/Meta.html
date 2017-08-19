@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+
+<f:if condition="{tsSetup.razor.seo.googlePlus}">
+  <link rel="publisher" href="https://plus.google.com/u/0/{tsSetup.razor.seo.googlePlus}/posts">
+</f:if>
+
+<f:if condition="{tsSetup.razor.rss.activate}">
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="feed.rss" />
+</f:if>
+</html>

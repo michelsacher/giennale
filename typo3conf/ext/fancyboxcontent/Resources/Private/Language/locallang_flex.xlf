@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2015-02-08T19:32:27Z" product-name="fancyboxcontent">
+    <header/>
+    <body>
+      <trans-unit id="fancyboxcontent.pi_flexform.sheet_general">
+        <source>General</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.sheet_options">
+        <source>Options</source>
+      </trans-unit>
+
+      <trans-unit id="fancyboxcontent.pi_flexform.ce">
+        <source>Content elements</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.type">
+        <source>Type</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.type_ce">
+        <source>Content elements</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.type_iframe">
+        <source>Iframe</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.type_media">
+        <source>Media</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.type_html">
+        <source>html</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.link">
+        <source>Link</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.linkType">
+        <source>Link type</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.linkType_link">
+        <source>Link</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.linkType_image">
+        <source>Image</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.linkImage">
+        <source>Image</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.html">
+        <source>html</source>
+      </trans-unit>
+
+      <trans-unit id="fancyboxcontent.pi_flexform.speed">
+        <source>Speed</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.loop">
+        <source>Loop</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.opacity">
+        <source>Opacity</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.margin">
+        <source>Margin</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.gutter">
+        <source>Gutter</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.infobar">
+        <source>Infobar</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.buttons">
+        <source>Buttons</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.slideShow">
+        <source>Slideshow</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.fullScreen">
+        <source>Fullscreen</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.thumbs">
+        <source>Thumbs</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.closeBtn">
+        <source>Close button</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.smallBtn">
+        <source>Small button</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.touch">
+        <source>Touch</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.keyboard">
+        <source>Keyboard</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.focus">
+        <source>Focus</source>
+      </trans-unit>
+      <trans-unit id="fancyboxcontent.pi_flexform.closeClickOutside">
+        <source>Close click outside</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

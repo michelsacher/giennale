@@ -1,0 +1,46 @@
+/* --------------------------------------------------------
+Component: Gallery
+
+version: 1.0
+last modified: ###DATE### by ###AUTHOR###
+author: ###AUTHOR###
+email: ###EMAIL###
+website: ###WEBSITE###
+----------------------------------------------------------*/
+
+.gallery {
+  $self: &;
+
+  .row {
+    #{$self}__single {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__single {
+    &.fade {
+      opacity: 1;
+      transition: opacity .25s ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    &.bw {
+      transition: all 1s ease;
+
+      &:hover {
+        filter: grayscale(100%);
+      }
+    }
+
+    &.zoom {
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

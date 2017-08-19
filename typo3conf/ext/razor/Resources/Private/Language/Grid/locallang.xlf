@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="razor">
+    <header />
+    <body>
+      <!-- Titles and descriptions -->
+      <trans-unit id="2cols">
+        <source>2 columns</source>
+      </trans-unit>
+      <trans-unit id="2colsDesc">
+        <source>Inserts 2 columns</source>
+      </trans-unit>
+      <trans-unit id="3cols">
+        <source>3 columns</source>
+      </trans-unit>
+      <trans-unit id="3colsDesc">
+        <source>Inserts 3 columns</source>
+      </trans-unit>
+      <trans-unit id="4cols">
+        <source>4 columns</source>
+      </trans-unit>
+      <trans-unit id="4colsDesc">
+        <source>Inserts 4 columns</source>
+      </trans-unit>
+      <trans-unit id="wrap">
+        <source>Wrap</source>
+      </trans-unit>
+      <trans-unit id="wrapDesc">
+        <source>Inserts a wrapper</source>
+      </trans-unit>
+      <trans-unit id="container">
+        <source>Container</source>
+      </trans-unit>
+      <trans-unit id="containerDesc">
+        <source>Inserts a container</source>
+      </trans-unit>
+      <trans-unit id="backendContainer">
+        <source>Backend container</source>
+      </trans-unit>
+      <trans-unit id="backendContainerDesc">
+        <source>Inserts a backend container</source>
+      </trans-unit>
+      <trans-unit id="infobox">
+        <source>Infobox</source>
+      </trans-unit>
+      <trans-unit id="infoboxDesc">
+        <source>Inserts an infobox</source>
+      </trans-unit>
+      <trans-unit id="tabsContainer">
+        <source>Tabs container</source>
+      </trans-unit>
+      <trans-unit id="tabsContainerDesc">
+        <source>Insert a tabs container</source>
+      </trans-unit>
+      <trans-unit id="tab">
+        <source>Tab item</source>
+      </trans-unit>
+      <trans-unit id="tabDesc">
+        <source>Insert a tab item</source>
+      </trans-unit>
+      <trans-unit id="accordionContainer">
+        <source>Accordion container</source>
+      </trans-unit>
+      <trans-unit id="accordionContainerDesc">
+        <source>Inserts an accordion container</source>
+      </trans-unit>
+      <trans-unit id="accordion">
+        <source>Accordion item</source>
+      </trans-unit>
+      <trans-unit id="accordionDesc">
+        <source>Inserts an accordion item</source>
+      </trans-unit>
+      <!-- Common -->
+      <trans-unit id="colLeft">
+        <source>Left column</source>
+      </trans-unit>
+      <trans-unit id="contentLeft">
+        <source>Content left</source>
+      </trans-unit>
+      <trans-unit id="sizeLeft">
+        <source>Size left</source>
+      </trans-unit>
+      <trans-unit id="offsetLeft">
+        <source>Offset left</source>
+      </trans-unit>
+      <trans-unit id="colRight">
+        <source>Right column</source>
+      </trans-unit>
+      <trans-unit id="contentRight">
+        <source>Content right</source>
+      </trans-unit>
+      <trans-unit id="sizeRight">
+        <source>Size right</source>
+      </trans-unit>
+      <trans-unit id="offsetRight">
+        <source>Offset right</source>
+      </trans-unit>
+      <trans-unit id="colNormal">
+        <source><![CDATA[Medium (≥992px)]]></source>
+      </trans-unit>
+      <trans-unit id="colXtraSmall">
+        <source><![CDATA[Extra small (<768px)]]></source>
+      </trans-unit>
+      <trans-unit id="colSmall">
+        <source><![CDATA[Small (≥768px)]]></source>
+      </trans-unit>
+      <trans-unit id="colBig">
+        <source><![CDATA[Large (≥1200px)]]></source>
+      </trans-unit>
+      <trans-unit id="notDefined">
+        <source>Not defined</source>
+      </trans-unit>
+      <trans-unit id="visibility">
+        <source>Visibility</source>
+      </trans-unit>
+      <trans-unit id="fullElement">
+        <source>Full element</source>
+      </trans-unit>
+      <trans-unit id="hiddenXS">
+        <source>Not visible on extra small</source>
+      </trans-unit>
+      <trans-unit id="hiddenS">
+        <source>Not visible on small</source>
+      </trans-unit>
+      <trans-unit id="hiddenN">
+        <source>Not visible on medium</source>
+      </trans-unit>
+      <trans-unit id="hiddenL">
+        <source>Not visible on large</source>
+      </trans-unit>
+      <trans-unit id="visibleXS">
+        <source>Only visible on extra small</source>
+      </trans-unit>
+      <trans-unit id="visibleS">
+        <source>Only visible on small</source>
+      </trans-unit>
+      <trans-unit id="visibleN">
+        <source>Only visible on medium</source>
+      </trans-unit>
+      <trans-unit id="visibleL">
+        <source>Only visible on large</source>
+      </trans-unit>
+      <trans-unit id="options">
+        <source>Options</source>
+      </trans-unit>
+      <trans-unit id="general">
+        <source>General</source>
+      </trans-unit>
+      <trans-unit id="padding">
+        <source>Padding</source>
+      </trans-unit>
+      <trans-unit id="flex">
+        <source>Row flex</source>
+      </trans-unit>
+      <trans-unit id="col_flex">
+        <source>Columns flex</source>
+      </trans-unit>
+      <trans-unit id="classes">
+        <source>CSS classes</source>
+      </trans-unit>
+      <trans-unit id="classesColLeft">
+        <source>CSS classes left</source>
+      </trans-unit>
+      <trans-unit id="classesColMiddle">
+        <source>CSS classes middle</source>
+      </trans-unit>
+      <trans-unit id="classesColMiddleLeft">
+        <source>CSS classes middle left</source>
+      </trans-unit>
+      <trans-unit id="classesColMiddleRight">
+        <source>CSS classes middle right</source>
+      </trans-unit>
+      <trans-unit id="classesColRight">
+        <source>CSS classes right</source>
+      </trans-unit>
+      <trans-unit id="classesContainer">
+        <source>CSS classes container</source>
+      </trans-unit>
+      <trans-unit id="classesRow">
+        <source>CSS classes row</source>
+      </trans-unit>
+      <trans-unit id="idContainer">
+        <source>CSS ID container</source>
+      </trans-unit>
+      <trans-unit id="classesCol">
+        <source>CSS classes column</source>
+      </trans-unit>
+      <trans-unit id="noGutter">
+        <source>No space between columns?</source>
+      </trans-unit>
+      <!-- Templates -->
+      <trans-unit id="mainTemplate">
+        <source>Main template</source>
+      </trans-unit>
+      <trans-unit id="subTemplate">
+        <source>Sub template</source>
+      </trans-unit>
+      <trans-unit id="storageTemplate">
+        <source>Storage folder template</source>
+      </trans-unit>
+      <trans-unit id="content">
+        <source>Content</source>
+      </trans-unit>
+      <trans-unit id="head">
+        <source>Head</source>
+      </trans-unit>
+      <!-- Wrap -->
+      <trans-unit id="wrapContent">
+        <source>Wrap content</source>
+      </trans-unit>
+      <trans-unit id="backgroundPosition">
+        <source>Background position</source>
+      </trans-unit>
+      <trans-unit id="backgroundColor">
+        <source>Background color</source>
+      </trans-unit>
+      <trans-unit id="id">
+        <source>CSS ID</source>
+      </trans-unit>
+      <trans-unit id="useSection">
+        <source>Use section instead of div?</source>
+      </trans-unit>
+      <trans-unit id="paddingTop">
+        <source>Padding top</source>
+      </trans-unit>
+      <trans-unit id="paddingBottom">
+        <source>Padding bottom</source>
+      </trans-unit>
+      <!-- Container -->
+      <trans-unit id="containerContent">
+        <source>Container content</source>
+      </trans-unit>
+      <trans-unit id="size">
+        <source>Size</source>
+      </trans-unit>
+      <trans-unit id="offset">
+        <source>Offset</source>
+      </trans-unit>
+      <trans-unit id="textCenter">
+        <source>Centered?</source>
+      </trans-unit>
+      <trans-unit id="fluid">
+        <source>Fluid?</source>
+      </trans-unit>
+      <trans-unit id="addPadding">
+        <source>Padding? (Add some padding left and right - good, if you use a grid system without space between columns)</source>
+      </trans-unit>
+      <trans-unit id="noContainer">
+        <source>Don't add container class</source>
+      </trans-unit>
+      <!-- 3 columns -->
+      <trans-unit id="colMiddle">
+        <source>Middle column</source>
+      </trans-unit>
+      <trans-unit id="contentMiddle">
+        <source>Content middle</source>
+      </trans-unit>
+      <trans-unit id="sizeMiddle">
+        <source>Size middle</source>
+      </trans-unit>
+      <trans-unit id="offsetMiddle">
+        <source>Offset middle</source>
+      </trans-unit>
+      <!-- 4 columns -->
+      <trans-unit id="colMiddleLeft">
+        <source>Middle left column</source>
+      </trans-unit>
+      <trans-unit id="contentMiddleLeft">
+        <source>Content middle left</source>
+      </trans-unit>
+      <trans-unit id="sizeMiddleLeft">
+        <source>Size middle left</source>
+      </trans-unit>
+      <trans-unit id="offsetMiddleLeft">
+        <source>Offset middle left</source>
+      </trans-unit>
+      <trans-unit id="colMiddleRight">
+        <source>Middle right column</source>
+      </trans-unit>
+      <trans-unit id="contentMiddleRight">
+        <source>Content middle right</source>
+      </trans-unit>
+      <trans-unit id="sizeMiddleRight">
+        <source>Size middle right</source>
+      </trans-unit>
+      <trans-unit id="offsetMiddleRight">
+        <source>Offset middle right</source>
+      </trans-unit>
+      <!-- Backend container -->
+      <trans-unit id="backendContainerContent">
+        <source>Backend container content</source>
+      </trans-unit>
+      <!-- Infobox -->
+      <trans-unit id="infoboxContent">
+        <source>Infobox content</source>
+      </trans-unit>
+      <trans-unit id="color">
+        <source>Color</source>
+      </trans-unit>
+      <!-- Tabs container -->
+      <trans-unit id="tabs">
+        <source>Tabs</source>
+      </trans-unit>
+      <trans-unit id="pills">
+        <source>Pills</source>
+      </trans-unit>
+      <trans-unit id="fade">
+        <source>Fade</source>
+      </trans-unit>
+      <!-- Accordion item -->
+      <trans-unit id="toggle">
+        <source>Element closed?</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

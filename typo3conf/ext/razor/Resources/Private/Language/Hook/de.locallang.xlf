@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="razor">
+    <header />
+    <body>
+      <trans-unit id="successHeader">
+        <target>TinyPNG - Erfolg</target>
+      </trans-unit>
+      <trans-unit id="successMessage">
+        <target><![CDATA[<b>%1$s</b> - %2$s => %3$s]]></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

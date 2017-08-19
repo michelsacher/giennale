@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:if condition="{newsContent.title}">
+  <h2>{newsContent.title}</h2>
+</f:if>
+
+<v:if stack="{0: newsContent.mp3, 1: 'OR', 2: newsContent.ogg}">
+  <audio class="razor--mb" controls>
+    <f:if condition="{newsContent.mp3}">
+      <v:variable.set name="audioFileMp3" value="{v:resource.file(identifier: newsContent.mp3, treatIdAsReference: 1)}" />
+      <source src="{audioFileMp3.0.url}" type="audio/mp3">
+    </f:if>
+
+    <f:if condition="{newsContent.ogg}">
+      <v:variable.set name="audioFileOgg" value="{v:resource.file(identifier: newsContent.ogg, treatIdAsReference: 1)}" />
+      <source src="{audioFileOgg.0.url}" type="audio/ogg">
+    </f:if>
+  </audio>
+</v:if>
+</html>

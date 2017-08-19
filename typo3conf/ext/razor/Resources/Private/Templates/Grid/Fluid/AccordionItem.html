@@ -1,0 +1,30 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:if condition="{active}">
+  <v:variable.set name="in" value="in" />
+</f:if>
+
+<f:if condition="{data.flexform_toggle}">
+  <v:variable.set name="in" value="" />
+</f:if>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordion-{parentUid}" href="#collapse-{uid}">
+        {data.header}
+      </a>
+    </h4>
+  </div>
+
+  <div id="collapse-{uid}" class="panel-collapse collapse {in}">
+    <div class="panel-body">
+      <f:format.raw>
+        {data.tx_gridelements_view_column_1}
+      </f:format.raw>
+    </div>
+  </div>
+</div>
+</html>

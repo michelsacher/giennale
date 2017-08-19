@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <meta type="array">
+    <langDisable>1</langDisable>
+    <langDatabaseOverlay>1</langDatabaseOverlay>
+  </meta>
+  <sheets>
+    <general>
+      <ROOT type="array">
+        <TCEforms>
+          <sheetTitle>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:colNormal</sheetTitle>
+        </TCEforms>
+        <el type="array">
+          <width_column_md_1 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>md</size>
+                  <default>quarter</default>
+                  <checkCols>1</checkCols>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_md_1>
+          <width_column_md_2 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeMiddleLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>md</size>
+                  <default>quarter</default>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_md_2>
+          <width_column_md_3 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeMiddleRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>md</size>
+                  <default>quarter</default>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_md_3>
+          <width_column_md_4 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>md</size>
+                  <default>quarter</default>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_md_4>
+          <offset_column_md_1 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>md</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_md_1>
+          <offset_column_md_2 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetMiddleLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>md</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_md_2>
+          <offset_column_md_3 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetMiddleRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>md</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_md_3>
+          <offset_column_md_4 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>md</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_md_4>
+        </el>
+      </ROOT>
+    </general>
+    <columns_xs>
+      <ROOT type="array">
+        <TCEforms>
+          <sheetTitle>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:colXtraSmall</sheetTitle>
+        </TCEforms>
+        <el type="array">
+          <width_column_xs_1 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>xs</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_xs_1>
+          <width_column_xs_2 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeMiddleLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>xs</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_xs_2>
+          <width_column_xs_3 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeMiddleRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>xs</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_xs_3>
+          <width_column_xs_4 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>xs</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_xs_4>
+          <offset_column_xs_1 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>xs</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_xs_1>
+          <offset_column_xs_2 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetMiddleLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>xs</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_xs_2>
+          <offset_column_xs_3 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetMiddleRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>xs</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_xs_3>
+          <offset_column_xs_4 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>xs</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_xs_4>
+        </el>
+      </ROOT>
+    </columns_xs>
+    <columns_sm>
+      <ROOT type="array">
+        <TCEforms>
+          <sheetTitle>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:colSmall</sheetTitle>
+        </TCEforms>
+        <el type="array">
+          <width_column_sm_1 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>sm</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_sm_1>
+          <width_column_sm_2 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeMiddleLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>sm</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_sm_2>
+          <width_column_sm_3 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeMiddleRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>sm</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_sm_3>
+          <width_column_sm_4 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>sm</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_sm_4>
+          <offset_column_sm_1 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>sm</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_sm_1>
+          <offset_column_sm_2 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetMiddleLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>sm</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_sm_2>
+          <offset_column_sm_3 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetMiddleRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>sm</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_sm_3>
+          <offset_column_sm_4 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>sm</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_sm_4>
+        </el>
+      </ROOT>
+    </columns_sm>
+    <columns_lg>
+      <ROOT type="array">
+        <TCEforms>
+          <sheetTitle>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:colBig</sheetTitle>
+        </TCEforms>
+        <el type="array">
+          <width_column_lg_1 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>lg</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_lg_1>
+          <width_column_lg_2 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeMiddleLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>lg</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_lg_2>
+          <width_column_lg_3 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeMiddleRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>lg</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_lg_3>
+          <width_column_lg_4 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:sizeRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>col</type>
+                  <size>lg</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </width_column_lg_4>
+          <offset_column_lg_1 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>lg</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_lg_1>
+          <offset_column_lg_2 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetMiddleLeft</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>lg</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_lg_2>
+          <offset_column_lg_3 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetMiddleRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>lg</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_lg_3>
+          <offset_column_lg_4 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:offsetRight</label>
+              <config type="array">
+                <type>user</type>
+                <userFunc>RZ\Razor\Hooks\Gridelements\Cols->user_cols</userFunc>
+                <parameters type="array">
+                  <type>offset</type>
+                  <size>lg</size>
+                </parameters>
+              </config>
+            </TCEforms>
+          </offset_column_lg_4>
+        </el>
+      </ROOT>
+    </columns_lg>
+    <options>
+      <ROOT type="array">
+        <TCEforms>
+          <sheetTitle>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:options</sheetTitle>
+        </TCEforms>
+        <el type="array">
+          <css_row type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:classesRow</label>
+              <config type="array">
+                <type>input</type>
+                <size>30</size>
+              </config>
+            </TCEforms>
+          </css_row>
+          <css_column_1 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:classesColLeft</label>
+              <config type="array">
+                <type>input</type>
+                <size>30</size>
+              </config>
+            </TCEforms>
+          </css_column_1>
+          <css_column_2 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:classesColMiddleLeft</label>
+              <config type="array">
+                <type>input</type>
+                <size>30</size>
+              </config>
+            </TCEforms>
+          </css_column_2>
+          <css_column_3 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:classesColMiddleRight</label>
+              <config type="array">
+                <type>input</type>
+                <size>30</size>
+              </config>
+            </TCEforms>
+          </css_column_3>
+          <css_column_4 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:classesColRight</label>
+              <config type="array">
+                <type>input</type>
+                <size>30</size>
+              </config>
+            </TCEforms>
+          </css_column_4>
+          <flex type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:flex</label>
+              <config type="array">
+                <type>check</type>
+              </config>
+            </TCEforms>
+          </flex>
+          <col_flex type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:col_flex</label>
+              <config type="array">
+                <type>check</type>
+              </config>
+            </TCEforms>
+          </col_flex>
+          <no_gutter type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:noGutter</label>
+              <config type="array">
+                <type>check</type>
+              </config>
+            </TCEforms>
+          </no_gutter>
+        </el>
+      </ROOT>
+    </options>
+    <visibility>
+      <ROOT type="array">
+        <TCEforms>
+          <sheetTitle>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibility</sheetTitle>
+        </TCEforms>
+        <el type="array">
+          <visibility_element type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:fullElement</label>
+              <config type="array">
+                <type>select</type>
+                <renderType>selectMultipleSideBySide</renderType>
+                <items>
+                  <numIndex index="1">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenXS</numIndex>
+                    <numIndex index="1">hidden-xs</numIndex>
+                  </numIndex>
+                  <numIndex index="2">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenS</numIndex>
+                    <numIndex index="1">hidden-sm</numIndex>
+                  </numIndex>
+                  <numIndex index="3">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenN</numIndex>
+                    <numIndex index="1">hidden-md</numIndex>
+                  </numIndex>
+                  <numIndex index="4">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenL</numIndex>
+                    <numIndex index="1">hidden-lg</numIndex>
+                  </numIndex>
+                  <numIndex index="5">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleXS</numIndex>
+                    <numIndex index="1">visible-xs-block</numIndex>
+                  </numIndex>
+                  <numIndex index="6">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleS</numIndex>
+                    <numIndex index="1">visible-sm-block</numIndex>
+                  </numIndex>
+                  <numIndex index="7">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleN</numIndex>
+                    <numIndex index="1">visible-md-block</numIndex>
+                  </numIndex>
+                  <numIndex index="8">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleL</numIndex>
+                    <numIndex index="1">visible-lg-block</numIndex>
+                  </numIndex>
+                </items>
+                <maxitems>3</maxitems>
+                <size>8</size>
+                <default />
+              </config>
+            </TCEforms>
+          </visibility_element>
+          <visibility_col1 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:colLeft</label>
+              <config type="array">
+                <type>select</type>
+                <renderType>selectMultipleSideBySide</renderType>
+                <items>
+                  <numIndex index="1">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenXS</numIndex>
+                    <numIndex index="1">hidden-xs</numIndex>
+                  </numIndex>
+                  <numIndex index="2">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenS</numIndex>
+                    <numIndex index="1">hidden-sm</numIndex>
+                  </numIndex>
+                  <numIndex index="3">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenN</numIndex>
+                    <numIndex index="1">hidden-md</numIndex>
+                  </numIndex>
+                  <numIndex index="4">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenL</numIndex>
+                    <numIndex index="1">hidden-lg</numIndex>
+                  </numIndex>
+                  <numIndex index="5">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleXS</numIndex>
+                    <numIndex index="1">visible-xs-block</numIndex>
+                  </numIndex>
+                  <numIndex index="6">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleS</numIndex>
+                    <numIndex index="1">visible-sm-block</numIndex>
+                  </numIndex>
+                  <numIndex index="7">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleN</numIndex>
+                    <numIndex index="1">visible-md-block</numIndex>
+                  </numIndex>
+                  <numIndex index="8">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleL</numIndex>
+                    <numIndex index="1">visible-lg-block</numIndex>
+                  </numIndex>
+                </items>
+                <maxitems>3</maxitems>
+                <size>8</size>
+                <default />
+              </config>
+            </TCEforms>
+          </visibility_col1>
+          <visibility_col2 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:colMiddleLeft</label>
+              <config type="array">
+                <type>select</type>
+                <renderType>selectMultipleSideBySide</renderType>
+                <items>
+                  <numIndex index="1">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenXS</numIndex>
+                    <numIndex index="1">hidden-xs</numIndex>
+                  </numIndex>
+                  <numIndex index="2">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenS</numIndex>
+                    <numIndex index="1">hidden-sm</numIndex>
+                  </numIndex>
+                  <numIndex index="3">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenN</numIndex>
+                    <numIndex index="1">hidden-md</numIndex>
+                  </numIndex>
+                  <numIndex index="4">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenL</numIndex>
+                    <numIndex index="1">hidden-lg</numIndex>
+                  </numIndex>
+                  <numIndex index="5">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleXS</numIndex>
+                    <numIndex index="1">visible-xs-block</numIndex>
+                  </numIndex>
+                  <numIndex index="6">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleS</numIndex>
+                    <numIndex index="1">visible-sm-block</numIndex>
+                  </numIndex>
+                  <numIndex index="7">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleN</numIndex>
+                    <numIndex index="1">visible-md-block</numIndex>
+                  </numIndex>
+                  <numIndex index="8">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleL</numIndex>
+                    <numIndex index="1">visible-lg-block</numIndex>
+                  </numIndex>
+                </items>
+                <maxitems>3</maxitems>
+                <size>8</size>
+                <default />
+              </config>
+            </TCEforms>
+          </visibility_col2>
+          <visibility_col3 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:colMiddleRight</label>
+              <config type="array">
+                <type>select</type>
+                <renderType>selectMultipleSideBySide</renderType>
+                <items>
+                  <numIndex index="1">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenXS</numIndex>
+                    <numIndex index="1">hidden-xs</numIndex>
+                  </numIndex>
+                  <numIndex index="2">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenS</numIndex>
+                    <numIndex index="1">hidden-sm</numIndex>
+                  </numIndex>
+                  <numIndex index="3">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenN</numIndex>
+                    <numIndex index="1">hidden-md</numIndex>
+                  </numIndex>
+                  <numIndex index="4">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenL</numIndex>
+                    <numIndex index="1">hidden-lg</numIndex>
+                  </numIndex>
+                  <numIndex index="5">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleXS</numIndex>
+                    <numIndex index="1">visible-xs</numIndex>
+                  </numIndex>
+                  <numIndex index="6">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleS</numIndex>
+                    <numIndex index="1">visible-sm</numIndex>
+                  </numIndex>
+                  <numIndex index="7">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleN</numIndex>
+                    <numIndex index="1">visible-md</numIndex>
+                  </numIndex>
+                  <numIndex index="8">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleL</numIndex>
+                    <numIndex index="1">visible-lg</numIndex>
+                  </numIndex>
+                </items>
+                <maxitems>3</maxitems>
+                <size>8</size>
+                <default />
+              </config>
+            </TCEforms>
+          </visibility_col3>
+          <visibility_col4 type="array">
+            <TCEforms type="array">
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:colRight</label>
+              <config type="array">
+                <type>select</type>
+                <renderType>selectMultipleSideBySide</renderType>
+                <items>
+                  <numIndex index="1">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenXS</numIndex>
+                    <numIndex index="1">hidden-xs</numIndex>
+                  </numIndex>
+                  <numIndex index="2">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenS</numIndex>
+                    <numIndex index="1">hidden-sm</numIndex>
+                  </numIndex>
+                  <numIndex index="3">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenN</numIndex>
+                    <numIndex index="1">hidden-md</numIndex>
+                  </numIndex>
+                  <numIndex index="4">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:hiddenL</numIndex>
+                    <numIndex index="1">hidden-lg</numIndex>
+                  </numIndex>
+                  <numIndex index="5">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleXS</numIndex>
+                    <numIndex index="1">visible-xs</numIndex>
+                  </numIndex>
+                  <numIndex index="6">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleS</numIndex>
+                    <numIndex index="1">visible-sm</numIndex>
+                  </numIndex>
+                  <numIndex index="7">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleN</numIndex>
+                    <numIndex index="1">visible-md</numIndex>
+                  </numIndex>
+                  <numIndex index="8">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:visibleL</numIndex>
+                    <numIndex index="1">visible-lg</numIndex>
+                  </numIndex>
+                </items>
+                <maxitems>3</maxitems>
+                <size>8</size>
+                <default />
+              </config>
+            </TCEforms>
+          </visibility_col4>
+        </el>
+      </ROOT>
+    </visibility>
+  </sheets>
+</T3DataStructure>

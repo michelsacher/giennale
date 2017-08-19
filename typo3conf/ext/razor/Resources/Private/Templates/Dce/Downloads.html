@@ -1,0 +1,47 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:dce="http://typo3.org/ns/ArminVieweg/Dce/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:render partial="Header" arguments="{layout: contentObject.header_layout, header: contentObject.header, link: contentObject.header_link, default: tsSetup.razor.misc.defaultHeaderType, position: contentObject.header_position, style: contentObject.header_style}" />
+
+<div class="downloads">
+  <f:for each="{field.files}" as="fileReference">
+    <f:if condition="{fileReference.title}">
+      <f:then>
+        <v:variable.set name="title" value="{fileReference.title}" />
+      </f:then>
+      <f:else>
+        <v:variable.set name="title" value="{fileReference.name}" />
+      </f:else>
+    </f:if>
+
+    <div class="downloads__single">
+      <div class="downloads__single__icon">
+        <f:link.page pageUid="fileadmin{fileReference.originalFile.identifier}" title="{title}" target="_blank">
+          <img src="{tsSetup.razor.misc.fileIcons}<razor:getFiletype path="{tsSetup.razor.misc.fileIcons}" file="fileadmin{fileReference.originalFile.identifier}" />" class="img-responsive" alt="{title}" title="{title}" />
+        </f:link.page>
+      </div>
+
+      <div class="downloads__single__file">
+        <h3>
+          <f:link.page pageUid="fileadmin{fileReference.originalFile.identifier}" title="{title}" target="_blank">
+            {title}
+          </f:link.page>
+
+          <f:if condition="{field.filesize}">
+            - <span class="razor-downloads-single-filesize"><razor:getFilesize file="fileadmin{fileReference.originalFile.identifier}" /></span>
+          </f:if>
+        </h3>
+
+        <f:if condition="{fileReference.description}">
+          <p>
+            <f:format.nl2br>{fileReference.description}</f:format.nl2br>
+          </p>
+        </f:if>
+      </div>
+    </div>
+  </f:for>
+</div>
+</html>

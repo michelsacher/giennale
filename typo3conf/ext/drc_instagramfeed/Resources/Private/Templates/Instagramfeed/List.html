@@ -1,0 +1,24 @@
+
+<f:layout name="Default" />
+<f:section name="main">
+	<div class="instagallery">
+		<div id="popup-gallery">
+			<div class="row">
+				<f:for each="{instagramfeeds}" as="instagramfeed" iteration="iterator">
+					<f:if condition="{settings.limit}">
+						<f:then>
+						<f:if condition="{iterator.cycle}<={settings.limit}">
+							<f:render partial="Instagramfeed/Limit" arguments="{instagramfeed: instagramfeed}"/>	
+					    </f:if>
+					    </f:then>
+					    <f:else>
+						    <f:if condition="{iterator.cycle}<=10">
+						    	<f:render partial="Instagramfeed/Withoutlimit" arguments="{instagramfeed: instagramfeed}"/>
+						    </f:if>
+					    </f:else>
+				    </f:if>
+				</f:for>
+			</div>
+		</div>
+	</div>	
+</f:section>

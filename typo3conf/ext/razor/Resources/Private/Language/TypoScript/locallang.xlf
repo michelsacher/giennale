@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="razor">
+    <header />
+    <body>
+      <!-- Categories -->
+      <trans-unit id="catLocal">
+        <source>Local</source>
+      </trans-unit>
+      <trans-unit id="catStaging">
+        <source>Staging</source>
+      </trans-unit>
+      <trans-unit id="catLive">
+        <source>Live</source>
+      </trans-unit>
+      <trans-unit id="catFeature">
+        <source>Feature</source>
+      </trans-unit>
+      <trans-unit id="catOptions">
+        <source>Options</source>
+      </trans-unit>
+      <!-- Default values -->
+      <trans-unit id="buttons">
+        <source>Buttons</source>
+      </trans-unit>
+      <trans-unit id="spacer">
+        <source>Spacer</source>
+      </trans-unit>
+      <trans-unit id="imageDefValue">
+        <source>Images</source>
+      </trans-unit>
+      <trans-unit id="gallery">
+        <source>Gallery</source>
+      </trans-unit>
+      <trans-unit id="downloads">
+        <source>Downloads</source>
+      </trans-unit>
+      <trans-unit id="icon">
+        <source>Icon</source>
+      </trans-unit>
+      <trans-unit id="header">
+        <source>Header</source>
+      </trans-unit>
+      <trans-unit id="video">
+        <source>Video</source>
+      </trans-unit>
+      <trans-unit id="alert">
+        <source>Alert</source>
+      </trans-unit>
+      <trans-unit id="contactButton">
+        <source>Contact button</source>
+      </trans-unit>
+      <trans-unit id="teaserbox">
+        <source>Teaserbox</source>
+      </trans-unit>
+      <trans-unit id="blockquote">
+        <source>Blockquote</source>
+      </trans-unit>
+      <!-- Sections -->
+      <trans-unit id="domain">
+        <source>Domain</source>
+      </trans-unit>
+      <trans-unit id="protocol">
+        <source>Protocol</source>
+      </trans-unit>
+      <trans-unit id="site">
+        <source>Site</source>
+      </trans-unit>
+      <trans-unit id="colors">
+        <source>Colors</source>
+      </trans-unit>
+      <trans-unit id="bootstrap">
+        <source>Bootstrap</source>
+      </trans-unit>
+      <trans-unit id="fontAwesome">
+        <source>Font Awesome</source>
+      </trans-unit>
+      <trans-unit id="seo">
+        <source>SEO</source>
+      </trans-unit>
+      <trans-unit id="spam">
+        <source>Spam</source>
+      </trans-unit>
+      <trans-unit id="search">
+        <source>Search</source>
+      </trans-unit>
+      <trans-unit id="image">
+        <source>Image options</source>
+      </trans-unit>
+      <trans-unit id="powermail">
+        <source>Powermail</source>
+      </trans-unit>
+      <trans-unit id="misc">
+        <source>Miscellaneous</source>
+      </trans-unit>
+      <trans-unit id="fancybox">
+        <source>fancyBox</source>
+      </trans-unit>
+      <trans-unit id="cookieConsent">
+        <source>Cookie Consent</source>
+      </trans-unit>
+      <trans-unit id="news">
+        <source>News</source>
+      </trans-unit>
+      <trans-unit id="rss">
+        <source>RSS feed</source>
+      </trans-unit>
+      <!-- Common -->
+      <trans-unit id="basedomainLocal">
+        <source>Local basedomain</source>
+      </trans-unit>
+      <trans-unit id="basedomainLocalAdditional">
+        <source>Additional local basedomains: Commasparated, with protocol</source>
+      </trans-unit>
+      <trans-unit id="basedomainStaging">
+        <source>Staging basedomain</source>
+      </trans-unit>
+      <trans-unit id="basedomainLive">
+        <source>Live basedomain</source>
+      </trans-unit>
+      <trans-unit id="basedomainLiveAdditional">
+        <source>Additional live basedomains: Commasparated, with protocol</source>
+      </trans-unit>
+      <trans-unit id="basedomainFeature">
+        <source>Feature basedomain</source>
+      </trans-unit>
+      <trans-unit id="username">
+        <source>Username</source>
+      </trans-unit>
+      <trans-unit id="password">
+        <source>Password</source>
+      </trans-unit>
+      <trans-unit id="host">
+        <source>Host</source>
+      </trans-unit>
+      <trans-unit id="database">
+        <source>Database</source>
+      </trans-unit>
+      <trans-unit id="colorspace">
+        <source>Colorspace: ImageMagick Colorspace</source>
+      </trans-unit>
+      <trans-unit id="https">
+        <source>SSL encryption for backend</source>
+      </trans-unit>
+      <!-- Protocol -->
+      <trans-unit id="protocolLocal">
+        <source>Local protocol</source>
+      </trans-unit>
+      <trans-unit id="protocolStaging">
+        <source>Staging protocol</source>
+      </trans-unit>
+      <trans-unit id="protocolLive">
+        <source>Live protocol</source>
+      </trans-unit>
+      <trans-unit id="protocolFeature">
+        <source>Feature protocol</source>
+      </trans-unit>
+      <!-- Site -->
+      <trans-unit id="projectName">
+        <source>Project name: The project name which is appended to the page title</source>
+      </trans-unit>
+      <trans-unit id="showProjectNameInMenu">
+        <source>Show project name: The project will be displayed in the main menu</source>
+      </trans-unit>
+      <trans-unit id="breadcrumb">
+        <source>Breadcrumb: Include a breadcrumb menu</source>
+      </trans-unit>
+      <trans-unit id="breadcrumbOnHomepage">
+        <source>Breadcrumb: Include the breadcrumb menu on the home page</source>
+      </trans-unit>
+      <!-- Colors -->
+      <trans-unit id="tile">
+        <source>Tile color for favicons</source>
+      </trans-unit>
+      <trans-unit id="theme">
+        <source>Theme color for favicons</source>
+      </trans-unit>
+      <!-- Bootstrap -->
+      <trans-unit id="cols">
+        <source>Columns</source>
+      </trans-unit>
+      <trans-unit id="defaultSizes">
+        <source>Default sizes for container</source>
+      </trans-unit>
+      <trans-unit id="defaultOffsets">
+        <source>Default offsets for container</source>
+      </trans-unit>
+      <trans-unit id="defaultViewports">
+        <source>Default viewports for container</source>
+      </trans-unit>
+      <trans-unit id="defaultFluid">
+        <source>Fluid standard for containers</source>
+      </trans-unit>
+      <trans-unit id="cssPath">
+        <source>Path to Bootstrap CSS file</source>
+      </trans-unit>
+      <trans-unit id="jsPath">
+        <source>Path to Bootstrap JavaScript file</source>
+      </trans-unit>
+      <!-- Font Awesome -->
+      <trans-unit id="activate">
+        <source>Activate Font Awesome Font</source>
+      </trans-unit>
+      <!-- Search -->
+      <trans-unit id="searchPid">
+        <source>Search results PID: The PID for the search results</source>
+      </trans-unit>
+      <trans-unit id="searchResults">
+        <source>Search results</source>
+      </trans-unit>
+      <trans-unit id="searchActivate">
+        <source>Search: Activate indexed_search and include a search form</source>
+      </trans-unit>
+      <!-- SEO -->
+      <trans-unit id="gaCodeLive">
+        <source>Google Analytics UA: Google Analytics UA ID (Live)</source>
+      </trans-unit>
+      <trans-unit id="googlePlus">
+        <source>Google+ profile ID</source>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Meta description: Default meta description for pages</source>
+      </trans-unit>
+      <trans-unit id="piwik">
+        <source>Piwik: Activate Piwik for live server</source>
+      </trans-unit>
+      <trans-unit id="piwikUrl">
+        <source>Piwik server url: Format: analytics.server.com</source>
+      </trans-unit>
+      <trans-unit id="piwikSite">
+        <source>Piwik site url: Format: *.www.my-website.com</source>
+      </trans-unit>
+      <trans-unit id="piwikSiteId">
+        <source>Piwik site id</source>
+      </trans-unit>
+      <!-- Image -->
+      <trans-unit id="galleryEffect">
+        <source>Gallery effect: Effect for the gallery content element</source>
+      </trans-unit>
+      <trans-unit id="fade">
+        <source>Fade</source>
+      </trans-unit>
+      <trans-unit id="zoom">
+        <source>Zoom</source>
+      </trans-unit>
+      <trans-unit id="bw">
+        <source>Black and white</source>
+      </trans-unit>
+      <trans-unit id="none">
+        <source>None</source>
+      </trans-unit>
+      <trans-unit id="srcSet">
+        <source>Image srcset</source>
+      </trans-unit>
+      <trans-unit id="wow">
+        <source>WOW.js: Activate WOW.js effects</source>
+      </trans-unit>
+      <trans-unit id="animate">
+        <source>Animate.css: Activate Animate.css effects</source>
+      </trans-unit>
+      <trans-unit id="tinyPngApiKey">
+        <source>TinyPNG API key</source>
+      </trans-unit>
+      <trans-unit id="gridBackground">
+        <source>Gridelements background: Specify gridelements that should have a background image FAL field (commasparated)</source>
+      </trans-unit>
+      <trans-unit id="maxAge">
+        <source>VHS assets max age: Max age for VHS assets when clearing the cache</source>
+      </trans-unit>
+      <!-- Powermail -->
+      <trans-unit id="powermailEmail">
+        <source>Static powermail eMail address</source>
+      </trans-unit>
+      <trans-unit id="siteKey">
+        <source>Captcha: reCAPTCHA website key</source>
+      </trans-unit>
+      <trans-unit id="secretKey">
+        <source>Captcha: reCAPTCHA secret key</source>
+      </trans-unit>
+      <!-- Misc -->
+      <trans-unit id="responsiveTables">
+        <source>Responsive tables: Activate responsive tables</source>
+      </trans-unit>
+      <trans-unit id="hyphenator">
+        <source>Hyphenator: Activate Hyphenator.js</source>
+      </trans-unit>
+      <trans-unit id="hoverCss">
+        <source>Include Hover.css</source>
+      </trans-unit>
+      <trans-unit id="normalizeCss">
+        <source>Include normalize.css</source>
+      </trans-unit>
+      <trans-unit id="showWrap">
+        <source><![CDATA[Show wrap: Show <div id="c{data.uid}"> around default content elements]]></source>
+      </trans-unit>
+      <trans-unit id="fileIcons">
+        <source>File icons: Path to file icons</source>
+      </trans-unit>
+      <trans-unit id="copyright">
+        <source>Copyright: Copyright notice for the source code</source>
+      </trans-unit>
+      <trans-unit id="retinaJs">
+        <source>Retina.js: Activate Retina.js</source>
+      </trans-unit>
+      <trans-unit id="languageDetection">
+        <source>Language detection: Get browser language and redirect to TYPO3 language</source>
+      </trans-unit>
+      <trans-unit id="deactivateMainFilesMergeLocal">
+        <source>Deactivate main files merge on local</source>
+      </trans-unit>
+      <trans-unit id="mainCss">
+        <source>Path to Main.css</source>
+      </trans-unit>
+      <trans-unit id="mainJs">
+        <source>Path to Main.js</source>
+      </trans-unit>
+      <!-- Cookie -->
+      <trans-unit id="cookieActivate">
+        <source>Activate Cookie Consent</source>
+      </trans-unit>
+      <trans-unit id="popupBackgroundColor">
+        <source>Popup background color</source>
+      </trans-unit>
+      <trans-unit id="popupTextColor">
+        <source>Popup text color</source>
+      </trans-unit>
+      <trans-unit id="buttonBackgroundColor">
+        <source>Button background color</source>
+      </trans-unit>
+      <trans-unit id="buttonTextColor">
+        <source>Button text color</source>
+      </trans-unit>
+      <!-- News -->
+      <trans-unit id="activateDisqus">
+        <source>Activate Disqus comments</source>
+      </trans-unit>
+      <trans-unit id="disqusShortname">
+        <source>Disqus shortname</source>
+      </trans-unit>
+      <trans-unit id="lightbox">
+        <source>Activate lightbox: Lightbox on detail view</source>
+      </trans-unit>
+      <trans-unit id="cropMaxCharacters">
+        <source>Crop text</source>
+      </trans-unit>
+      <!-- RSS -->
+      <trans-unit id="rssActivate">
+        <source>Activate RSS feed</source>
+      </trans-unit>
+      <trans-unit id="rssTitle">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="rssDescription">
+        <source>Description</source>
+      </trans-unit>
+      <trans-unit id="rssLink">
+        <source>Link</source>
+      </trans-unit>
+      <trans-unit id="rssLanguage">
+        <source>Language</source>
+      </trans-unit>
+      <trans-unit id="rssCopyright">
+        <source>Copyright</source>
+      </trans-unit>
+      <trans-unit id="rssCategory">
+        <source>Category</source>
+      </trans-unit>
+      <trans-unit id="rssGenerator">
+        <source>Generator</source>
+      </trans-unit>
+      <trans-unit id="rssMaxItems">
+        <source>RSS feed max items</source>
+      </trans-unit>
+      <trans-unit id="rssCategories">
+        <source>RSS categories</source>
+      </trans-unit>
+      <trans-unit id="rssCategoryConjunction">
+        <source>RSS category conjunction</source>
+      </trans-unit>
+      <trans-unit id="rssDetailPid">
+        <source>RSS detail pid</source>
+      </trans-unit>
+      <trans-unit id="rssStartingPoint">
+        <source>RSS starting point</source>
+      </trans-unit>
+      <!-- Spam -->
+      <trans-unit id="protectEmail">
+        <source>Protect eMail address from spam</source>
+      </trans-unit>
+      <!-- Fancybox -->
+      <trans-unit id="selector">
+        <source>Selector: CSS selector class</source>
+      </trans-unit>
+      <trans-unit id="speed">
+        <source>Speed: Animation duration in ms</source>
+      </trans-unit>
+      <trans-unit id="loop">
+        <source>Loop: Enable infinite gallery navigation</source>
+      </trans-unit>
+      <trans-unit id="opacity">
+        <source>Opacity: Should zoom animation change opacity, too. If opacity is 'auto', then fade-out if image and thumbnail have different aspect ratios</source>
+      </trans-unit>
+      <trans-unit id="margin">
+        <source>Margin: Space around image, ignored if zoomed-in or viewport smaller than 800px</source>
+      </trans-unit>
+      <trans-unit id="gutter">
+        <source>Gutter: Horizontal space between slides</source>
+      </trans-unit>
+      <trans-unit id="infobar">
+        <source>Infobar: Should display toolbars</source>
+      </trans-unit>
+      <trans-unit id="buttons2">
+        <source>Buttons: Should display toolbars</source>
+      </trans-unit>
+      <trans-unit id="slideShow">
+        <source>Slideshow: What buttons should appear in the toolbar</source>
+      </trans-unit>
+      <trans-unit id="fullScreen">
+        <source>Fullscreen: What buttons should appear in the toolbar</source>
+      </trans-unit>
+      <trans-unit id="thumbs">
+        <source>Thumbs: What buttons should appear in the toolbar</source>
+      </trans-unit>
+      <trans-unit id="closeBtn">
+        <source>Close button: What buttons should appear in the toolbar</source>
+      </trans-unit>
+      <trans-unit id="smallBtn">
+        <source>Small button: Should apply small close button at top right corner of the content. If 'auto' - will be set for content having type 'html', 'inline' or 'ajax'</source>
+      </trans-unit>
+      <trans-unit id="baseClass">
+        <source>Base class: Custom CSS class for layout</source>
+      </trans-unit>
+      <trans-unit id="slideClass">
+        <source>Slide class: Custom CSS class for slide element</source>
+      </trans-unit>
+      <trans-unit id="touch">
+        <source>Touch: Enable gestures (tap, zoom, pan and pinch)</source>
+      </trans-unit>
+      <trans-unit id="keyboard">
+        <source>Keyboard: Enable keyboard navigation</source>
+      </trans-unit>
+      <trans-unit id="focus">
+        <source>Focus: Try to focus on first focusable element after opening</source>
+      </trans-unit>
+      <trans-unit id="closeClickOutside">
+        <source>Close click outside: Close when clicked outside of the content</source>
+      </trans-unit>
+      <!-- EM conf -->
+      <trans-unit id="localName">
+        <source>Local name</source>
+      </trans-unit>
+      <trans-unit id="stagingName">
+        <source>Staging name</source>
+      </trans-unit>
+      <trans-unit id="liveName">
+        <source>Live name</source>
+      </trans-unit>
+      <trans-unit id="featureName">
+        <source>Feature name</source>
+      </trans-unit>
+      <trans-unit id="showModule">
+        <source>Search/replace module: Show search/replace backend module</source>
+      </trans-unit>
+      <trans-unit id="showToolsModule">
+        <source>Tools module: Show tools extension-builder backend module</source>
+      </trans-unit>
+      <trans-unit id="default404Page">
+        <source>Default 404 Page: A uid of a page out of the page tree that will be returned as 404 page. '0' disables this feature. Default: '0'.</source>
+      </trans-unit>
+      <trans-unit id="headlineRequired">
+        <source>Headline required: Headline in content elements is a required field</source>
+      </trans-unit>
+      <trans-unit id="headlineMulti">
+        <source>Headline linebreaks: Multiple line headlines</source>
+      </trans-unit>
+      <trans-unit id="hosteuropeFix">
+        <source>Hosteurope fix: Fixes a Hosteurope mail problem</source>
+      </trans-unit>
+      <trans-unit id="hosteuropeFixMail">
+        <source>Hosteurope fix: Default email address</source>
+      </trans-unit>
+      <trans-unit id="1and1Fix">
+        <source>1&amp;1 fix: Fixes a 1&amp;1 ImageMagick problem</source>
+      </trans-unit>
+      <trans-unit id="mittFix">
+        <source>Mittwald fix: Fixes a Mittwald ImageMagick problem</source>
+      </trans-unit>
+      <trans-unit id="tinyPng">
+        <source>Activate TinyPNG service when uploading files</source>
+      </trans-unit>
+      <!-- TsConfig -->
+      <trans-unit id="news.listFull">
+        <source>List view (full width)</source>
+      </trans-unit>
+      <trans-unit id="news.list2Cols">
+        <source>List view (2 columns)</source>
+      </trans-unit>
+      <trans-unit id="news.list3Cols">
+        <source>List view (3 columns)</source>
+      </trans-unit>
+      <trans-unit id="tabSitemap">
+        <source>Tab Sitemap</source>
+      </trans-unit>
+      <trans-unit id="reCaptcha">
+        <source>reCAPTCHA (jh_captcha)</source>
+      </trans-unit>
+      <trans-unit id="header_layout.0">
+        <source>Default</source>
+      </trans-unit>
+      <trans-unit id="header_layout.1">
+        <source>Layout 1</source>
+      </trans-unit>
+      <trans-unit id="header_layout.2">
+        <source>Layout 2</source>
+      </trans-unit>
+      <trans-unit id="header_layout.3">
+        <source>Layout 3</source>
+      </trans-unit>
+      <trans-unit id="header_layout.4">
+        <source>Layout 4</source>
+      </trans-unit>
+      <trans-unit id="header_layout.5">
+        <source>Layout 5</source>
+      </trans-unit>
+      <trans-unit id="header_layout.6">
+        <source>Layout 6</source>
+      </trans-unit>
+      <trans-unit id="header_layout.101">
+        <source>Hidden</source>
+      </trans-unit>
+      <!-- Conntent -->
+      <trans-unit id="textmedia">
+        <source>Text</source>
+      </trans-unit>
+      <trans-unit id="textmediaDesc">
+        <source>A regular text element with header and bodytext fields.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

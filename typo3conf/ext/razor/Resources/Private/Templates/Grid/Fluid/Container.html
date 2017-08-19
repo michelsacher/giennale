@@ -1,0 +1,62 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+
+<f:if condition="{data.flexform_css_column}">
+  <v:variable.set name="classesCol" value=" {data.flexform_css_column}" />
+</f:if>
+
+<f:if condition="{data.flexform_text_center}">
+  <v:variable.set name="center" value=" text-center" />
+</f:if>
+
+<f:if condition="{data.flexform_css}">
+  <v:variable.set name="classes" value=" {data.flexform_css}" />
+</f:if>
+
+<f:if condition="{data.flexform_css_row}">
+  <v:variable.set name="classesRow" value=" {data.flexform_css_row}" />
+</f:if>
+
+<f:if condition="{data.flexform_fluid}">
+  <f:then>
+    <v:variable.set name="container" value="container-fluid" />
+  </f:then>
+  <f:else>
+    <v:variable.set name="container" value="container" />
+  </f:else>
+</f:if>
+
+<f:if condition="{data.flexform_padding}">
+  <v:variable.set name="padding" value=" container--padding" />
+</f:if>
+
+<v:variable.set name="visibility" value='<razor:colImpExp content="{visibility: data.flexform_visibility_element}" row="1" />' />
+<v:variable.set name="column1" value='<razor:colImpExp content="{md: data.flexform_width_column_md_1, md-offset: data.flexform_offset_column_md_1, xs: data.flexform_width_column_xs_1, xs-offset: data.flexform_offset_column_xs_1, sm: data.flexform_width_column_sm_1, sm-offset: data.flexform_offset_column_sm_1, lg: data.flexform_width_column_lg_1, lg-offset: data.flexform_offset_column_lg_1}" />' />
+
+<f:if condition="{data.flexform_no_container}">
+  <f:then>
+    <div class="row{visibility}{center}{classesRow}">
+      <div class="{column1}{classesCol}">
+        <f:format.raw>
+          {data.tx_gridelements_view_column_1}
+        </f:format.raw>
+      </div>
+    </div>
+  </f:then>
+  <f:else>
+    <div{f:if(condition: data.flexform_id, then: ' id="{data.flexform_id}"')} class="{container}{padding}{classes}">
+      <div class="row{visibility}{center}{classesRow}">
+        <div class="{column1}{classesCol}">
+          <f:format.raw>
+            {data.tx_gridelements_view_column_1}
+          </f:format.raw>
+        </div>
+      </div>
+    </div>
+  </f:else>
+</f:if>
+</html>

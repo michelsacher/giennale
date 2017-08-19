@@ -1,0 +1,39 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+<v:variable.set name="pid" value="{tsSetup.razor.search.pid}" />
+<v:variable.set name="searchParams" value="{tsSetup.plugin.tx_indexedsearch.settings.defaultOptions}" />
+
+<f:form class="navbar-form navbar-right" pageUid="{pid}" method="post" noCacheHash="true" absolute="0" action="search" extensionName="IndexedSearch" pluginName="pi2" controller="Search">
+  <div class="hidden tx-indexedsearch-hidden-fields">
+    <f:form.hidden name="search[_sections]" value="0" />
+    <f:form.hidden name="search[_freeIndexUid]" value="_" />
+    <f:form.hidden name="search[pointer]" value="0" />
+    <f:form.hidden name="search[ext]" value="{searchParams.ext}" />
+    <f:form.hidden name="search[searchType]" value="{searchParams.searchType}" />
+    <f:form.hidden name="search[defaultOperand]" value="{searchParams.defaultOperand}" />
+    <f:form.hidden name="search[mediaType]" value="{searchParams.mediaType}" />
+    <f:form.hidden name="search[sortOrder]" value="{searchParams.sortOrder}" />
+    <f:form.hidden name="search[group]" value="{searchParams.group}" />
+    <f:form.hidden name="search[languageUid]" value="{searchParams.languageUid}" />
+    <f:form.hidden name="search[desc]" value="{searchParams.desc}" />
+    <f:form.hidden name="search[numberOfResults]" value="{searchParams.numberOfResults}" />
+    <f:form.hidden name="search[extendedSearch]" value="{searchParams.extendedSearch}" />
+  </div>
+
+  <div class="form-group">
+    <div class="input-group">
+      <f:form.textfield name="search[sword]" value="" id="tx-indexedsearch-searchbox-sword" class="form-control tx-indexedsearch-searchbox-sword" placeholder="<v:l key='LLL:fileadmin/razor/Language/razor.xlf:searchTerm' />" additionalAttributes="{autocomplete: 'off'}" />
+
+      <div class="input-group-btn">
+        <button type="submit" class="btn btn-primary" name="search[submitButton]">
+          <v:l key="LLL:fileadmin/razor/Language/razor.xlf:search" />
+        </button>
+      </div>
+    </div>
+  </div>
+</f:form>
+</html>

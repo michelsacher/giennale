@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="rzcoreupdate">
+    <header/>
+    <body>
+      <trans-unit id="mlang_tabs_tab">
+        <target>TYPO3 Updater</target>
+      </trans-unit>
+      <trans-unit id="switch">
+        <target>Wechseln</target>
+      </trans-unit>
+      <trans-unit id="get">
+        <target>Holen</target>
+      </trans-unit>
+      <trans-unit id="delete">
+        <target>Löschen</target>
+      </trans-unit>
+      <trans-unit id="versionInstalled">
+        <target>Installierte Version</target>
+      </trans-unit>
+      <trans-unit id="versionAvailable">
+        <target>Verfügbare Version</target>
+      </trans-unit>
+      <trans-unit id="pathTo">
+        <target>Pfad zu den TYPO3 Quellverzeichnissen</target>
+      </trans-unit>
+      <trans-unit id="infoInstallation">
+        <target>Informationen über diese Installation</target>
+      </trans-unit>
+      <trans-unit id="versionsInstallation">
+        <target>Verfügbare Versionen für diese Installation</target>
+      </trans-unit>
+      <trans-unit id="versionsDownload">
+        <target>Verfügbare Versionen zum Download</target>
+      </trans-unit>
+      <trans-unit id="downloaded">
+        <target>Heruntergeladen</target>
+      </trans-unit>
+      <trans-unit id="alreadyExists">
+        <target>Existiert bereits</target>
+      </trans-unit>
+      <trans-unit id="problemSwitchingSource">
+        <target>Problem, den Source zu wechseln</target>
+      </trans-unit>
+      <trans-unit id="problemDeletingSource">
+        <target>Problem, den Source zu löschen</target>
+      </trans-unit>
+      <trans-unit id="doesNotExist">
+        <target>existiert nicht</target>
+      </trans-unit>
+      <trans-unit id="zipArchive">
+        <target>Fehlende Klasse ZipArchive. Bitte installiere die zugehörige PHP Erweiterung.</target>
+      </trans-unit>
+      <trans-unit id="versionInstalled">
+        <target>Installierte Version</target>
+      </trans-unit>
+      <trans-unit id="latestPatch">
+        <target>Letzter Patch</target>
+      </trans-unit>
+      <trans-unit id="latestStable">
+        <target>Letzte Stable</target>
+      </trans-unit>
+      <trans-unit id="ltsStable">
+        <target>LTS Stable</target>
+      </trans-unit>
+      <trans-unit id="oldStable">
+        <target>Alte Stable</target>
+      </trans-unit>
+      <trans-unit id="deprecatedStable">
+        <target>Veraltete Stable</target>
+      </trans-unit>
+      <trans-unit id="securityUpdate">
+        <target>Sicherheitsupdate verfügbar</target>
+      </trans-unit>
+      <trans-unit id="securityUpdate">
+        <target>Wartungsupdate verfügbar</target>
+      </trans-unit>
+      <trans-unit id="updateNotes">
+        <target>Bitte werfen Sie einen Blick in die Update Notizen.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

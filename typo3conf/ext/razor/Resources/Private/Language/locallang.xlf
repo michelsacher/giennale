@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="razor">
+    <header />
+    <body>
+      <!-- News -->
+      <trans-unit id="newsDetail">
+        <source>News detail</source>
+      </trans-unit>
+      <trans-unit id="news.relatedFiles">
+        <source>Files</source>
+      </trans-unit>
+      <trans-unit id="news.relatedLinks">
+        <source>More about this news</source>
+      </trans-unit>
+      <!-- Tools module -->
+      <trans-unit id="headline">
+        <source>Tools Extension-Builder</source>
+      </trans-unit>
+      <trans-unit id="extensionName">
+        <source>Extension name</source>
+      </trans-unit>
+      <trans-unit id="extensionNameLower">
+        <source>extensionname</source>
+      </trans-unit>
+      <trans-unit id="vendor">
+        <source>Vendor</source>
+      </trans-unit>
+      <trans-unit id="vendorUpper">
+        <source>VENDOR</source>
+      </trans-unit>
+      <trans-unit id="author">
+        <source>Author</source>
+      </trans-unit>
+      <trans-unit id="email">
+        <source>Author email</source>
+      </trans-unit>
+      <trans-unit id="desc">
+        <source>Description</source>
+      </trans-unit>
+      <trans-unit id="descLong">
+        <source>This is a description</source>
+      </trans-unit>
+      <trans-unit id="create">
+        <source>Create extension</source>
+      </trans-unit>
+      <trans-unit id="success">
+        <source>Success!</source>
+      </trans-unit>
+      <trans-unit id="error">
+        <source>Error!</source>
+      </trans-unit>
+      <trans-unit id="successMessage">
+        <source>The extension was successfully created. Please install it in the extension manager.</source>
+      </trans-unit>
+      <trans-unit id="errorMessage">
+        <source>An extension with this name already exists. Please choose a different name.</source>
+      </trans-unit>
+      <trans-unit id="version">
+        <source>Version</source>
+      </trans-unit>
+      <trans-unit id="state">
+        <source>Status</source>
+      </trans-unit>
+      <trans-unit id="alpha">
+        <source>Alpha</source>
+      </trans-unit>
+      <trans-unit id="beta">
+        <source>Beta</source>
+      </trans-unit>
+      <trans-unit id="stable">
+        <source>Stable</source>
+      </trans-unit>
+      <trans-unit id="experimental">
+        <source>Experimental</source>
+      </trans-unit>
+      <trans-unit id="test">
+        <source>Test</source>
+      </trans-unit>
+      <trans-unit id="obsolete">
+        <source>Obsolete</source>
+      </trans-unit>
+      <trans-unit id="excludeFromUpdates">
+        <source>Exclude from updates</source>
+      </trans-unit>
+      <trans-unit id="viewhelper">
+        <source>Create dummy ViewHelper?</source>
+      </trans-unit>
+      <!-- Clear cache -->
+      <trans-unit id="rm.clearCacheMenu_razor">
+        <source>Clear all caches</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

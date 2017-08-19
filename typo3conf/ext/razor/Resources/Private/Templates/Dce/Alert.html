@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+  <f:render partial="Header" arguments="{layout: contentObject.header_layout, header: contentObject.header, link: contentObject.header_link, default: tsSetup.razor.misc.defaultHeaderType, position: contentObject.header_position, style: contentObject.header_style}" />
+
+  <v:variable.set name="dismissable" value="" />
+  <f:if condition="{field.dismissable}">
+    <v:variable.set name="dismissable" value=' alert-dismissable' />
+  </f:if>
+
+  <v:variable.set name="state" value="{v:content.resources(table:'tx_razor_domain_model_state', field:'value', uid:'{field.type}')}" />
+
+  <div class="alert alert-{state.0}{dismissable}">
+    <f:if condition="{field.dismissable}">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    </f:if>
+
+    <f:format.html><razor:alertLink text="{field.text}" /></f:format.html>
+  </div>
+</html>

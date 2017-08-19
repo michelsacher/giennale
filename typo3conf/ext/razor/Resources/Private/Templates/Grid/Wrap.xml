@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <meta type="array">
+    <langDisable>1</langDisable>
+    <langDatabaseOverlay>1</langDatabaseOverlay>
+  </meta>
+  <sheets>
+    <general>
+      <ROOT type="array">
+        <TCEforms>
+          <sheetTitle>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:general</sheetTitle>
+        </TCEforms>
+        <el type="array">
+          <backgroundColor>
+            <TCEforms>
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:backgroundColor</label>
+              <config>
+                <type>select</type>
+                <renderType>selectSingle</renderType>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0" />
+                    <numIndex index="1" />
+                  </numIndex>
+                </items>
+                <foreign_table>tx_razor_domain_model_color</foreign_table>
+                <foreign_table_where>AND tx_razor_domain_model_color.hidden=0 AND tx_razor_domain_model_color.deleted=0 AND tx_razor_domain_model_color.pid=###PAGE_TSCONFIG_ID### ORDER BY tx_razor_domain_model_color.sorting</foreign_table_where>
+                <size>1</size>
+                <minitems>0</minitems>
+                <maxitems>1</maxitems>
+              </config>
+            </TCEforms>
+          </backgroundColor>
+          <backgroundPosition>
+            <TCEforms>
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:backgroundPosition</label>
+              <config>
+                <type>input</type>
+                <size>20</size>
+              </config>
+            </TCEforms>
+          </backgroundPosition>
+        </el>
+      </ROOT>
+    </general>
+    <options>
+      <ROOT type="array">
+        <TCEforms>
+          <sheetTitle>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:options</sheetTitle>
+        </TCEforms>
+        <el type="array">
+          <classes>
+            <TCEforms>
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:classes</label>
+              <config>
+                <type>input</type>
+                <size>30</size>
+              </config>
+            </TCEforms>
+          </classes>
+          <id>
+            <TCEforms>
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:id</label>
+              <config>
+                <type>input</type>
+                <size>30</size>
+                <eval>nospace</eval>
+              </config>
+            </TCEforms>
+          </id>
+          <top>
+            <TCEforms>
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:paddingTop</label>
+              <config>
+                <type>select</type>
+                <renderType>selectSingle</renderType>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0" />
+                    <numIndex index="1" />
+                  </numIndex>
+                </items>
+                <foreign_table>tx_razor_domain_model_padding</foreign_table>
+                <foreign_table_where>AND tx_razor_domain_model_padding.hidden=0 AND tx_razor_domain_model_padding.deleted=0 AND tx_razor_domain_model_padding.pid=###PAGE_TSCONFIG_ID### ORDER BY tx_razor_domain_model_padding.sorting</foreign_table_where>
+                <size>1</size>
+                <minitems>0</minitems>
+                <maxitems>1</maxitems>
+              </config>
+            </TCEforms>
+          </top>
+          <bottom>
+            <TCEforms>
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:paddingBottom</label>
+              <config>
+                <type>select</type>
+                <renderType>selectSingle</renderType>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0" />
+                    <numIndex index="1" />
+                  </numIndex>
+                </items>
+                <foreign_table>tx_razor_domain_model_padding</foreign_table>
+                <foreign_table_where>AND tx_razor_domain_model_padding.hidden=0 AND tx_razor_domain_model_padding.deleted=0 AND tx_razor_domain_model_padding.pid=###PAGE_TSCONFIG_ID### ORDER BY tx_razor_domain_model_padding.sorting</foreign_table_where>
+                <size>1</size>
+                <minitems>0</minitems>
+                <maxitems>1</maxitems>
+              </config>
+            </TCEforms>
+          </bottom>
+          <useSection>
+            <TCEforms>
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:useSection</label>
+              <config>
+                <type>check</type>
+              </config>
+            </TCEforms>
+          </useSection>
+        </el>
+      </ROOT>
+    </options>
+  </sheets>
+</T3DataStructure>

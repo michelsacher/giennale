@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2017-05-06T01:35:09Z" product-name="dce" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="generaltab" xml:space="preserve" approved="yes">
+        <source>General</source>
+      <target state="translated">Allgemein</target></trans-unit>
+      <trans-unit id="availableVariables" xml:space="preserve" approved="yes">
+        <source>Available variables</source>
+      <target state="translated">Verfügbare Variablen</target></trans-unit>
+      <trans-unit id="useForViewhelper" xml:space="preserve" approved="yes">
+        <source>use f:for viewhelper</source>
+      <target state="translated">ViewHelper f:for verwenden</target></trans-unit>
+      <trans-unit id="availableBaseVariables" xml:space="preserve" approved="yes">
+        <source>Available base variables</source>
+      <target state="translated">Verfügbare Basis-Variablen</target></trans-unit>
+      <trans-unit id="famousViewHelper" xml:space="preserve" approved="yes">
+        <source>Famous viewhelper</source>
+      <target state="translated">Meist verwendete ViewHelper</target></trans-unit>
+      <trans-unit id="dceViewHelper" xml:space="preserve" approved="yes">
+        <source>DCE viewhelper</source>
+      <target state="translated">DCE-ViewHelper</target></trans-unit>
+      <trans-unit id="dceObject" xml:space="preserve" approved="no">
+        <source>DCE object</source>
+      <target state="needs-translation">DCE-Objekt</target></trans-unit>
+      <trans-unit id="dceObjectNode" xml:space="preserve" approved="yes">
+        <source>{dce}</source>
+      <target state="translated">{dce}</target></trans-unit>
+      <trans-unit id="dcesObject" xml:space="preserve">
+        <source>Array of DCE objects</source>
+      <target></target></trans-unit>
+      <trans-unit id="dcesObjectNode" xml:space="preserve" approved="no">
+        <source>{dces}</source>
+      <target state="needs-translation">{dce}</target></trans-unit>
+      <trans-unit id="contentObject" xml:space="preserve" approved="no">
+        <source>Content Object (of DCE instance with resolved relations)</source>
+      <target state="needs-translation">Inhaltselement (DCE-Instanz)</target></trans-unit>
+      <trans-unit id="contentObjectNode" xml:space="preserve" approved="yes">
+        <source>{contentObject}</source>
+      <target state="translated">{contentObject}</target></trans-unit>
+      <trans-unit id="tsfeObject" xml:space="preserve" approved="yes">
+        <source>TSFE object (TypoScriptFrontendController)</source>
+      <target state="translated">TSFE-Objekt (tslib_fe)</target></trans-unit>
+      <trans-unit id="tsfeObjectNode" xml:space="preserve" approved="yes">
+        <source>{TSFE}</source>
+      <target state="translated">{TSFE}</target></trans-unit>
+      <trans-unit id="pageObject" xml:space="preserve" approved="yes">
+        <source>Properties of current page</source>
+      <target state="translated">Eigenschaften der aktuellen Seite</target></trans-unit>
+      <trans-unit id="pageObjectNode" xml:space="preserve" approved="yes">
+        <source>{page}</source>
+      <target state="translated">{page}</target></trans-unit>
+      <trans-unit id="tsSetupObject" xml:space="preserve" approved="yes">
+        <source>TypoScript setup of current page</source>
+      <target state="translated">TypoScript-Setup der aktuellen Seite</target></trans-unit>
+      <trans-unit id="tsSetupObjectNode" xml:space="preserve" approved="yes">
+        <source>{tsSetup}</source>
+      <target state="translated">{tsSetup}</target></trans-unit>
+      <trans-unit id="dcePopupButtonTitle" xml:space="preserve">
+        <source>Opens the settings of the DCE which this DCE instance based on, in a popup</source>
+      <target></target></trans-unit>
+      <trans-unit id="contentElementCreatedByFrontendHeader" xml:space="preserve" approved="yes">
+        <source>*Created or updated by frontend*</source>
+      <target state="translated">*Erstellt oder geändert durch das Frontend*</target></trans-unit>
+      <trans-unit id="contentElementCreatedByFrontendBodytext" xml:space="preserve" approved="yes">
+        <source>&lt;!-- Please update! --&gt;If a content element based on DCE, has been created in frontend context, it is not possible to render this preview texts, because in frontend extbase resources are not always available. &lt;em&gt;(eID: %s)&lt;/em&gt;</source>
+      <target state="translated">&lt;!-- Bitte ändern! --&gt;Wenn ein Inhaltselement, das auf DCE basiert, im Kontext des Frontend erstellt wurde, ist es nicht möglich diese Vorschautexte auszugeben, da im Frontend die Extbase Ressourcen nicht immer vorhanden sind. &lt;em&gt;(eID: %s)&lt;/em&gt;</target></trans-unit>
+      <trans-unit id="noTitle" xml:space="preserve">
+        <source>No title</source>
+      <target></target></trans-unit>
+      <trans-unit id="section" xml:space="preserve">
+        <source>Section</source>
+      <target></target></trans-unit>
+      <trans-unit id="dceTitle" xml:space="preserve">
+        <source>*DCE title*</source>
+      <target></target></trans-unit>
+      <trans-unit id="empty" xml:space="preserve">
+        <source>*Empty*</source>
+      <target></target></trans-unit>
+      <trans-unit id="containerflag" xml:space="preserve">
+        <source>*Container Color*</source>
+      <target></target></trans-unit>
+      <trans-unit id="entry" xml:space="preserve">
+        <source>entry</source>
+      <target></target></trans-unit>
+      <trans-unit id="entries" xml:space="preserve">
+        <source>entries</source>
+      <target></target></trans-unit>
+      <trans-unit id="editDceOfThisContentElement" xml:space="preserve">
+        <source>Edit DCE (on which this content element is based on)</source>
+      <target></target></trans-unit>
+      <trans-unit id="chooseOption" xml:space="preserve">
+        <source>Choose an option</source>
+      <target></target></trans-unit>
+      <trans-unit id="noMapping" xml:space="preserve">
+        <source>Do not map field</source>
+      <target></target></trans-unit>
+      <trans-unit id="mapToIndexColumn" xml:space="preserve">
+        <source>Map to index column (tx_dce_index, mediumtext)</source>
+      <target></target></trans-unit>
+      <trans-unit id="newcol" xml:space="preserve">
+        <source>Create new column (in tt_content)</source>
+      <target></target></trans-unit>
+      <trans-unit id="chooseExistingField" xml:space="preserve">
+        <source>Or choose an existing field</source>
+      <target></target></trans-unit>
+    </body>
+  </file>
+</xliff>

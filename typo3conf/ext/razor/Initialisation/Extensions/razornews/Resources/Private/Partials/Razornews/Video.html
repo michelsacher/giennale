@@ -1,0 +1,73 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:if condition="{newsContent.title}">
+  <h2>{newsContent.title}</h2>
+</f:if>
+
+<f:switch expression="{newsContent.ratio}">
+  <f:case value="1">
+    <v:variable.set name="ratio" value="16by9" />
+  </f:case>
+  <f:case value="2">
+    <v:variable.set name="ratio" value="4by3" />
+  </f:case>
+  <f:case value="3">
+    <f:if condition="{newsContent.width}">
+      <v:variable.set name="width" value="{newsContent.width}" />
+    </f:if>
+
+    <f:if condition="{newsContent.height}">
+      <v:variable.set name="height" value="{newsContent.height}" />
+    </f:if>
+  </f:case>
+</f:switch>
+
+<f:switch expression="{newsContent.videoType}">
+  <f:case value="0">
+    <f:if condition="{newsContent.ratio} == 3">
+      <f:then>
+        <v:media.youtube videoId="{newsContent.videoId}" width="{width}" height="{height}" />
+      </f:then>
+      <f:else>
+        <div class="embed-responsive embed-responsive-{ratio} razor--mb">
+          <razor:media.youtube videoId="{newsContent.videoId}" additionalAttributes="{class: 'embed-responsive-item'}" defer="1" />
+        </div>
+      </f:else>
+    </f:if>
+  </f:case>
+  <f:case value="1">
+    <f:if condition="{newsContent.ratio} == 3">
+      <f:then>
+        <v:media.vimeo videoId="{newsContent.videoId}" width="{width}" height="{height}" />
+      </f:then>
+      <f:else>
+        <div class="embed-responsive embed-responsive-{ratio} razor--mb">
+          <razor:media.vimeo videoId="{newsContent.videoId}" additionalAttributes="{class: 'embed-responsive-item'}" defer="1" />
+        </div>
+      </f:else>
+    </f:if>
+  </f:case>
+  <f:case value="2">
+    <f:for each="{newsContent.videoFile}" as="fileReference" iteration="i">
+      <v:variable.set name="video" value='<v:resource.file identifier="{fileReference.uid}" treatIdAsReference="1" />' />
+      <v:variable.set name="video{i.index}" value="{video.url}" />
+    </f:for>
+
+    <v:variable.set name="videos" value='<razor:filter arr="{0: video0, 1: video1, 2: video2}" />' />
+
+    <f:if condition="{newsContent.ratio} == 3">
+      <f:then>
+        <v:media.video src="{videos}" width="{width}" height="{height}" controls="1" />
+      </f:then>
+      <f:else>
+        <div class="embed-responsive embed-responsive-{ratio} razor--mb">
+          <v:media.video src="{videos}" width="" height="" controls="1" additionalAttributes="{class: 'embed-responsive-item'}" />
+        </div>
+      </f:else>
+    </f:if>
+  </f:case>
+</f:switch>
+</html>

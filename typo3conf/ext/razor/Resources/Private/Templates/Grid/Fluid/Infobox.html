@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:if condition="{data.flexform_size}">
+  <v:variable.set name="size" value="{v:content.resources(table:'tx_razor_domain_model_size', field:'value', uid:'{data.flexform_size}')}" />
+
+  <f:if condition="{size.0}">
+    <v:variable.set name="theSize" value=" well--{size.0}" />
+  </f:if>
+</f:if>
+
+<f:if condition="{data.flexform_color}">
+  <v:variable.set name="class" value="{v:content.resources(table:'tx_razor_domain_model_color', field:'value', uid:'{data.flexform_color}')}" />
+
+  <f:if condition="{class.0}">
+    <v:variable.set name="theClass" value=" well--razor-{class.0}" />
+  </f:if>
+</f:if>
+
+<div class="well{theSize}{theClass}">
+  <f:format.raw>
+    {data.tx_gridelements_view_column_1}
+  </f:format.raw>
+</div>
+</html>

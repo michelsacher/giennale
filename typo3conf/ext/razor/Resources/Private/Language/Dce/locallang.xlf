@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="razor">
+    <header />
+    <body>
+      <!-- Titles and descriptions -->
+      <trans-unit id="galleryCe">
+        <source>Gallery</source>
+      </trans-unit>
+      <trans-unit id="galleryCeDesc">
+        <source>Inserts a gallery</source>
+      </trans-unit>
+      <trans-unit id="downloads">
+        <source>Downloads</source>
+      </trans-unit>
+      <trans-unit id="downloadsDesc">
+        <source>Inserts downloads</source>
+      </trans-unit>
+      <trans-unit id="buttons">
+        <source>Buttons</source>
+      </trans-unit>
+      <trans-unit id="buttonsDesc">
+        <source>Inserts flexible buttons</source>
+      </trans-unit>
+      <trans-unit id="icon">
+        <source>Icon</source>
+      </trans-unit>
+      <trans-unit id="iconDesc">
+        <source>Inserts an icon</source>
+      </trans-unit>
+      <trans-unit id="headerWithImage">
+        <source>Headline with optional image or icon</source>
+      </trans-unit>
+      <trans-unit id="headerWithImageDesc">
+        <source>Inserts a headline with optional image or icon</source>
+      </trans-unit>
+      <trans-unit id="image">
+        <source>Images</source>
+      </trans-unit>
+      <trans-unit id="imageSingle">
+        <source>Image</source>
+      </trans-unit>
+      <trans-unit id="imageDesc">
+        <source>Inserts a images</source>
+      </trans-unit>
+      <trans-unit id="spacer">
+        <source>Spacer</source>
+      </trans-unit>
+      <trans-unit id="spacerDesc">
+        <source>Inserts a spacer</source>
+      </trans-unit>
+      <trans-unit id="youtubevimeovideo">
+        <source>YouTube/Vimeo/HTML5 Video</source>
+      </trans-unit>
+      <trans-unit id="youtubevimeovideoDesc">
+        <source>Inserts a YouTube, Vimeo or HTML5 video</source>
+      </trans-unit>
+      <trans-unit id="alert">
+        <source>Alert</source>
+      </trans-unit>
+      <trans-unit id="alertDesc">
+        <source>Inserts an alert</source>
+      </trans-unit>
+      <trans-unit id="contactButton">
+        <source>Contact button</source>
+      </trans-unit>
+      <trans-unit id="contactButtonDesc">
+        <source>Inserts a contact button</source>
+      </trans-unit>
+      <trans-unit id="typoscript">
+        <source>TypoScript</source>
+      </trans-unit>
+      <trans-unit id="typoscriptDesc">
+        <source>Inserts a TypoScript content element</source>
+      </trans-unit>
+      <trans-unit id="teaserbox">
+        <source>Teaserbox</source>
+      </trans-unit>
+      <trans-unit id="teaserboxDesc">
+        <source>Inserts a teaserbox content element</source>
+      </trans-unit>
+      <trans-unit id="blockquote">
+        <source>Blockquote</source>
+      </trans-unit>
+      <trans-unit id="blockquoteDesc">
+        <source>Inserts a blockquote</source>
+      </trans-unit>
+      <!-- Common -->
+      <trans-unit id="general">
+        <source>General</source>
+      </trans-unit>
+      <trans-unit id="options">
+        <source>Options</source>
+      </trans-unit>
+      <trans-unit id="link">
+        <source>Link</source>
+      </trans-unit>
+      <trans-unit id="size">
+        <source>Size</source>
+      </trans-unit>
+      <trans-unit id="type">
+        <source>Type</source>
+      </trans-unit>
+      <trans-unit id="width">
+        <source>Width</source>
+      </trans-unit>
+      <trans-unit id="height">
+        <source>Height</source>
+      </trans-unit>
+      <trans-unit id="crop">
+        <source>Crop</source>
+      </trans-unit>
+      <trans-unit id="position">
+        <source>Position</source>
+      </trans-unit>
+      <trans-unit id="left">
+        <source>Left</source>
+      </trans-unit>
+      <trans-unit id="center">
+        <source>Center</source>
+      </trans-unit>
+      <trans-unit id="right">
+        <source>Right</source>
+      </trans-unit>
+      <trans-unit id="enlarge">
+        <source>Click enlarge?</source>
+      </trans-unit>
+      <trans-unit id="gallery">
+        <source>Add to gallery?</source>
+      </trans-unit>
+      <trans-unit id="responsive">
+        <source>Responsive?</source>
+      </trans-unit>
+      <trans-unit id="classes">
+        <source>CSS classes</source>
+      </trans-unit>
+      <trans-unit id="color">
+        <source>Color</source>
+      </trans-unit>
+      <trans-unit id="text">
+        <source>Text</source>
+      </trans-unit>
+      <trans-unit id="block">
+        <source>Full width of parent element</source>
+      </trans-unit>
+      <trans-unit id="disabled">
+        <source>Disabled?</source>
+      </trans-unit>
+      <trans-unit id="iconPos">
+        <source>Icon position</source>
+      </trans-unit>
+      <trans-unit id="default">
+        <source>Default</source>
+      </trans-unit>
+      <trans-unit id="large">
+        <source>Large</source>
+      </trans-unit>
+      <trans-unit id="small">
+        <source>Small</source>
+      </trans-unit>
+      <trans-unit id="extraSmall">
+        <source>Extra small</source>
+      </trans-unit>
+      <trans-unit id="primary">
+        <source>Primary</source>
+      </trans-unit>
+      <trans-unit id="success">
+        <source>Success</source>
+      </trans-unit>
+      <trans-unit id="info">
+        <source>Info</source>
+      </trans-unit>
+      <trans-unit id="warning">
+        <source>Warning</source>
+      </trans-unit>
+      <trans-unit id="danger">
+        <source>Danger</source>
+      </trans-unit>
+      <trans-unit id="beforeText">
+        <source>Before text</source>
+      </trans-unit>
+      <trans-unit id="afterText">
+        <source>After text</source>
+      </trans-unit>
+      <trans-unit id="additionalOptions">
+        <source>Additional options</source>
+      </trans-unit>
+      <trans-unit id="wrapText">
+        <source>Wrap text?</source>
+      </trans-unit>
+      <trans-unit id="wrap">
+        <source>Wrap?</source>
+      </trans-unit>
+      <trans-unit id="viewport">
+        <source>Viewport</source>
+      </trans-unit>
+      <!-- Gallery -->
+      <trans-unit id="images">
+        <source>Images</source>
+      </trans-unit>
+      <trans-unit id="cols">
+        <source>Columns</source>
+      </trans-unit>
+      <!-- Downloads -->
+      <trans-unit id="files">
+        <source>Files</source>
+      </trans-unit>
+      <trans-unit id="filesize">
+        <source>Show file size?</source>
+      </trans-unit>
+      <trans-unit id="addFile">
+        <source>Add file</source>
+      </trans-unit>
+      <!-- Buttons -->
+      <trans-unit id="button">
+        <source>Button</source>
+      </trans-unit>
+      <trans-unit id="linktitle">
+        <source>Link title</source>
+      </trans-unit>
+      <trans-unit id="buttonGroup">
+        <source>Group buttons?</source>
+      </trans-unit>
+      <!-- Image -->
+      <trans-unit id="thumbnail">
+        <source>Alternative thumbnail</source>
+      </trans-unit>
+      <trans-unit id="appearance">
+        <source>Appearance</source>
+      </trans-unit>
+      <trans-unit id="appearance.1">
+        <source>rounded</source>
+      </trans-unit>
+      <trans-unit id="appearance.2">
+        <source>circle</source>
+      </trans-unit>
+      <trans-unit id="appearance.3">
+        <source>thumbnail</source>
+      </trans-unit>
+      <!-- Spacer -->
+      <trans-unit id="spaceTop">
+        <source>Top</source>
+      </trans-unit>
+      <trans-unit id="spaceBottom">
+        <source>Bottom</source>
+      </trans-unit>
+      <trans-unit id="noLine">
+        <source>No line</source>
+      </trans-unit>
+      <!-- Video -->
+      <trans-unit id="videoId">
+        <source>Video ID</source>
+      </trans-unit>
+      <trans-unit id="file">
+        <source>Video file</source>
+      </trans-unit>
+      <trans-unit id="html5Video">
+        <source>HTML5 video</source>
+      </trans-unit>
+      <trans-unit id="autoplay">
+        <source>Autoplay?</source>
+      </trans-unit>
+      <trans-unit id="byline">
+        <source>Show the users byline on the video?</source>
+      </trans-unit>
+      <trans-unit id="related">
+        <source>Show related Videos at the end?</source>
+      </trans-unit>
+      <trans-unit id="loop">
+        <source>Loop?</source>
+      </trans-unit>
+      <trans-unit id="portrait">
+        <source>Show the users portrait on the video?</source>
+      </trans-unit>
+      <trans-unit id="title">
+        <source>Show the title on the video?</source>
+      </trans-unit>
+      <trans-unit id="aspectRatio">
+        <source>Aspect ratio</source>
+      </trans-unit>
+      <trans-unit id="aspectRatio.1">
+        <source>16:9</source>
+      </trans-unit>
+      <trans-unit id="aspectRatio.2">
+        <source>4:3</source>
+      </trans-unit>
+      <trans-unit id="aspectRatio.3">
+        <source>Free</source>
+      </trans-unit>
+      <trans-unit id="youtube">
+        <source>YouTube</source>
+      </trans-unit>
+      <trans-unit id="vimeo">
+        <source>Vimeo</source>
+      </trans-unit>
+      <trans-unit id="hideInfo">
+        <source>Hide info?</source>
+      </trans-unit>
+      <trans-unit id="video.addFileReference">
+        <source>Add video</source>
+      </trans-unit>
+      <trans-unit id="poster">
+        <source>Poster</source>
+      </trans-unit>
+      <!-- Alert -->
+      <trans-unit id="close">
+        <source>Close?</source>
+      </trans-unit>
+      <!-- Contact button -->
+      <trans-unit id="powermail">
+        <source>powermail field</source>
+      </trans-unit>
+      <trans-unit id="param">
+        <source>Given to powermail form (if empty, page title is taken)</source>
+      </trans-unit>
+      <!-- TypoScript -->
+      <trans-unit id="objectPath">
+        <source>TypoScript object path</source>
+      </trans-unit>
+      <trans-unit id="noObjectPath">
+        <source>No TypoScript object path <![CDATA[<strong>%s</strong>]]> available</source>
+      </trans-unit>
+      <!-- Teaserbox -->
+      <trans-unit id="theTitle">
+        <source>Title</source>
+      </trans-unit>
+      <!-- Blockquote -->
+      <trans-unit id="footer">
+        <source>Footer</source>
+      </trans-unit>
+      <!-- Header -->
+      <trans-unit id="header">
+        <source>Headline</source>
+      </trans-unit>
+      <trans-unit id="layout">
+        <source>Layout</source>
+      </trans-unit>
+      <trans-unit id="headerPosition">
+        <source>Headline position</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

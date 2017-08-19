@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:if condition="{data.parentgrid_pi_flexform.data.general.lDEF.fade.vDEF}">
+  <v:variable.set name="fade" value="fade" />
+</f:if>
+
+<v:if stack="{0: data.parentgrid_pi_flexform.data.general.lDEF.fade.vDEF, 1: 'AND', 2: active}">
+  <v:variable.set name="in" value="in" />
+</v:if>
+
+<div id="tab-content-{uid}" class="tab-pane {fade} {in} {active}">
+  <f:format.raw>
+    {data.tx_gridelements_view_column_1}
+  </f:format.raw>
+</div>
+</html>

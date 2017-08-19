@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:page.menu pageUid="{pages}" levels="1" as="menu" useShortcutUid="0" showHidden="0" classHasSubpages="" classCurrent="" classActive="active">
+  <ul class="nav nav-tabs">
+    <f:for each="{menu}" as="item" iteration="i">
+      <li{f:if(condition:'{i.isFirst}',then:' class="active"')}>
+        <a href="#tab-content-{item.uid}" data-toggle="tab" role="tab">{item.title}</a>
+      </li>
+    </f:for>
+  </ul>
+  <div class="tab-content">
+    <f:for each="{menu}" as="item2" iteration="j">
+      <div id="tab-content-{item2.uid}" class="tab-pane {f:if(condition:'{j.isFirst}',then:'active')}">
+        <f:format.html>{item2.description}</f:format.html>
+      </div>
+    </f:for>
+  </div>
+</v:page.menu>
+</html>

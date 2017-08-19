@@ -1,0 +1,154 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+    xmlns:rx="http://typo3.org/ns/Reelworx/RxShariff/ViewHelper"
+    xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+    xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+<f:layout name="Detail" />
+
+<f:section name="content">
+
+  <v:variable.set name="tsSetup" value='<razor:ts />' />
+
+  <v:variable.set name="cols" value="{tsSetup.razor.bootstrap.cols}" />
+
+  <v:variable.set name="newsMedia" value='<razor:newsMedia elements="{newsItem.falMedia}" />' />
+
+  <v:if stack="{0: newsItem.falMedia, 1: 'AND', 2: newsMedia}">
+    <f:then>
+      <v:variable.set name="imageCol" value='<razor:cols cols="{cols}" divider="3" />' />
+      <v:variable.set name="col" value='<razor:cols cols="{cols}" subtrahend="{imageCol}" />' />
+    </f:then>
+    <f:else>
+      <v:variable.set name="col" value="{cols}" />
+    </f:else>
+  </v:if>
+
+  <f:if condition="{newsItem}">
+    <div class="col-md-24">
+      <n:format.nothing>
+        <n:excludeDisplayedNews newsItem="{newsItem}" />
+        <f:if condition="{newsItem.alternativeTitle}">
+          <f:then>
+            <n:titleTag>
+              <f:format.htmlentitiesDecode>{newsItem.alternativeTitle}</f:format.htmlentitiesDecode>
+            </n:titleTag>
+          </f:then>
+          <f:else>
+            <n:titleTag>
+              <f:format.htmlentitiesDecode>{newsItem.title}</f:format.htmlentitiesDecode>
+            </n:titleTag>
+          </f:else>
+        </f:if>
+
+        <f:render partial="Detail/Opengraph" arguments="{newsItem: newsItem, settings:settings}" />
+      </n:format.nothing>
+
+      <h1>{newsItem.title}</h1>
+
+      <f:if condition="{newsItem.teaser}">
+        <div class="lead">
+          <f:format.html>{newsItem.teaser}</f:format.html>
+          <hr />
+        </div>
+      </f:if>
+
+      <f:format.html>{newsItem.bodytext}</f:format.html>
+
+      <f:if condition="{newsItem.newscontent}">
+        <hr />
+
+        <v:iterator.sort as="newsContentSorted" subject="{newsItem.newscontent}" sortBy="sorting" order="ASC">
+          <f:for each="{newsContentSorted}" as="newsContent">
+            <f:render partial="Razornews/{newsContent.type}" arguments="{newsContent: newsContent}" />
+          </f:for>
+        </v:iterator.sort>
+      </f:if>
+
+      <f:if condition="{newsItem.falRelatedFiles}">
+        <hr />
+
+        <h3>
+          <f:translate key="LLL:EXT:razor/Resources/Private/Language/locallang.xlf:news.relatedFiles" />
+        </h3>
+
+        <ul class="list-group">
+          <f:if condition="{newsItem.falRelatedFiles}">
+            <f:for each="{newsItem.falRelatedFiles}" as="relatedFile">
+              <li class="list-group-item">
+                <a href="{relatedFile.originalResource.publicUrl -> f:format.htmlspecialchars()}" target="_blank">
+                  {f:if(condition:relatedFile.originalResource.title, then:relatedFile.originalResource.title, else:relatedFile.originalResource.name)}
+                </a>
+
+                <span class="razor--news-filesize">
+                  {relatedFile.originalResource.size -> f:format.bytes()}
+                </span>
+              </li>
+            </f:for>
+          </f:if>
+        </ul>
+      </f:if>
+
+      <f:if condition="{newsItem.relatedLinks}">
+        <h3>
+          <f:translate key="LLL:EXT:razor/Resources/Private/Language/locallang.xlf:news.relatedLinks" />
+        </h3>
+
+        <ul class="list-group">
+          <f:for each="{newsItem.relatedLinks}" as="relatedLink">
+            <li class="list-group-item">
+              <f:link.page pageUid="{relatedLink.uri}" title="{relatedLink.title}" target="{n:targetLink(link:relatedLink.uri)}">
+                {f:if(condition: relatedLink.title, then: relatedLink.title, else: relatedLink.uri)}
+              </f:link.page>
+
+              <f:if condition="{relatedLink.description}">
+                <p>{relatedLink.description}</p>
+              </f:if>
+            </li>
+          </f:for>
+        </ul>
+      </f:if>
+    </div>
+
+    <v:if stack="{0: newsItem.falMedia, 1: 'AND', 2: newsMedia}">
+      <div class="col-md-8 col-md-offset-1">
+        <f:render partial="Detail/FalMediaContainer" arguments="{media: newsItem.falMedia, settings:settings}" />
+      </div>
+    </v:if>
+
+    <div class="col-md-{cols} razor--mt">
+      <razor:share channels="{0: 'twitter', 1: 'google-plus', 2: 'facebook'}" as="channels" subject="{f:translate(key: 'LLL:fileadmin/razor/Language/razor.xlf:subject')}" body="{f:translate(key: 'LLL:fileadmin/razor/Language/razor.xlf:body', arguments: {0: '{v:page.absoluteUrl()}'})}">
+        <div class="razor--share">
+          <f:for each="{channels}" as="channel">
+            <a href="{channel.url}" target="{channel.target}">
+              <i class="rz-{channel.name}"></i>
+            </a>
+          </f:for>
+        </div>
+      </razor:share>
+
+      <f:if condition="{tsSetup.razor.news.activateDisqus}">
+        <div id="disqus_thread"></div>
+        <script>
+          (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+
+          s.src = '//{tsSetup.razor.news.disqusShortname}.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+      </f:if>
+
+      <f:if condition="{settings.backPid}">
+        <f:link.page pageUid="{settings.backPid}" class="btn btn-primary news-back-link">
+          <i class="fa fa-angle-left razor--fa-left"></i> <f:translate key="back-link" />
+        </f:link.page>
+      </f:if>
+    </div>
+  </f:if>
+</f:section>
+</html>

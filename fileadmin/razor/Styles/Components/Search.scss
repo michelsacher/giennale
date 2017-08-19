@@ -1,0 +1,32 @@
+/* --------------------------------------------------------
+Component: Search
+
+version: 1.0
+last modified: 23.05.2017 by Michel Sacher
+author: Michel Sacher
+email: michelsacher@googlemail.com
+website: www.michelsacher.de
+----------------------------------------------------------*/
+
+.panel {
+  $self: &;
+
+  &-primary {
+    border-color: $color-ci-1;
+
+    >#{$self}-heading {
+      background-color: $color-ci-1;
+      border-color: $color-ci-1;
+    }
+  }
+
+  p {
+    &#{$self}-search-info {
+      background: $grey;
+    }
+  }
+}
+
+.tx-indexedsearch-redMarkup {
+  color: $color-error;
+}

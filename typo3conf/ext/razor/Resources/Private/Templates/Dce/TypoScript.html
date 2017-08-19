@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:render partial="Header" arguments="{layout: contentObject.header_layout, header: contentObject.header, link: contentObject.header_link, default: tsSetup.razor.misc.defaultHeaderType, position: contentObject.header_position, style: contentObject.header_style}" />
+
+<f:if condition="{field.objectPath}">
+  <v:variable.set name="tsObj" value='<f:cObject typoscriptObjectPath="{field.objectPath}" />' />
+
+  <f:if condition="{tsObj}">
+    <f:then>
+      <f:format.raw>{tsObj}</f:format.raw>
+    </f:then>
+    <f:else>
+      <p>
+        <f:translate key="LLL:EXT:razor/Resources/Private/Language/Dce/locallang.xlf:noObjectPath" arguments="{0: field.objectPath}" />
+      </p>
+    </f:else>
+  </f:if>
+</f:if>
+</html>

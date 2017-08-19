@@ -1,0 +1,60 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+
+<f:if condition="{data.flexform_css_row}">
+  <v:variable.set name="classesRow" value=" {data.flexform_css_row}" />
+</f:if>
+
+<f:if condition="{data.flexform_css_column_1}">
+  <v:variable.set name="classesLeft" value=" {data.flexform_css_column_1}" />
+</f:if>
+
+<f:if condition="{data.flexform_css_column_2}">
+  <v:variable.set name="classesMiddle" value=" {data.flexform_css_column_2}" />
+</f:if>
+
+<f:if condition="{data.flexform_css_column_3}">
+  <v:variable.set name="classesRight" value=" {data.flexform_css_column_3}" />
+</f:if>
+
+<v:variable.set name="visibility" value='<razor:colImpExp content="{visibility: data.flexform_visibility_element}" row="1" />' />
+<v:variable.set name="column1" value='<razor:colImpExp content="{md: data.flexform_width_column_md_1, md-offset: data.flexform_offset_column_md_1, xs: data.flexform_width_column_xs_1, xs-offset: data.flexform_offset_column_xs_1, sm: data.flexform_width_column_sm_1, sm-offset: data.flexform_offset_column_sm_1, lg: data.flexform_width_column_lg_1, lg-offset: data.flexform_offset_column_lg_1, visibility: data.flexform_visibility_col1}" />' />
+<v:variable.set name="column2" value='<razor:colImpExp content="{md: data.flexform_width_column_md_2, md-offset: data.flexform_offset_column_md_2, xs: data.flexform_width_column_xs_2, xs-offset: data.flexform_offset_column_xs_2, sm: data.flexform_width_column_sm_2, sm-offset: data.flexform_offset_column_sm_2, lg: data.flexform_width_column_lg_2, lg-offset: data.flexform_offset_column_lg_2, visibility: data.flexform_visibility_col2}" />' />
+<v:variable.set name="column3" value='<razor:colImpExp content="{md: data.flexform_width_column_md_3, md-offset: data.flexform_offset_column_md_3, xs: data.flexform_width_column_xs_3, xs-offset: data.flexform_offset_column_xs_3, sm: data.flexform_width_column_sm_3, sm-offset: data.flexform_offset_column_sm_3, lg: data.flexform_width_column_lg_3, lg-offset: data.flexform_offset_column_lg_3, visibility: data.flexform_visibility_col3}" />' />
+
+<f:if condition="{data.flexform_flex}">
+  <v:variable.set name="flex" value=" row-flex" />
+</f:if>
+
+<f:if condition="{data.flexform_col_flex}">
+  <v:variable.set name="colFlex" value=" col-flex" />
+</f:if>
+
+<f:if condition="{data.flexform_no_gutter}">
+  <v:variable.set name="noGutter" value=" no-gutters" />
+</f:if>
+
+<div class="row{visibility}{flex}{noGutter}{classesRow}">
+  <div class="{column1}{classesLeft}{colFlex}">
+    <f:format.raw>
+      {data.tx_gridelements_view_column_0}
+    </f:format.raw>
+  </div>
+
+  <div class="{column2}{classesMiddle}{colFlex}">
+    <f:format.raw>
+      {data.tx_gridelements_view_column_1}
+    </f:format.raw>
+  </div>
+
+  <div class="{column3}{classesRight}{colFlex}">
+    <f:format.raw>
+      {data.tx_gridelements_view_column_2}
+    </f:format.raw>
+  </div>
+</div>
+</html>

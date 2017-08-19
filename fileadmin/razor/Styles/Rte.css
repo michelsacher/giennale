@@ -1,0 +1,39 @@
+p.align-left,
+span.align-left {
+  text-align: left;
+}
+
+p.align-center,
+span.align-center {
+  text-align: center;
+}
+
+p.align-right,
+span.align-right {
+  text-align: right;
+}
+
+p.small,
+span.small {
+  font-size: 85%;
+}
+
+p.big,
+span.big {
+  font-size: 115%;
+}
+
+p.text-lowercase,
+span.text-lowercase {
+  text-transform: lowercase;
+}
+
+p.text-uppercase,
+span.text-uppercase {
+  text-transform: uppercase;
+}
+
+p.text-capitalize,
+span.text-capitalize {
+  text-transform: capitalize;
+}

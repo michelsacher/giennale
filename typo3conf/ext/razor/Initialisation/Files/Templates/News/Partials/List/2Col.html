@@ -1,0 +1,55 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+    xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+    xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+<v:variable.set name="row" value='<v:math.modulo a="{iterator.cycle}" fail="0" b="2" />' />
+<v:variable.set name="col" value='<razor:cols cols="{tsSetup.razor.bootstrap.cols}" divider="2" />' />
+
+<n:excludeDisplayedNews newsItem="{newsItem}"/>
+
+<f:if condition="{newsItem.sysLanguageUid} == {tsSetup.config.sys_language_uid}">
+  <v:if stack="{0: iterator.isFirst, 1: 'OR', 2: row, 3: '==', 4: 1}">
+    <div class="row razor--news-list">
+  </v:if>
+
+    <article class="col-md-{col}">
+      <h3>
+        <n:link newsItem="{newsItem}" settings="{settings}">
+          {newsItem.title}
+        </n:link>
+      </h3>
+
+      <f:if condition="{newsItem.falMedia}">
+        <f:if condition="{newsItem.falMediaPreviews}">
+          <n:link newsItem="{newsItem}" settings="{settings}">
+            <f:alias map="{mediaElement: newsItem.falMediaPreviews.0}">
+              <f:image image="{mediaElement}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" class="img-responsive" />
+            </f:alias>
+          </n:link>
+        </f:if>
+      </f:if>
+
+      <div class="razor--news-teaser">
+        <f:if condition="{newsItem.teaser}">
+          <f:then>
+            {newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+          </f:then>
+          <f:else>
+            {newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+          </f:else>
+        </f:if>
+      </div>
+
+      <n:link newsItem="{newsItem}" settings="{settings}" class="btn btn-primary">
+        <f:translate key="more-link"/> <i class="fa fa-angle-right razor--fa-right"></i>
+      </n:link>
+    </article>
+
+  <v:if stack="{0: iterator.isLast, 1: 'OR', 2: row, 3: '==', 4: 0}">
+    </div>
+  </v:if>
+</f:if>
+</html>

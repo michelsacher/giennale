@@ -1,0 +1,24 @@
+plugin.tx_fancyboxcontent {
+  view {
+    # cat=plugin.tx_fancyboxcontent/file; type=string; label=Path to template root (FE)
+    templateRootPath = EXT:fancyboxcontent/Resources/Private/Templates/
+    # cat=plugin.tx_fancyboxcontent/file; type=string; label=Path to template partials (FE)
+    partialRootPath = EXT:fancyboxcontent/Resources/Private/Partials/
+    # cat=plugin.tx_fancyboxcontent/file; type=string; label=Path to template layouts (FE)
+    layoutRootPath = EXT:fancyboxcontent/Resources/Private/Layouts/
+  }
+  persistence {
+    # cat=plugin.tx_fancyboxcontent//a; type=string; label=Default storage PID
+    storagePid =
+  }
+  settings {
+    # cat=plugin.tx_fancyboxcontent/file; type=boolean; label=LLL:EXT:fancyboxcontent/Resources/Private/Language/locallang.xlf:addJquery
+    addJquery = 1
+
+    # cat=plugin.tx_fancyboxcontent/file; type=boolean; label=LLL:EXT:fancyboxcontent/Resources/Private/Language/locallang.xlf:addJsToFooter
+    addToFooter = 1
+
+    # cat=plugin.tx_fancyboxcontent/file; type=boolean; label=LLL:EXT:fancyboxcontent/Resources/Private/Language/locallang.xlf:addFancybox
+    addFancybox = 1
+  }
+}

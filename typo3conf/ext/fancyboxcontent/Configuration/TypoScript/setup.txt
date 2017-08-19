@@ -1,0 +1,36 @@
+plugin.tx_fancyboxcontent {
+  view {
+    templateRootPaths {
+      0 = {$plugin.tx_fancyboxcontent.view.templateRootPath}
+    }
+    partialRootPaths {
+      0 = {$plugin.tx_fancyboxcontent.view.partialRootPath}
+    }
+    layoutRootPaths {
+      0 = {$plugin.tx_fancyboxcontent.view.layoutRootPath}
+    }
+  }
+  persistence {
+    storagePid = {$plugin.tx_fancyboxcontent.persistence.storagePid}
+  }
+  features {
+    # uncomment the following line to enable the new Property Mapper.
+    # rewrittenPropertyMapper = 1
+  }
+  settings {
+    addJquery = {$plugin.tx_fancyboxcontent.settings.addJquery}
+    addToFooter = {$plugin.tx_fancyboxcontent.settings.addToFooter}
+    addFancybox = {$plugin.tx_fancyboxcontent.settings.addFancybox}
+  }
+}
+
+[globalVar = LIT:1 = {$plugin.tx_fancyboxcontent.settings.addFancybox}]
+
+plugin.tx_vhs.settings.asset {
+  fancyboxcontent {
+    name = fancyboxcontent
+    path = EXT:fancyboxcontent/Resources/Public/Js/fancybox3/dist/jquery.fancybox.min.css
+  }
+}
+
+[global]

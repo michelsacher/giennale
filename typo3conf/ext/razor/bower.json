@@ -1,0 +1,20 @@
+{
+  "name": "razor",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "https://github.com/necolas/normalize.css.git",
+    "bootstrap": "~3.3.7",
+    "hover": "~2.0.2",
+    "fontawesome": "latest",
+    "cookieconsent": "latest",
+    "fancyBox": "https://github.com/fancyapps/fancyBox.git#3.0",
+    "html5shiv": "~3.7.3",
+    "Hyphenator": "~5.1.0",
+    "respond": "~1.4.2",
+    "retinajs": "~2.1.0",
+    "wow": "latest",
+    "animate.css": "latest"
+  },
+  "devDependencies": {},
+  "overrides": {}
+}

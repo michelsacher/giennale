@@ -1,0 +1,87 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <f:if condition="{tsSetup.razor.site.showProjectNameInMenu}">
+        <f:link.page pageUid="1">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+          <svg version="1.1" id="nav-claim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="113.543px" height="12.686px" viewBox="0 0 113.543 12.686" enable-background="new 0 0 113.543 12.686"
+             xml:space="preserve">
+          <path fill="#FFFFFF" d="M8.179,11.695V5.259H4.491v2.373h1.298v2.254c-0.222,0.17-0.564,0.255-0.957,0.255
+            c-1.502,0-2.134-1.741-2.134-3.773c0-2.032,0.683-3.773,2.186-3.756c0.717,0,1.263,0.291,1.673,0.854l1.485-1.998
+            C7.411,0.632,6.301,0,4.679,0C1.862,0,0,2.595,0,6.368c0,3.757,1.81,6.318,4.849,6.318C6.318,12.686,7.411,12.293,8.179,11.695
+             M19.636,0.324h-2.749v12.089h2.749V0.324z M34.661,12.413V9.971h-3.432V7.359H34.2V5.105h-2.971V2.732h3.227V0.324h-5.84v12.089
+            H34.661z M51.24,12.413V0.324h-2.357l0.052,7.461h-0.052L46.1,0.324h-3.005v12.089h2.442l-0.069-7.359h0.052l2.8,7.359H51.24z
+             M68.365,12.413V0.324h-2.357l0.052,7.461h-0.052l-2.782-7.461h-3.005v12.089h2.441l-0.068-7.359h0.051l2.8,7.359H68.365z
+             M85.558,12.413L82.639,0.324h-3.432L76.27,12.413h2.732l0.495-2.203h2.715l0.495,2.203H85.558z M81.87,8.093h-2.066l1.025-5.14
+            h0.068L81.87,8.093z M99.44,12.413V9.886h-3.227V0.324h-2.766v12.089H99.44z M113.543,12.413V9.971h-3.432V7.359h2.971V5.105h-2.971
+            V2.732h3.227V0.324h-5.839v12.089H113.543z"/>
+          </svg>
+        </f:link.page>
+      </f:if>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>      
+    </div>
+    <div class="navbar-collapse collapse">
+      <v:page.menu entryLevel="0" levels="2" as="menu" useShortcutUid="1" classHasSubpages="dropdown" classCurrent="" classActive="active">
+        <ul class="nav navbar-nav">
+          <f:for each="{menu}" as="item" iteration="i">
+            <f:if condition="{item.nav_title}">
+              <f:then>
+                <v:variable.set name="title" value="{item.nav_title}" />
+              </f:then>
+              <f:else>
+                <v:variable.set name="title" value="{item.title}" />
+              </f:else>
+            </f:if>
+
+            <li>
+              <a href="{f:if(condition: item.tx_razor_menulink, then: 'javascript:void(0);', else: '{item.link}')}" class="{item.class}{f:if(condition: item.hasSubPages, then: ' dropdown-toggle')}" data-toggle="{f:if(condition: item.hasSubPages, then: 'dropdown')}" target="{item.target}">
+                {title} {f:if(condition: item.hasSubPages, then: '<i class="fa fa-angle-down"></i>')}
+              </a>
+
+              <v:page.menu pageUid="{item.uid}" expandAll="1" as="sub" useShortcutUid="1" classHasSubpages="" classCurrent="" classActive="active">
+                <ul class="dropdown-menu">
+                  <f:for each="{sub}" as="itemsub">
+                    <f:if condition="{itemsub.nav_title}">
+                      <f:then>
+                        <v:variable.set name="itemsubTitle" value="{itemsub.nav_title}" />
+                      </f:then>
+                      <f:else>
+                        <v:variable.set name="itemsubTitle" value="{itemsub.title}" />
+                      </f:else>
+                    </f:if>
+
+                    <li>
+                      <a href="{f:if(condition: itemsub.tx_razor_menulink, then: 'javascript:void(0);', else: '{itemsub.link}')}" target="{itemsub.target}" class="{itemsub.class}">
+                        {itemsubTitle}
+                      </a>
+                    </li>
+                  </f:for>
+                </ul>
+              </v:page.menu>
+            </li>
+          </f:for>
+        </ul>
+      </v:page.menu>
+
+      <f:if condition="{tsSetup.razor.search.activate}">
+        <f:render partial="Searchbox" />
+      </f:if>
+    </div>
+  </div>
+</div>
+</html>

@@ -1,0 +1,50 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+{namespace razor=RZ\Razor\ViewHelpers}
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+<v:variable.set name="cols" value="{tsSetup.razor.bootstrap.cols}" />
+
+<f:if condition="{field.css} == 'zip'">
+  <v:variable.set name="col" value='col-lg-<razor:cols cols="{cols}" divider="3" /> ' />
+
+  <div class="row">
+</f:if>
+
+<f:if condition="{field.css} == 'city'">
+  <v:variable.set name="col" value='col-lg-<razor:cols cols="{cols}" divider="1.5" /> ' />
+</f:if>
+
+<div class="{col}powermail_fieldwrap powermail_fieldwrap_type_input powermail_fieldwrap_{field.marker} {field.css} {settings.styles.framework.fieldAndLabelWrappingClasses}">
+  <label for="powermail_field_{field.marker}" class="{settings.styles.framework.labelClasses}" title="{field.description}">
+    <vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss><f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+  </label>
+
+  <f:if condition="{field.txRazorPowermailReadonly}">
+    <f:then>
+      <f:form.textfield
+          type="{vh:Validation.FieldTypeFromValidation(field:field)}"
+          property="{field.marker}"
+          placeholder="{field.placeholder}"
+          readonly="readonly"
+          value="{vh:Misc.PrefillField(field:field, mail:mail)}"
+          class="powermail_input {settings.styles.framework.fieldClasses} {vh:Validation.ErrorClass(field:field, class:'powermail_field_error')}"
+          additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field)}"
+          id="powermail_field_{field.marker}" />
+    </f:then>
+    <f:else>
+      <f:form.textfield
+          type="{vh:Validation.FieldTypeFromValidation(field:field)}"
+          property="{field.marker}"
+          placeholder="{field.placeholder}"
+          value="{vh:Misc.PrefillField(field:field, mail:mail)}"
+          class="powermail_input {settings.styles.framework.fieldClasses} {vh:Validation.ErrorClass(field:field, class:'powermail_field_error')}"
+          additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field)}"
+          id="powermail_field_{field.marker}" />
+    </f:else>
+  </f:if>
+</div>
+
+<f:if condition="{field.css} == 'city'">
+  </div>
+</f:if>

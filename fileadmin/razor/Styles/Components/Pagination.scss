@@ -1,0 +1,49 @@
+/* --------------------------------------------------------
+Component: Pagination
+
+version: 1.0
+last modified: 23.05.2017 by Michel Sacher
+author: Michel Sacher
+email: michelsacher@googlemail.com
+website: www.michelsacher.de
+----------------------------------------------------------*/
+
+.pagination {
+  >li {
+    >a, >span {
+      color: $color-ci-1;
+      border-color: $grey;
+
+      &:focus, &:hover {
+        color: $white;
+        background: $color-ci-1;
+        border-color: $color-ci-1;
+      }
+    }
+  }
+
+  >.active {
+    >a {
+      &, &:focus, &:hover {
+        background-color: $color-ci-1;
+        border-color: $color-ci-1;
+      }
+    }
+
+    >span {
+      &, &:focus, &:hover {
+        background-color: $color-ci-1;
+        border-color: $color-ci-1;
+      }
+    }
+  }
+
+  >.disabled {
+    >a, >span {
+      &, &:focus, &:hover {
+        color: $grey;
+        border-color: $grey;
+      }
+    }
+  }
+}

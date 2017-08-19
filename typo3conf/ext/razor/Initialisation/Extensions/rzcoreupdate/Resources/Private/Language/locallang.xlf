@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="rzcoreupdate">
+    <header/>
+    <body>
+      <trans-unit id="mlang_tabs_tab">
+        <source>TYPO3 Updater</source>
+      </trans-unit>
+      <trans-unit id="switch">
+        <source>Switch</source>
+      </trans-unit>
+      <trans-unit id="get">
+        <source>Get</source>
+      </trans-unit>
+      <trans-unit id="delete">
+        <source>Delete</source>
+      </trans-unit>
+      <trans-unit id="versionInstalled">
+        <source>Version installed</source>
+      </trans-unit>
+      <trans-unit id="versionAvailable">
+        <source>Version available</source>
+      </trans-unit>
+      <trans-unit id="pathTo">
+        <source>Path to the TYPO3 sources directories</source>
+      </trans-unit>
+      <trans-unit id="infoInstallation">
+        <source>Information about this installation</source>
+      </trans-unit>
+      <trans-unit id="versionsInstallation">
+        <source>Versions available for Installation</source>
+      </trans-unit>
+      <trans-unit id="versionsDownload">
+        <source>Versions available for Download</source>
+      </trans-unit>
+      <trans-unit id="downloaded">
+        <source>Downloaded</source>
+      </trans-unit>
+      <trans-unit id="alreadyExists">
+        <source>Already exists</source>
+      </trans-unit>
+      <trans-unit id="problemSwitchingSource">
+        <source>Problem switching source</source>
+      </trans-unit>
+      <trans-unit id="problemDeletingSource">
+        <source>Problem deleting source</source>
+      </trans-unit>
+      <trans-unit id="doesNotExist">
+        <source>does not exist</source>
+      </trans-unit>
+      <trans-unit id="zipArchive">
+        <source>Missing class ZipArchive. Please install the corresponding PHP Extension.</source>
+      </trans-unit>
+      <trans-unit id="versionInstalled">
+        <source>Version installed</source>
+      </trans-unit>
+      <trans-unit id="latestPatch">
+        <source>Latest Patch</source>
+      </trans-unit>     
+      <trans-unit id="latestStable">
+        <source>Latest Stable</source>
+      </trans-unit>
+      <trans-unit id="ltsStable">
+        <source>LTS Stable</source>
+      </trans-unit>
+      <trans-unit id="oldStable">
+        <source>Old Stable</source>
+      </trans-unit>
+      <trans-unit id="deprecatedStable">
+        <source>Deprecated Stable</source>
+      </trans-unit>
+      <trans-unit id="securityUpdate">
+        <source>Security update available</source>
+      </trans-unit>
+      <trans-unit id="securityUpdate">
+        <source>Maintaince update available</source>
+      </trans-unit>
+      <trans-unit id="updateNotes">
+        <source>Please take a look into the update notes.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,68 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+{namespace razor=RZ\Razor\ViewHelpers}
+
+<f:layout name="Default" />
+
+Render Powermail Form
+{form}      All Forms with their Pages and their Fields
+{ttContentData}   All values from content element with plugin
+
+
+<f:section name="main">
+  <f:flashMessages class="powermail_message powermail_message_error" />
+
+  <v:variable.set name="tsSetup" value='<razor:ts />' />
+  <v:variable.set name="cols" value="{tsSetup.razor.bootstrap.cols}" />
+
+  <f:if condition="{form}">
+    <f:then>
+      <f:form
+          action="{action}"
+          name="field"
+          noCacheHash="1"
+          argumentsToBeExcludedFromQueryString="{0: 'cHash'}"
+          enctype="multipart/form-data"
+          additionalAttributes="{vh:Validation.EnableParsleyAndAjax(form:form)}"
+          addQueryString="{settings.misc.addQueryString}"
+          class="powermail_form powermail_form_{form.uid} {form.css} {settings.styles.framework.formClasses} {vh:Misc.MorestepClass(activate:settings.main.moresteps)}">
+
+        <f:render partial="Misc/FormError" arguments="{_all}" />
+
+        <v:variable.set name="pagesCount" value='<f:count subject="{form.pages}" />' />
+
+        <f:if condition="{pagesCount} < 2">
+          <f:then>
+            <v:variable.set name="colSize" value="{cols}" />
+          </f:then>
+          <f:else>
+            <v:variable.set name="colSize" value='<razor:cols cols="{cols}" divider="2" />' />
+          </f:else>
+        </f:if>
+
+        <f:for each="{form.pages}" as="page" iteration="i">
+          <v:variable.set name="row" value='<v:math.modulo a="{i.cycle}" fail="0" b="2" />' />
+
+          <v:if stack="{0: i.isFirst, 1: 'OR', 2: row, 3: '==', 4: 1}">
+            <div class="row">
+          </v:if>
+
+          <div class="col-md-{colSize}">
+            <f:render partial="Form/Page" arguments="{_all}" />
+          </div>
+
+          <v:if stack="{0: i.isLast, 1: 'OR', 2: row, 3: '==', 4: 0}">
+            </div>
+          </v:if>
+        </f:for>
+
+        <f:form.hidden name="mail[form]" value="{form.uid}" class="powermail_form_uid" />
+        <f:render partial="Misc/HoneyPod" arguments="{form:form}" />
+      </f:form>
+    </f:then>
+    <f:else>
+      <f:translate key="error_no_form" />
+    </f:else>
+  </f:if>
+
+</f:section>

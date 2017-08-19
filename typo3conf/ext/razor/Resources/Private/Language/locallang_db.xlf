@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="razor">
+    <header />
+    <body>
+      <!-- Content element -->
+      <trans-unit id="tx_razor_visibility">
+        <source>Visibility</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_wow">
+        <source>Effect</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_classes">
+        <source>CSS classes</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_tablestyles">
+        <source>Table style</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_gridbackground">
+        <source>Background</source>
+      </trans-unit>
+      <trans-unit id="options">
+        <source>Options</source>
+      </trans-unit>
+      <trans-unit id="hiddenXS">
+        <source><![CDATA[Not visible on extra small (<768px)]]></source>
+      </trans-unit>
+      <trans-unit id="hiddenS">
+        <source><![CDATA[Not visible on small (≥768px)]]></source>
+      </trans-unit>
+      <trans-unit id="hiddenN">
+        <source><![CDATA[Not visible on medium (≥992px)]]></source>
+      </trans-unit>
+      <trans-unit id="hiddenL">
+        <source><![CDATA[Not visible on large (≥1200px)]]></source>
+      </trans-unit>
+      <trans-unit id="visibleXS">
+        <source><![CDATA[Only visible on extra small (<768px)]]></source>
+      </trans-unit>
+      <trans-unit id="visibleS">
+        <source><![CDATA[Only visible on small (≥768px)]]></source>
+      </trans-unit>
+      <trans-unit id="visibleN">
+        <source><![CDATA[Only visible on medium (≥992px)]]></source>
+      </trans-unit>
+      <trans-unit id="visibleL">
+        <source><![CDATA[Only visible on large (≥1200px)]]></source>
+      </trans-unit>
+      <trans-unit id="header_style">
+        <source>Style</source>
+      </trans-unit>
+      <trans-unit id="header_position">
+        <source>Alignment</source>
+      </trans-unit>
+      <trans-unit id="header_position.left">
+        <source>Left</source>
+      </trans-unit>
+      <trans-unit id="header_position.right">
+        <source>Right</source>
+      </trans-unit>
+      <trans-unit id="header_position.center">
+        <source>Center</source>
+      </trans-unit>
+      <trans-unit id="header_position.default">
+        <source>Default</source>
+      </trans-unit>
+      <!-- Pages -->
+      <trans-unit id="tx_razor_menulink">
+        <source>In Menus</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_menulink.doNotLink">
+        <source>Do not link</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_ogimage">
+        <source>facebook image (og:image)</source>
+      </trans-unit>
+      <trans-unit id="target.1">
+        <source>Same window</source>
+      </trans-unit>
+      <trans-unit id="target.2">
+        <source>New window</source>
+      </trans-unit>
+      <!-- Color -->
+      <trans-unit id="tx_razor_domain_model_color">
+        <source>Color</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_color.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_color.value">
+        <source>Value</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_color.color">
+        <source>Color</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_color.css">
+        <source>Additional CSS</source>
+      </trans-unit>
+      <!-- Padding -->
+      <trans-unit id="tx_razor_domain_model_padding">
+        <source>Padding</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_padding.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_padding.top">
+        <source>Top (rem)</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_padding.bottom">
+        <source>Bottom (rem)</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_padding.size">
+        <source>Size</source>
+      </trans-unit>
+      <!-- Icon -->
+      <trans-unit id="tx_razor_domain_model_icon">
+        <source>Icon</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_icon.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_icon.value">
+        <source>Value</source>
+      </trans-unit>
+      <!-- Size -->
+      <trans-unit id="tx_razor_domain_model_size">
+        <source>Size</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_size.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_size.value">
+        <source>Value</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_size.active">
+        <source>Activate for</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_size.button">
+        <source>Button</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_size.infobox">
+        <source>Infobox</source>
+      </trans-unit>
+      <!-- State -->
+      <trans-unit id="tx_razor_domain_model_state">
+        <source>State</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_state.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_state.value">
+        <source>Value</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_state.active">
+        <source>Activate for</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_state.button">
+        <source>Button</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_state.alert">
+        <source>Alert</source>
+      </trans-unit>
+      <!-- Tablestyles -->
+      <trans-unit id="tx_razor_domain_model_tablestyles">
+        <source>Table styles</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_tablestyles.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_tablestyles.value">
+        <source>Value</source>
+      </trans-unit>
+      <!-- Headerstyles -->
+      <trans-unit id="tx_razor_domain_model_headerstyles">
+        <source>Header styles</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_headerstyles.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_headerstyles.value">
+        <source>Value</source>
+      </trans-unit>
+      <!-- Effects -->
+      <trans-unit id="tx_razor_domain_model_effects">
+        <source>Effect</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_effects.title">
+        <source>Title</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_effects.value">
+        <source>Value</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_effects.duration">
+        <source>Duration</source>
+      </trans-unit>
+      <trans-unit id="tx_razor_domain_model_effects.delay">
+        <source>Delay</source>
+      </trans-unit>
+      <!-- Powermail -->
+      <trans-unit id="additionalOptions">
+        <source>Additional options</source>
+      </trans-unit>
+      <trans-unit id="readonly">
+        <source>Readonly</source>
+      </trans-unit>
+      <trans-unit id="maxlength">
+        <source>Maxlength</source>
+      </trans-unit>
+      <!-- Various -->
+      <trans-unit id="zip">
+        <source>Zip</source>
+      </trans-unit>
+      <trans-unit id="city">
+        <source>City</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

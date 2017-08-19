@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <meta type="array">
+    <langDisable>1</langDisable>
+    <langDatabaseOverlay>1</langDatabaseOverlay>
+  </meta>
+  <sheets>
+    <general>
+      <ROOT type="array">
+        <TCEforms>
+          <sheetTitle>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:general</sheetTitle>
+        </TCEforms>
+        <el type="array">
+          <size>
+            <TCEforms>
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:padding</label>
+              <config>
+                <type>select</type>
+                <renderType>selectSingle</renderType>
+                <foreign_table>tx_razor_domain_model_size</foreign_table>
+                <foreign_table_where>AND FIND_IN_SET (1, tx_razor_domain_model_size.active) AND tx_razor_domain_model_size.hidden=0 AND tx_razor_domain_model_size.deleted=0 AND tx_razor_domain_model_size.pid=###PAGE_TSCONFIG_ID### ORDER BY tx_razor_domain_model_size.sorting</foreign_table_where>
+                <size>1</size>
+                <minitems>0</minitems>
+                <maxitems>1</maxitems>
+              </config>
+            </TCEforms>
+          </size>
+          <color>
+            <TCEforms>
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:color</label>
+              <config>
+                <type>select</type>
+                <renderType>selectSingle</renderType>
+                <foreign_table>tx_razor_domain_model_color</foreign_table>
+                <foreign_table_where>AND tx_razor_domain_model_color.hidden=0 AND tx_razor_domain_model_color.deleted=0 AND tx_razor_domain_model_color.pid=###PAGE_TSCONFIG_ID### ORDER BY tx_razor_domain_model_color.sorting</foreign_table_where>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0" />
+                    <numIndex index="1" />
+                  </numIndex>
+                </items>
+                <size>1</size>
+                <minitems>0</minitems>
+                <maxitems>1</maxitems>
+              </config>
+            </TCEforms>
+          </color>
+        </el>
+      </ROOT>
+    </general>
+  </sheets>
+</T3DataStructure>

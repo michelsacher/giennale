@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="generaltab">Allgemein</label>
+      <label index="availableVariables">Verfügbare Variablen</label>
+      <label index="useForViewhelper">ViewHelper f:for verwenden</label>
+      <label index="availableBaseVariables">Verfügbare Basis-Variablen</label>
+      <label index="famousViewHelper">Meist verwendete ViewHelper</label>
+      <label index="dceViewHelper">DCE-ViewHelper</label>
+      <label index="dceObject">DCE-Objekt</label>
+      <label index="dceObjectNode">{dce}</label>
+      <label index="dcesObject"/>
+      <label index="dcesObjectNode">{dce}</label>
+      <label index="contentObject">Inhaltselement (DCE-Instanz)</label>
+      <label index="contentObjectNode">{contentObject}</label>
+      <label index="tsfeObject">TSFE-Objekt (tslib_fe)</label>
+      <label index="tsfeObjectNode">{TSFE}</label>
+      <label index="pageObject">Eigenschaften der aktuellen Seite</label>
+      <label index="pageObjectNode">{page}</label>
+      <label index="tsSetupObject">TypoScript-Setup der aktuellen Seite</label>
+      <label index="tsSetupObjectNode">{tsSetup}</label>
+      <label index="dcePopupButtonTitle"/>
+      <label index="contentElementCreatedByFrontendHeader">*Erstellt oder geändert durch das Frontend*</label>
+      <label index="contentElementCreatedByFrontendBodytext">&lt;!-- Bitte ändern! --&gt;Wenn ein Inhaltselement, das auf DCE basiert, im Kontext des Frontend erstellt wurde, ist es nicht möglich diese Vorschautexte auszugeben, da im Frontend die Extbase Ressourcen nicht immer vorhanden sind. &lt;em&gt;(eID: %s)&lt;/em&gt;</label>
+      <label index="noTitle"/>
+      <label index="section"/>
+      <label index="dceTitle"/>
+      <label index="empty"/>
+      <label index="containerflag"/>
+      <label index="entry"/>
+      <label index="entries"/>
+      <label index="editDceOfThisContentElement"/>
+      <label index="chooseOption"/>
+      <label index="noMapping"/>
+      <label index="mapToIndexColumn"/>
+      <label index="newcol"/>
+      <label index="chooseExistingField"/>
+    </languageKey>
+  </data>
+</T3locallangExt>

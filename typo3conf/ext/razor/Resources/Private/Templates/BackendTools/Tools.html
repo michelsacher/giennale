@@ -1,0 +1,76 @@
+<f:layout name="Tools" />
+
+<f:section name="docHeaderRow1"></f:section>
+<f:section name="docHeaderRow2"></f:section>
+
+<f:section name="Tools">
+
+  <h1><f:translate key="headline" /></h1>
+
+  <f:flashMessages />
+
+  <f:form action="create" method="post">
+    <div class="form-group">
+      <label>
+        <f:translate key="extensionName" />
+      </label>
+      <f:form.textfield name="extension" type="text" value="{extension}" placeholder="{f:translate(key: 'extensionNameLower')}" required="1" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label>
+        <f:translate key="vendor" />
+      </label>
+      <f:form.textfield name="vendor" type="text" value="{vendor}" placeholder="{f:translate(key: 'vendorUpper')}" required="1" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label>
+        <f:translate key="author" />
+      </label>
+      <f:form.textfield name="author" type="text" value="{author}" placeholder="{f:translate(key: 'author')}" required="1" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label>
+        <f:translate key="email" />
+      </label>
+      <f:form.textfield name="email" type="email" value="{email}" placeholder="{f:translate(key: 'email')}" required="1" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label>
+        <f:translate key="version" />
+      </label>
+      <f:form.textfield name="version" type="text" value="{version}" placeholder="0.0.1" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label>
+        <f:translate key="state" />
+      </label>
+      <f:form.select name="state" options="{states}" value="{state}" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label>
+        <f:translate key="desc" />
+      </label>
+      <f:form.textarea name="desc" value="{desc}" placeholder="{f:translate(key: 'descLong')}" class="form-control" rows="5" />
+    </div>
+
+    <div class="checkbox">
+      <label>
+        <f:form.checkbox name="viewhelper" value="1" checked="{viewhelper}" /> <f:translate key="viewhelper" />
+      </label>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-default">
+        <img src="/typo3/sysext/core/Resources/Public/Icons/T3Icons/actions/actions-document-new.svg" width="16" height="16" alt="">
+        <f:translate key="create" />
+      </button>
+    </div>
+  </f:form>
+
+</f:section>

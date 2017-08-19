@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="razor">
+    <header />
+    <body>
+      <!-- Categories -->
+      <trans-unit id="catLocal">
+        <target>Lokal</target>
+      </trans-unit>
+      <trans-unit id="catStaging">
+        <target>Staging</target>
+      </trans-unit>
+      <trans-unit id="catLive">
+        <target>Live</target>
+      </trans-unit>
+      <trans-unit id="catFeature">
+        <target>Feature</target>
+      </trans-unit>
+      <trans-unit id="catOptions">
+        <target>Optionen</target>
+      </trans-unit>
+      <!-- Default values -->
+      <trans-unit id="buttons">
+        <target>Buttons</target>
+      </trans-unit>
+      <trans-unit id="spacer">
+        <target>Trenner</target>
+      </trans-unit>
+      <trans-unit id="imageDefValue">
+        <target>Bilder</target>
+      </trans-unit>
+      <trans-unit id="gallery">
+        <target>Galerie</target>
+      </trans-unit>
+      <trans-unit id="downloads">
+        <target>Downloads</target>
+      </trans-unit>
+      <trans-unit id="icon">
+        <target>Icon</target>
+      </trans-unit>
+      <trans-unit id="header">
+        <target>Überschrift</target>
+      </trans-unit>
+      <trans-unit id="video">
+        <target>Video</target>
+      </trans-unit>
+      <trans-unit id="alert">
+        <target>Alert</target>
+      </trans-unit>
+      <trans-unit id="contactButton">
+        <target>Kontaktbutton</target>
+      </trans-unit>
+      <trans-unit id="teaserbox">
+        <target>Teaserbox</target>
+      </trans-unit>
+      <trans-unit id="blockquote">
+        <target>Zitat</target>
+      </trans-unit>
+      <!-- Sections -->
+      <trans-unit id="domain">
+        <target>Domain</target>
+      </trans-unit>
+      <trans-unit id="protocol">
+        <target>Protokoll</target>
+      </trans-unit>
+      <trans-unit id="site">
+        <target>Seite</target>
+      </trans-unit>
+      <trans-unit id="colors">
+        <target>Farben</target>
+      </trans-unit>
+      <trans-unit id="bootstrap">
+        <target>Bootstrap</target>
+      </trans-unit>
+      <trans-unit id="fontAwesome">
+        <target>Font Awesome</target>
+      </trans-unit>
+      <trans-unit id="seo">
+        <target>SEO</target>
+      </trans-unit>
+      <trans-unit id="spam">
+        <target>Spam</target>
+      </trans-unit>
+      <trans-unit id="search">
+        <target>Suche</target>
+      </trans-unit>
+      <trans-unit id="image">
+        <target>Bild Optionen</target>
+      </trans-unit>
+      <trans-unit id="powermail">
+        <target>Powermail</target>
+      </trans-unit>
+      <trans-unit id="misc">
+        <target>Sonstiges</target>
+      </trans-unit>
+      <trans-unit id="fancybox">
+        <target>fancyBox</target>
+      </trans-unit>
+      <trans-unit id="cookieConsent">
+        <target>Cookie Consent</target>
+      </trans-unit>
+      <trans-unit id="news">
+        <target>News</target>
+      </trans-unit>
+      <trans-unit id="rss">
+        <target>RSS Feed</target>
+      </trans-unit>
+      <!-- Common -->
+      <trans-unit id="basedomainLocal">
+        <target>Lokal Basedomain</target>
+      </trans-unit>
+      <trans-unit id="basedomainLocalAdditional">
+        <target>Zusätzliche Lokale Basedomains: Kommasepariert, mit Protokoll</target>
+      </trans-unit>
+      <trans-unit id="basedomainStaging">
+        <target>Staging Basedomain</target>
+      </trans-unit>
+      <trans-unit id="basedomainLive">
+        <target>Live Basedomain</target>
+      </trans-unit>
+      <trans-unit id="basedomainLiveAdditional">
+        <target>Zusätzliche Live Basedomains: Kommasepariert, mit Protokoll</target>
+      </trans-unit>
+      <trans-unit id="basedomainFeature">
+        <target>Feature Basedomain</target>
+      </trans-unit>
+      <trans-unit id="username">
+        <target>Benutzername</target>
+      </trans-unit>
+      <trans-unit id="password">
+        <target>Passwort</target>
+      </trans-unit>
+      <trans-unit id="host">
+        <target>Host</target>
+      </trans-unit>
+      <trans-unit id="database">
+        <target>Datenbank</target>
+      </trans-unit>
+      <trans-unit id="colorspace">
+        <target>Colorspace: ImageMagick Colorspace</target>
+      </trans-unit>
+      <trans-unit id="https">
+        <target>SSL Verschlüsselung für Backend</target>
+      </trans-unit>
+      <!-- Protocol -->
+      <trans-unit id="protocolLocal">
+        <target>Lokal Protokoll</target>
+      </trans-unit>
+      <trans-unit id="protocolStaging">
+        <target>Staging Protokoll</target>
+      </trans-unit>
+      <trans-unit id="protocolLive">
+        <target>Live Protokoll</target>
+      </trans-unit>
+      <trans-unit id="protocolFeature">
+        <target>Feature Protokoll</target>
+      </trans-unit>
+      <!-- Site -->
+      <trans-unit id="projectName">
+        <target>Projektname: Der Projektname, der an den Seitentitel angehängt wird</target>
+      </trans-unit>
+      <trans-unit id="showProjectNameInMenu">
+        <target>Projektname anzeigen: Der Projektname wird im Hauptmenü angezeigt</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb">
+        <target>Breadcrumb: Breadcrumb Menü hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="breadcrumbOnHomepage">
+        <target>Breadcrumb: Breadcrumb Menü auf der Startseite hinzufügen</target>
+      </trans-unit>
+      <!-- Colors -->
+      <trans-unit id="tile">
+        <target>Tile Farbe für Favicons</target>
+      </trans-unit>
+      <trans-unit id="theme">
+        <target>Theme Farbe für Favicons</target>
+      </trans-unit>
+      <!-- Bootstrap -->
+      <trans-unit id="cols">
+        <target>Spalten</target>
+      </trans-unit>
+      <trans-unit id="defaultSizes">
+        <target>Standardgrößen für Container</target>
+      </trans-unit>
+      <trans-unit id="defaultOffsets">
+        <target>Standard-Offsets für Container</target>
+      </trans-unit>
+      <trans-unit id="defaultViewports">
+        <target>Standard-Viewports für Container</target>
+      </trans-unit>
+      <trans-unit id="defaultFluid">
+        <target>Fluid als Standard für Container</target>
+      </trans-unit>
+      <trans-unit id="cssPath">
+        <target>Pfad zur Bootstrap CSS Datei</target>
+      </trans-unit>
+      <trans-unit id="jsPath">
+        <target>Pfad zur Bootstrap JavaScript Datei</target>
+      </trans-unit>
+      <!-- Font Awesome -->
+      <trans-unit id="activate">
+        <target>Font Awesome Font aktivieren</target>
+      </trans-unit>
+      <!-- Search -->
+      <trans-unit id="searchPid">
+        <target>Suchergebnisse PID: Die PID für die Suchergebnisse</target>
+      </trans-unit>
+      <trans-unit id="searchResults">
+        <target>Suchergebnisse</target>
+      </trans-unit>
+      <trans-unit id="searchActivate">
+        <target>Suche: Aktiviert indexed_search und bindet ein Suchformular ein</target>
+      </trans-unit>
+      <!-- SEO -->
+      <trans-unit id="gaCodeLive">
+        <target>Google Analytics UA: Google Analytics UA ID (Live)</target>
+      </trans-unit>
+      <trans-unit id="googlePlus">
+        <target>Google+ Profil ID</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <target>Meta Description: Standard Meta Description für Seiten</target>
+      </trans-unit>
+      <trans-unit id="piwik">
+        <target>Piwik: Aktiviere Piwik für den Live Server</target>
+      </trans-unit>
+      <trans-unit id="piwikUrl">
+        <target>Piwik Server URL: Format: analytics.server.com</target>
+      </trans-unit>
+      <trans-unit id="piwikSite">
+        <target>Piwik Seiten URL: Format: *.www.my-website.com</target>
+      </trans-unit>
+      <trans-unit id="piwikSiteId">
+        <target>Piwik Seiten ID</target>
+      </trans-unit>
+      <!-- Image -->
+      <trans-unit id="galleryEffect">
+        <target>Galerieeffekt: Effekt für das Galerie Content Element</target>
+      </trans-unit>
+      <trans-unit id="fade">
+        <target>Fade</target>
+      </trans-unit>
+      <trans-unit id="zoom">
+        <target>Zoom</target>
+      </trans-unit>
+      <trans-unit id="none">
+        <target>Keiner</target>
+      </trans-unit>
+      <trans-unit id="bw">
+        <target>Schwarz/Weiß</target>
+      </trans-unit>
+      <trans-unit id="srcSet">
+        <target>Bild srcset</target>
+      </trans-unit>
+      <trans-unit id="wow">
+        <target>WOW.js: WOW.js Effekte aktivieren</target>
+      </trans-unit>
+      <trans-unit id="animate">
+        <target>Animate.css: Animate.css Effekte aktivieren</target>
+      </trans-unit>
+      <trans-unit id="tinyPngApiKey">
+        <target>TinyPNG API Key</target>
+      </trans-unit>
+      <!-- Powermail -->
+      <trans-unit id="powermailEmail">
+        <target>Statische powermail E-Mail Adresse</target>
+      </trans-unit>
+      <trans-unit id="siteKey">
+        <target>Captcha: reCAPTCHA Websiteschlüssel</target>
+      </trans-unit>
+      <trans-unit id="secretKey">
+        <target>Captcha: reCAPTCHA Geheimer Schlüssel</target>
+      </trans-unit>
+      <!-- Misc -->
+      <trans-unit id="responsiveTables">
+        <target>Responsive Tabellen: Aktiviere responsive Tabellen</target>
+      </trans-unit>
+      <trans-unit id="hyphenator">
+        <target>Hyphenator: Aktiviere Hyphenator.js</target>
+      </trans-unit>
+      <trans-unit id="hoverCss">
+        <target>Hover.css: Hover.css einbinden</target>
+      </trans-unit>
+      <trans-unit id="normalizeCss">
+        <target>normalize.css: normalize.css einbinden</target>
+      </trans-unit>
+      <trans-unit id="showWrap">
+        <target><![CDATA[Wrap anzeigen: <div id="c{data.uid}"> um Standard Content Elemente anzeigen]]></target>
+      </trans-unit>
+      <trans-unit id="fileIcons">
+        <target>Datei Icons: Pfad zu Datei Icons</target>
+      </trans-unit>
+      <trans-unit id="copyright">
+        <target>Copyright: Copyright Hinweis für den Quelltext</target>
+      </trans-unit>
+      <trans-unit id="retinaJs">
+        <target>Retina.js: Retina.js aktivieren</target>
+      </trans-unit>
+      <trans-unit id="languageDetection">
+        <target>Spracherkennung: Browsersprache erkennen und auf TYPO3 Sprache weiterleiten</target>
+      </trans-unit>
+      <trans-unit id="deactivateMainFilesMergeLocal">
+        <target>Main Dateien lokal nicht mergen</target>
+      </trans-unit>
+      <trans-unit id="mainCss">
+        <target>Pfad zu Main.css</target>
+      </trans-unit>
+      <trans-unit id="mainJs">
+        <target>Pfad zu Main.js</target>
+      </trans-unit>
+      <!-- Cookie -->
+      <trans-unit id="cookieActivate">
+        <target>Aktiviere Cookie Consent</target>
+      </trans-unit>
+      <trans-unit id="popupBackgroundColor">
+        <target>Popup Hintergrundfarbe</target>
+      </trans-unit>
+      <trans-unit id="popupTextColor">
+        <target>Popup Textfarbe</target>
+      </trans-unit>
+      <trans-unit id="buttonBackgroundColor">
+        <target>Button Hintergrundfarbe</target>
+      </trans-unit>
+      <trans-unit id="buttonTextColor">
+        <target>Button Textfarbe</target>
+      </trans-unit>
+      <!-- News -->
+      <trans-unit id="activateDisqus">
+        <target>Disqus Kommentare aktivieren</target>
+      </trans-unit>
+      <trans-unit id="disqusShortname">
+        <target>Disqus Kurzname</target>
+      </trans-unit>
+      <trans-unit id="lightbox">
+        <target>Lightbox aktivieren: Lightbox auf Detailseite</target>
+      </trans-unit>
+      <trans-unit id="cropMaxCharacters">
+        <target>Text abschneiden</target>
+      </trans-unit>
+      <!-- RSS -->
+      <trans-unit id="rssActivate">
+        <target>RSS Feed aktivieren</target>
+      </trans-unit>
+      <trans-unit id="rssTitle">
+        <target>Titel</target>
+      </trans-unit>
+      <trans-unit id="rssDescription">
+        <target>Beschreibung</target>
+      </trans-unit>
+      <trans-unit id="rssLink">
+        <target>Link</target>
+      </trans-unit>
+      <trans-unit id="rssLanguage">
+        <target>Sprache</target>
+      </trans-unit>
+      <trans-unit id="rssCopyright">
+        <target>Copyright</target>
+      </trans-unit>
+      <trans-unit id="rssCategory">
+        <target>Kategorie</target>
+      </trans-unit>
+      <trans-unit id="rssGenerator">
+        <target>Generator</target>
+      </trans-unit>
+      <trans-unit id="rssMaxItems">
+        <target>RSS Feed maximale Anzahl</target>
+      </trans-unit>
+      <trans-unit id="rssCategories">
+        <target>RSS Kategorien</target>
+      </trans-unit>
+      <trans-unit id="rssCategoryConjunction">
+        <target>RSS Kategorie Verbindung</target>
+      </trans-unit>
+      <trans-unit id="rssDetailPid">
+        <target>RSS Detail PID</target>
+      </trans-unit>
+      <trans-unit id="rssStartingPoint">
+        <target>RSS Startpunkt</target>
+      </trans-unit>
+      <!-- Spam -->
+      <trans-unit id="protectEmail">
+        <target>E-Mail Adresse vor Spam schützen</target>
+      </trans-unit>
+      <!-- Fancybox -->
+      <trans-unit id="selector">
+        <target>Selector: CSS selector class</target>
+      </trans-unit>
+      <trans-unit id="speed">
+        <target>Speed: Animation duration in ms</target>
+      </trans-unit>
+      <trans-unit id="loop">
+        <target>Loop: Enable infinite gallery navigation</target>
+      </trans-unit>
+      <trans-unit id="opacity">
+        <target>Opacity: Should zoom animation change opacity, too. If opacity is 'auto', then fade-out if image and thumbnail have different aspect ratios</target>
+      </trans-unit>
+      <trans-unit id="margin">
+        <target>Margin: Space around image, ignored if zoomed-in or viewport smaller than 800px</target>
+      </trans-unit>
+      <trans-unit id="gutter">
+        <target>Gutter: Horizontal space between slides</target>
+      </trans-unit>
+      <trans-unit id="infobar">
+        <target>Infobar: Should display toolbars</target>
+      </trans-unit>
+      <trans-unit id="buttons2">
+        <target>Buttons: Should display toolbars</target>
+      </trans-unit>
+      <trans-unit id="slideShow">
+        <target>Slideshow: What buttons should appear in the toolbar</target>
+      </trans-unit>
+      <trans-unit id="fullScreen">
+        <target>Fullscreen: What buttons should appear in the toolbar</target>
+      </trans-unit>
+      <trans-unit id="thumbs">
+        <target>Thumbs: What buttons should appear in the toolbar</target>
+      </trans-unit>
+      <trans-unit id="closeBtn">
+        <target>Close button: What buttons should appear in the toolbar</target>
+      </trans-unit>
+      <trans-unit id="smallBtn">
+        <target>Small button: Should apply small close button at top right corner of the content. If 'auto' - will be set for content having type 'html', 'inline' or 'ajax'</target>
+      </trans-unit>
+      <trans-unit id="baseClass">
+        <target>Base class: Custom CSS class for layout</target>
+      </trans-unit>
+      <trans-unit id="slideClass">
+        <target>Slide class: Custom CSS class for slide element</target>
+      </trans-unit>
+      <trans-unit id="touch">
+        <target>Touch: Enable gestures (tap, zoom, pan and pinch)</target>
+      </trans-unit>
+      <trans-unit id="keyboard">
+        <target>Keyboard: Enable keyboard navigation</target>
+      </trans-unit>
+      <trans-unit id="focus">
+        <target>Focus: Try to focus on first focusable element after opening</target>
+      </trans-unit>
+      <trans-unit id="closeClickOutside">
+        <target>Close click outside: Close when clicked outside of the content</target>
+      </trans-unit>
+      <!-- EM conf -->
+      <trans-unit id="localName">
+        <target>Lokal Name</target>
+      </trans-unit>
+      <trans-unit id="stagingName">
+        <target>Staging Name</target>
+      </trans-unit>
+      <trans-unit id="liveName">
+        <target>Live Name</target>
+      </trans-unit>
+      <trans-unit id="featureName">
+        <target>Feature Name</target>
+      </trans-unit>
+      <trans-unit id="showModule">
+        <target>Suchen/Ersetzen Modul: Suchen/Ersetzen Backend Modul anzeigen</target>
+      </trans-unit>
+      <trans-unit id="showToolsModule">
+        <target>Tools Modul: Tools Extension-Builder Backend Modul anzeigen</target>
+      </trans-unit>
+      <trans-unit id="default404Page">
+        <target>Standard 404 Seite:Die Uid einer Seite im TYPO3 Seitenbaum, die als 404 Seite ausgegeben werden soll. '0' deaktiviert diese Funktion. Standard: '0'.</target>
+      </trans-unit>
+      <trans-unit id="headlineRequired">
+        <target>Überschrift erforderlich: Überschrift in Content Elementen ist ein Pflichtfeld</target>
+      </trans-unit>
+      <trans-unit id="headlineMulti">
+        <target>Überschrift mehrzeilig: Mehrzeilige Überschriften</target>
+      </trans-unit>
+      <trans-unit id="hosteuropeFix">
+        <target>Hosteurope Fix: Repariert ein Hosteurope E-Mail Problem</target>
+      </trans-unit>
+      <trans-unit id="hosteuropeFixMail">
+        <target>Hosteurope Fix: Standard E-Mail Adresse</target>
+      </trans-unit>
+      <trans-unit id="1and1Fix">
+        <target>1&amp;1 Fix: Repariert ein 1&amp;1 ImageMagick Problem</target>
+      </trans-unit>
+      <trans-unit id="mittFix">
+        <target>Mittwald Fix: Repariert ein Mittwald ImageMagick Problem</target>
+      </trans-unit>
+      <trans-unit id="tinyPng">
+        <target>TinyPNG beim Hochladen von Dateien aktivieren</target>
+      </trans-unit>
+      <trans-unit id="gridBackground">
+        <target>Gridelements Hintergrund: Gridelements definieren, die ein FAL Hintergrund-Feld besitzen sollen (kommasepariert)</target>
+      </trans-unit>
+      <trans-unit id="maxAge">
+        <target>VHS Assets maximales Alter: Maximales Alter für VHS Assets, wenn Cache geleert wird</target>
+      </trans-unit>
+      <!-- TsConfig -->
+      <trans-unit id="news.listFull">
+        <target>Listenansicht (volle Breite)</target>
+      </trans-unit>
+      <trans-unit id="news.list2Cols">
+        <target>Listenansicht (2 Spalten)</target>
+      </trans-unit>
+      <trans-unit id="news.list3Cols">
+        <target>Listenansicht (3 Spalten)</target>
+      </trans-unit>
+      <trans-unit id="tabSitemap">
+        <target>Tab Sitemap</target>
+      </trans-unit>
+      <trans-unit id="reCaptcha">
+        <target>reCAPTCHA (jh_captcha)</target>
+      </trans-unit>
+      <trans-unit id="header_layout.0">
+        <target>Standard</target>
+      </trans-unit>
+      <trans-unit id="header_layout.1">
+        <target>Layout 1</target>
+      </trans-unit>
+      <trans-unit id="header_layout.2">
+        <target>Layout 2</target>
+      </trans-unit>
+      <trans-unit id="header_layout.3">
+        <target>Layout 3</target>
+      </trans-unit>
+      <trans-unit id="header_layout.4">
+        <target>Layout 4</target>
+      </trans-unit>
+      <trans-unit id="header_layout.5">
+        <target>Layout 5</target>
+      </trans-unit>
+      <trans-unit id="header_layout.6">
+        <target>Layout 6</target>
+      </trans-unit>
+      <trans-unit id="header_layout.101">
+        <target>Verborgen</target>
+      </trans-unit>
+      <!-- Conntent -->
+      <trans-unit id="textmedia">
+        <target>Text</target>
+      </trans-unit>
+      <trans-unit id="textmediaDesc">
+        <target>Ein normales Textelement mit Überschrift und Fließtext.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

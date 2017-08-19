@@ -1,0 +1,11 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+
+<f:if condition="{tsSetup.razor.seo.piwik}">
+  <iframe style="border: 0; width: 100%;" src="https://{tsSetup.razor.seo.piwikUrl}/index.php?module=CoreAdminHome&action=optOut&idsite={tsSetup.razor.seo.piwikSiteId}&language=de"></iframe>
+</f:if>
+</html>

@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+
+<f:if condition="{data.description}">
+  <f:then>
+    <v:page.header.meta property="og:description" content="{data.description}" />
+  </f:then>
+  <f:else>
+    <f:if condition="{tsSetup.plugin.metaseo.metaTags.description}">
+      <v:page.header.meta property="og:description" content="{tsSetup.plugin.metaseo.metaTags.description}" />
+    </f:if>
+  </f:else>
+</f:if>
+</html>

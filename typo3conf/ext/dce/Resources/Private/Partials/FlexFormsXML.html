@@ -1,0 +1,65 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}<dce:format.tiny>
+	<dce:format.addcslashes>
+		<T3DataStructure>
+			<meta>
+				<langDisable>1</langDisable>
+				<langDatabaseOverlay>1</langDatabaseOverlay>
+			</meta>
+			<sheets>
+				<f:for each="{dce.tabs}" as="tab" iteration="iterator">
+					<sheet.{tab.variable}>
+						<ROOT>
+							<TCEforms>
+								<sheetTitle>{tab.title}</sheetTitle>
+							</TCEforms>
+							<type>array</type>
+							<el>
+								<f:for each="{tab.fields}" as="field">
+									<f:if condition="{field.type} == 2">
+										<f:then>
+											<settings.{field.variable}>
+												<title>{field.title}</title>
+												<tx_templavoila>
+													<title>{field.title}</title>
+												</tx_templavoila>
+												<section>1</section>
+												<type>array</type>
+												<el>
+													<container_{field.variable}>
+														<type>array</type>
+														<title>{field.section_fields_tag}</title>
+														<tx_templavoila>
+															<title>{field.section_fields_tag}</title>
+														</tx_templavoila>
+														<el>
+															<f:for each="{field.section_fields}" as="sectionField">
+																<{sectionField.variable}>
+																	<TCEforms>
+																		<label>{sectionField.title}</label>
+																		{sectionField.configuration -> f:format.raw()}
+																	</TCEforms>
+																</{sectionField.variable}>
+															</f:for>
+														</el>
+													</container_{field.variable}>
+												</el>
+											</settings.{field.variable}>
+										</f:then>
+										<f:else>
+											<settings.{field.variable}>
+													<TCEforms>
+															<label>{field.title}</label>
+															{field.configuration -> f:format.raw()}
+													</TCEforms>
+											</settings.{field.variable}>
+										</f:else>
+									</f:if>
+								</f:for>
+							</el>
+						</ROOT>
+					</sheet.{tab.variable}>
+				</f:for>
+			</sheets>
+		</T3DataStructure>
+	</dce:format.addcslashes>
+</dce:format.tiny>

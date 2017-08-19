@@ -1,0 +1,71 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <f:if condition="{tsSetup.razor.site.showProjectNameInMenu}">
+        <f:link.page pageUid="1" class="navbar-brand">{tsSetup.razor.site.projectName}</f:link.page>
+      </f:if>
+    </div>
+    <div class="navbar-collapse collapse">
+      <v:page.menu entryLevel="0" levels="2" as="menu" useShortcutUid="1" classHasSubpages="dropdown" classCurrent="" classActive="active">
+        <ul class="nav navbar-nav">
+          <f:for each="{menu}" as="item" iteration="i">
+            <f:if condition="{item.nav_title}">
+              <f:then>
+                <v:variable.set name="title" value="{item.nav_title}" />
+              </f:then>
+              <f:else>
+                <v:variable.set name="title" value="{item.title}" />
+              </f:else>
+            </f:if>
+
+            <li>
+              <a href="{f:if(condition: item.tx_razor_menulink, then: 'javascript:void(0);', else: '{item.link}')}" class="{item.class}{f:if(condition: item.hasSubPages, then: ' dropdown-toggle')}" data-toggle="{f:if(condition: item.hasSubPages, then: 'dropdown')}" target="{item.target}">
+                {title} {f:if(condition: item.hasSubPages, then: '<i class="fa fa-angle-down"></i>')}
+              </a>
+
+              <v:page.menu pageUid="{item.uid}" expandAll="1" as="sub" useShortcutUid="1" classHasSubpages="" classCurrent="" classActive="active">
+                <ul class="dropdown-menu">
+                  <f:for each="{sub}" as="itemsub">
+                    <f:if condition="{itemsub.nav_title}">
+                      <f:then>
+                        <v:variable.set name="itemsubTitle" value="{itemsub.nav_title}" />
+                      </f:then>
+                      <f:else>
+                        <v:variable.set name="itemsubTitle" value="{itemsub.title}" />
+                      </f:else>
+                    </f:if>
+
+                    <li>
+                      <a href="{f:if(condition: itemsub.tx_razor_menulink, then: 'javascript:void(0);', else: '{itemsub.link}')}" target="{itemsub.target}" class="{itemsub.class}">
+                        {itemsubTitle}
+                      </a>
+                    </li>
+                  </f:for>
+                </ul>
+              </v:page.menu>
+            </li>
+          </f:for>
+        </ul>
+      </v:page.menu>
+
+      <f:if condition="{tsSetup.razor.search.activate}">
+        <f:render partial="Searchbox" />
+      </f:if>
+    </div>
+  </div>
+</div>
+</html>

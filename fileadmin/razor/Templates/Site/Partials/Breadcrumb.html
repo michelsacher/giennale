@@ -1,0 +1,57 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+<v:variable.set name="cols" value="{tsSetup.razor.bootstrap.cols}" />
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-{cols}">
+      <v:page.breadCrumb classHasSubpages="" classCurrent="active" useShortcutUid="1" classActive="" as="breadcrumb">
+        <ol class="breadcrumb">
+          <f:for each="{breadcrumb}" as="item" iteration="i">
+            <f:if condition="{item.nav_title}">
+              <f:then>
+                <v:variable.set name="title" value="{item.nav_title}" />
+              </f:then>
+              <f:else>
+                <v:variable.set name="title" value="{item.title}" />
+              </f:else>
+            </f:if>
+
+            <f:if condition="{item.doktype} == 115">
+              <v:variable.set name="title" value='<f:cObject typoscriptObjectPath="lib.newsBreadcrumb" />' />
+            </f:if>
+
+            <li class="{item.class}">
+              <f:if condition="{i.isLast}">
+                <f:then>
+                  <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span itemprop="title">{title}</span>
+                  </span>
+                </f:then>
+                <f:else>
+                  <f:if condition="{item.tx_razor_menulink}">
+                    <f:then>
+                      <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <a href="javascript:void(0);" itemprop="url"><span itemprop="title">{title}</span></a>
+                      </span>
+                    </f:then>
+                    <f:else>
+                      <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <a href="{item.link}" itemprop="url"><span itemprop="title">{title}</span></a>
+                      </span>
+                    </f:else>
+                  </f:if>
+                </f:else>
+              </f:if>
+            </li>
+          </f:for>
+        </ol>
+      </v:page.breadCrumb>
+    </div>
+  </div>
+</div>
+</html>

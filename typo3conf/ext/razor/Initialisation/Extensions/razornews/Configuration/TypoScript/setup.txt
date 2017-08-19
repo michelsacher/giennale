@@ -1,0 +1,7 @@
+plugin.tx_news {
+  view {
+    partialRootPaths {
+      2 = EXT:razornews/Resources/Private/Partials/
+    }
+  }
+}

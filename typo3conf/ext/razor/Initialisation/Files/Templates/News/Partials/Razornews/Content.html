@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:if condition="{newsContent.title}">
+  <h2>{newsContent.title}</h2>
+</f:if>
+
+<v:content.render contentUids="{0: newsContent.content}" as="content">
+  <f:format.raw>{content.0}</f:format.raw>
+</v:content.render>
+</html>

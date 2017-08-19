@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="razor">
+    <header />
+    <body>
+      <!-- Titles and descriptions -->
+      <trans-unit id="2cols">
+        <target>2 Spalten</target>
+      </trans-unit>
+      <trans-unit id="2colsDesc">
+        <target>Fügt ein 2-spaltiges Element hinzu</target>
+      </trans-unit>
+      <trans-unit id="3cols">
+        <target>3 Spalten</target>
+      </trans-unit>
+      <trans-unit id="3colsDesc">
+        <target>Fügt ein 3-spaltiges Element hinzu</target>
+      </trans-unit>
+      <trans-unit id="4cols">
+        <target>4 Spalten</target>
+      </trans-unit>
+      <trans-unit id="4colsDesc">
+        <target>Fügt ein 4-spaltiges Element hinzu</target>
+      </trans-unit>
+      <trans-unit id="wrap">
+        <target>Wrap</target>
+      </trans-unit>
+      <trans-unit id="wrapDesc">
+        <target>Fügt einen Wrapper hinzu</target>
+      </trans-unit>
+      <trans-unit id="container">
+        <target>Container</target>
+      </trans-unit>
+      <trans-unit id="containerDesc">
+        <target>Fügt einen Container hinzu</target>
+      </trans-unit>
+      <trans-unit id="backendContainer">
+        <target>Backend container</target>
+      </trans-unit>
+      <trans-unit id="backendContainerDesc">
+        <target>Fügt einen Backend Container hinzu</target>
+      </trans-unit>
+      <trans-unit id="infobox">
+        <target>Infobox</target>
+      </trans-unit>
+      <trans-unit id="infoboxDesc">
+        <target>Fügt eine Infobox hinzu</target>
+      </trans-unit>
+      <trans-unit id="tabsContainer">
+        <target>Tabs Container</target>
+      </trans-unit>
+      <trans-unit id="tabsContainerDesc">
+        <target>Fügt einen Tab Container hinzu</target>
+      </trans-unit>
+      <trans-unit id="tab">
+        <target>Tab Element</target>
+      </trans-unit>
+      <trans-unit id="tabDesc">
+        <target>Fügt ein Tab Element hinzu</target>
+      </trans-unit>
+      <trans-unit id="accordionContainer">
+        <target>Akkordeon Container</target>
+      </trans-unit>
+      <trans-unit id="accordionContainerDesc">
+        <target>Fügt ein Akkordeon Container hinzu</target>
+      </trans-unit>
+      <trans-unit id="accordion">
+        <target>Akkordeon Element</target>
+      </trans-unit>
+      <trans-unit id="accordionDesc">
+        <target>Fügt ein Akkordeon Element hinzu</target>
+      </trans-unit>
+      <!-- Common -->
+      <trans-unit id="colLeft">
+        <target>Linke Spalte</target>
+      </trans-unit>
+      <trans-unit id="contentLeft">
+        <target>Content Links</target>
+      </trans-unit>
+      <trans-unit id="sizeLeft">
+        <target>Größe Links</target>
+      </trans-unit>
+      <trans-unit id="offsetLeft">
+        <target>Offset Links</target>
+      </trans-unit>
+      <trans-unit id="colRight">
+        <target>Rechte Spalte</target>
+      </trans-unit>
+      <trans-unit id="contentRight">
+        <target>Content Rechts</target>
+      </trans-unit>
+      <trans-unit id="sizeRight">
+        <target>Größe Rechts</target>
+      </trans-unit>
+      <trans-unit id="offsetRight">
+        <target>Offset Rechts</target>
+      </trans-unit>
+      <trans-unit id="colNormal">
+        <target><![CDATA[Medium (≥992px)]]></target>
+      </trans-unit>
+      <trans-unit id="colXtraSmall">
+        <target><![CDATA[Sehr klein (<768px)]]></target>
+      </trans-unit>
+      <trans-unit id="colSmall">
+        <target><![CDATA[Klein (≥768px)]]></target>
+      </trans-unit>
+      <trans-unit id="colBig">
+        <target><![CDATA[Groß (≥1200px)]]></target>
+      </trans-unit>
+      <trans-unit id="notDefined">
+        <target>Nicht definiert</target>
+      </trans-unit>
+      <trans-unit id="visibility">
+        <target>Sichtbarkeit</target>
+      </trans-unit>
+      <trans-unit id="fullElement">
+        <target>Ganzes Element</target>
+      </trans-unit>
+      <trans-unit id="hiddenXS">
+        <target>Nicht sichtbar auf sehr klein</target>
+      </trans-unit>
+      <trans-unit id="hiddenS">
+        <target>Nicht sichtbar auf klein</target>
+      </trans-unit>
+      <trans-unit id="hiddenN">
+        <target>Nicht sichtbar auf medium</target>
+      </trans-unit>
+      <trans-unit id="hiddenL">
+        <target>Nicht sichtbar auf groß</target>
+      </trans-unit>
+      <trans-unit id="visibleXS">
+        <target>Nur sichtbar auf sehr klein</target>
+      </trans-unit>
+      <trans-unit id="visibleS">
+        <target>Nur sichtbar auf klein</target>
+      </trans-unit>
+      <trans-unit id="visibleN">
+        <target>Nur sichtbar auf medium</target>
+      </trans-unit>
+      <trans-unit id="visibleL">
+        <target>Nur sichtbar auf groß</target>
+      </trans-unit>
+      <trans-unit id="options">
+        <target>Optionen</target>
+      </trans-unit>
+      <trans-unit id="general">
+        <target>Allgemein</target>
+      </trans-unit>
+      <trans-unit id="padding">
+        <target>Padding</target>
+      </trans-unit>
+      <trans-unit id="flex">
+        <target>Row Flex</target>
+      </trans-unit>
+      <trans-unit id="col_flex">
+        <target>Spalten Flex</target>
+      </trans-unit>
+      <trans-unit id="classes">
+        <target>CSS Klassen</target>
+      </trans-unit>
+      <trans-unit id="classesColLeft">
+        <target>CSS Klassen Links</target>
+      </trans-unit>
+      <trans-unit id="classesColMiddle">
+        <target>CSS Klassen Mitte</target>
+      </trans-unit>
+      <trans-unit id="classesColMiddleLeft">
+        <target>CSS Klassen Mitte Links</target>
+      </trans-unit>
+      <trans-unit id="classesColMiddleRight">
+        <target>CSS Klassen Mitte Rechts</target>
+      </trans-unit>
+      <trans-unit id="classesColRight">
+        <target>CSS Klassen Rechts</target>
+      </trans-unit>
+      <trans-unit id="classesContainer">
+        <target>CSS Klassen Container</target>
+      </trans-unit>
+      <trans-unit id="classesRow">
+        <target>CSS Klassen Row</target>
+      </trans-unit>
+      <trans-unit id="idContainer">
+        <target>CSS ID Container</target>
+      </trans-unit>
+      <trans-unit id="classesCol">
+        <target>CSS Klassen Spalte</target>
+      </trans-unit>
+      <trans-unit id="noGutter">
+        <target>Kein Abstand zwischen Spalten?</target>
+      </trans-unit>
+      <!-- Templates -->
+      <trans-unit id="mainTemplate">
+        <target>Haupttemplate</target>
+      </trans-unit>
+      <trans-unit id="subTemplate">
+        <target>Unterseiten Template</target>
+      </trans-unit>
+      <trans-unit id="storageTemplate">
+        <target>Storage Folder Template</target>
+      </trans-unit>
+      <trans-unit id="content">
+        <target>Content</target>
+      </trans-unit>
+      <trans-unit id="head">
+        <target>Kopfbereich</target>
+      </trans-unit>
+      <!-- Wrap -->
+      <trans-unit id="wrapContent">
+        <target>Wrap Content</target>
+      </trans-unit>
+      <trans-unit id="backgroundPosition">
+        <target>Hintergrund Position</target>
+      </trans-unit>
+      <trans-unit id="backgroundColor">
+        <target>Hintergrundfarbe</target>
+      </trans-unit>
+      <trans-unit id="id">
+        <target>CSS ID</target>
+      </trans-unit>
+      <trans-unit id="useSection">
+        <target>Section statt div?</target>
+      </trans-unit>
+      <trans-unit id="paddingTop">
+        <target>Abstand oben</target>
+      </trans-unit>
+      <trans-unit id="paddingBottom">
+        <target>Abstand unten</target>
+      </trans-unit>
+      <!-- Container -->
+      <trans-unit id="containerContent">
+        <target>Container Content</target>
+      </trans-unit>
+      <trans-unit id="size">
+        <target>Größe</target>
+      </trans-unit>
+      <trans-unit id="offset">
+        <target>Offset</target>
+      </trans-unit>
+      <trans-unit id="textCenter">
+        <target>Zentriert?</target>
+      </trans-unit>
+      <trans-unit id="fluid">
+        <target>Fluid?</target>
+      </trans-unit>
+      <trans-unit id="addPadding">
+        <target>Padding? (Fügt Padding links und rechts hinzu - gut, wenn ein Grid System ohne Abstände zwischen den Spalten benutzt wird)</target>
+      </trans-unit>
+      <trans-unit id="noContainer">
+        <target>Keine Container Klasse hinzufügen</target>
+      </trans-unit>
+      <!-- 3 columns -->
+      <trans-unit id="colMiddle">
+        <target>Mittlere Spalte</target>
+      </trans-unit>
+      <trans-unit id="contentMiddle">
+        <target>Content Mitte</target>
+      </trans-unit>
+      <trans-unit id="sizeMiddle">
+        <target>Größe Mitte</target>
+      </trans-unit>
+      <trans-unit id="offsetMiddle">
+        <target>Offset Mitte</target>
+      </trans-unit>
+      <!-- 4 columns -->
+      <trans-unit id="colMiddleLeft">
+        <target>Mittlere Linke Spalte</target>
+      </trans-unit>
+      <trans-unit id="contentMiddleLeft">
+        <target>Content Mitte Links</target>
+      </trans-unit>
+      <trans-unit id="sizeMiddleLeft">
+        <target>Größe Mitte Links</target>
+      </trans-unit>
+      <trans-unit id="offsetMiddleLeft">
+        <target>Offset Mitte Links</target>
+      </trans-unit>
+      <trans-unit id="colMiddleRight">
+        <target>Mittlere Rechte Spalte</target>
+      </trans-unit>
+      <trans-unit id="contentMiddleRight">
+        <target>Content Mitte Rechts</target>
+      </trans-unit>
+      <trans-unit id="sizeMiddleRight">
+        <target>Größe Mitte Rechts</target>
+      </trans-unit>
+      <trans-unit id="offsetMiddleRight">
+        <target>Offset Mitte Rechts</target>
+      </trans-unit>
+      <!-- Backend container -->
+      <trans-unit id="backendContainerContent">
+        <target>Backend Container Content</target>
+      </trans-unit>
+      <!-- Infobox -->
+      <trans-unit id="infoboxContent">
+        <target>Infobox Content</target>
+      </trans-unit>
+      <trans-unit id="color">
+        <target>Farbe</target>
+      </trans-unit>
+      <!-- Tabs container -->
+      <trans-unit id="tabs">
+        <target>Tabs</target>
+      </trans-unit>
+      <trans-unit id="pills">
+        <target>Pills</target>
+      </trans-unit>
+      <trans-unit id="fade">
+        <target>Fade</target>
+      </trans-unit>
+      <!-- Accordion item -->
+      <trans-unit id="toggle">
+        <target>Element geschlossen?</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

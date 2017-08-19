@@ -1,0 +1,60 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:render partial="Header" arguments="{layout: contentObject.header_layout, header: contentObject.header, link: contentObject.header_link, default: tsSetup.razor.misc.defaultHeaderType, position: contentObject.header_position, style: contentObject.header_style}" />
+
+<v:variable.set name="icon" value="" />
+<v:variable.set name="class" value="" />
+<v:variable.set name="theClass" value="" />
+<v:variable.set name="classes" value="" />
+
+<f:if condition="{field.icon}">
+  <v:variable.set name="icon" value="{v:content.resources(table:'tx_razor_domain_model_icon', field:'value', uid:'{field.icon}')}" />
+
+  <f:if condition="{field.color}">
+    <v:variable.set name="class" value="{v:content.resources(table:'tx_razor_domain_model_color', field:'value', uid:'{field.color}')}" />
+
+    <f:if condition="{class.0}">
+      <v:variable.set name="theClass" value=" razor-icon-{class.0}" />
+    </f:if>
+  </f:if>
+
+  <f:if condition="{field.size}">
+    <v:condition.string.contains haystack="{icon.0}" needle="fa-">
+      <f:then>
+        <v:variable.set name="size" value=" {field.size}" />
+      </f:then>
+      <f:else>
+        <v:variable.set name="size" value=" razor-{field.size}" />
+      </f:else>
+    </v:condition.string.contains>
+  </f:if>
+
+  <f:if condition="{field.cssClasses}">
+    <v:variable.set name="classes" value=" {field.cssClasses}" />
+  </f:if>
+
+  <f:if condition="{theClass}">
+    <f:then>
+      <v:variable.set name="iconFinal" value='<i class="{icon.0}{size}{theClass}{classes}"></i>' />
+    </f:then>
+    <f:else>
+      <v:variable.set name="iconFinal" value='<i class="{icon.0}{size}{classes}"></i>' />
+    </f:else>
+  </f:if>
+
+  <div class="{field.position}">
+    <f:if condition="{field.link}">
+      <f:then>
+        <f:link.typolink parameter="{field.link}">
+          <f:format.raw>{iconFinal}</f:format.raw>
+        </f:link.typolink>
+      </f:then>
+      <f:else>
+        <f:format.raw>{iconFinal}</f:format.raw>
+      </f:else>
+    </f:if>
+  </div>
+</f:if>
+</html>

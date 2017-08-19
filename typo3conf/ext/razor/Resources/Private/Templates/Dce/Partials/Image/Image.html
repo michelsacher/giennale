@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="pictureConfig" value="{tsSetup.razor.picture.image}" />
+
+<f:if condition="{pictureConfig}">
+  <f:then>
+    <razor:media.picture src="{image}" imageClass="{responsive}{classes} {appearance}" alt="{imageAlt}" title="{imageTitle}" width="{pictureConfig.defaultWidth}" height="{pictureConfig.defaultHeight}">
+      <f:for each="{pictureConfig.sources}" as="source">
+        <razor:media.source media="({source.media})" width="{source.width}" height="{source.height}" />
+      </f:for>
+    </razor:media.picture>
+  </f:then>
+  <f:else>
+    <f:image src="{image}" class="{responsive}{classes}{imgResp} {appearance}" alt="{imageAlt}" title="{imageTitle}" />
+  </f:else>
+</f:if>
+</html>

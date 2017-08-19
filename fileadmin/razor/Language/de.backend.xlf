@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="razor">
+    <header />
+    <body>
+      <trans-unit id="defaultDce">
+        <target>Standard DCE (zum kopieren)</target>
+      </trans-unit>
+      <trans-unit id="defaultDceDesc">
+        <target>Fügt ein Standard DCE hinzu</target>
+      </trans-unit>
+
+      <trans-unit id="title">
+        <target>Titel</target>
+      </trans-unit>
+      <trans-unit id="subtitle">
+        <target>Untertitel</target>
+      </trans-unit>
+      <trans-unit id="headline">
+        <target>Überschrift</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

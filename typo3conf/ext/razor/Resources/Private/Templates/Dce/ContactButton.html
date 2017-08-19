@@ -1,0 +1,67 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:render partial="Header" arguments="{layout: contentObject.header_layout, header: contentObject.header, link: contentObject.header_link, default: tsSetup.razor.misc.defaultHeaderType, position: contentObject.header_position, style: contentObject.header_style}" />
+
+<f:if condition="{field.param}">
+  <f:then>
+    <v:variable.set name="param" value='<f:format.urlencode value="{field.param}" />' />
+  </f:then>
+  <f:else>
+    <v:variable.set name="param" value='<f:format.urlencode value="{page.title}" />' />
+  </f:else>
+</f:if>
+
+<v:variable.set name="block" value="" />
+<f:if condition="{field.block}">
+  <v:variable.set name="block" value=' btn-block' />
+</f:if>
+
+<v:variable.set name="wrap" value="" />
+<f:if condition="{field.wrap}">
+  <v:variable.set name="wrap" value=' btn-wrap' />
+</f:if>
+
+<v:variable.set name="state" value="{v:content.resources(table:'tx_razor_domain_model_state', field:'value', uid:'{field.type}')}" />
+
+<f:if condition="{field.size}">
+  <v:variable.set name="theSize" value="" />
+  <v:variable.set name="size" value="{v:content.resources(table:'tx_razor_domain_model_size', field:'value', uid:'{field.size}')}" />
+
+  <f:if condition="{size.0}">
+    <v:variable.set name="theSize" value=" btn-{size.0}" />
+  </f:if>
+</f:if>
+
+<v:variable.set name="icon" value="{v:content.resources(table:'tx_razor_domain_model_icon', field:'value', uid:'{field.icon}')}" />
+
+<div class="{field.position}">
+  <f:if condition="{field.disabled}">
+    <f:then>
+      <f:link.typolink parameter="{field.link}" class="btn btn-{state.0}{theSize}{block}" additionalParams="&tx_powermail_pi1[uid{field.powermail}]={param}" additionalAttributes="{disabled: 'disabled'}">
+        <f:if condition="{field.iconPos} == 0">
+          <f:then>
+            <f:if condition="{field.icon}"><i class="{icon.0} razor--fa-left"></i> </f:if>{field.title}
+          </f:then>
+          <f:else>
+            {field.title}<f:if condition="{field.icon}"> <i class="{icon.0} razor--fa-right"></i></f:if>
+          </f:else>
+        </f:if>
+      </f:link.typolink>
+    </f:then>
+    <f:else>
+      <f:link.typolink parameter="{field.link}" class="btn btn-{state.0}{theSize}{block}" additionalParams="&tx_powermail_pi1[uid{field.powermail}]={param}">
+        <f:if condition="{field.iconPos} == 0">
+          <f:then>
+            <f:if condition="{field.icon}"><i class="{icon.0} razor--fa-left"></i> </f:if>{field.title}
+          </f:then>
+          <f:else>
+            {field.title}<f:if condition="{field.icon}"> <i class="{icon.0} razor--fa-right"></i></f:if>
+          </f:else>
+        </f:if>
+      </f:link.typolink>
+    </f:else>
+  </f:if>
+</div>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-02-08T19:32:27Z" product-name="fancyboxcontent">
+		<header/>
+		<body>
+			<trans-unit id="pi1_title">
+				<target>fancybox Content</target>
+			</trans-unit>
+			<trans-unit id="pi1_plus_wiz_description">
+				<target>Fügt ein fancybox Content Plugin hinzu</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

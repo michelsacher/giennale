@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2017-05-06T01:35:09Z" product-name="dce" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="mlang_tabs_tab" xml:space="preserve" approved="yes">
+        <source>DCE</source>
+      <target state="translated">DCE</target></trans-unit>
+      <trans-unit id="mlang_labels_tablabel" xml:space="preserve" approved="yes">
+        <source>DCE - Dynamic Content Elements</source>
+      <target state="translated">DCE - Dynamische Inhaltselemente</target></trans-unit>
+      <trans-unit id="mlang_labels_tabdescr" xml:space="preserve" approved="yes">
+        <source>Module for faster access of DCE elements.</source>
+      <target state="translated">Modul für schnelleren Zugriff auf DCE-Elemente.</target></trans-unit>
+      <trans-unit id="createNewDce" xml:space="preserve" approved="yes">
+        <source>Create new DCE</source>
+      <target state="translated">Neues DCE erstellen</target></trans-unit>
+      <trans-unit id="previewOverHeadline" xml:space="preserve" approved="yes">
+        <source>DCE preview</source>
+      <target state="translated">DCE-Vorschau</target></trans-unit>
+      <trans-unit id="previewOverText" xml:space="preserve">
+        <source>The preview tt_content record has been removed.</source>
+      <target></target><alt-trans xml:space="preserve" origin="michadu"><target>Der Vorschau-Eintrag in tt_content wurde wieder entfernt.</target></alt-trans></trans-unit>
+      <trans-unit id="previewSaveFirst" xml:space="preserve" approved="yes">
+        <source>Please save the new DCE. After initial save the preview will be available. To update the preview, don't forgett to save when you have made changes on the DCE fields.</source>
+      <target state="translated">Bitte erst das DCE speichern. Nach einem initialem Speichern ist die Vorschau verfügbar. Um die Vorschau zu aktualisieren, nicht vergessen nach Änderungen an den DCE-Feldern zu speichern.</target></trans-unit>
+      <trans-unit id="createNewDce" xml:space="preserve" approved="yes">
+        <source>Create new DCE</source>
+      <target state="translated">Neues DCE erstellen</target></trans-unit>
+      <trans-unit id="goToListView" xml:space="preserve" approved="yes">
+        <source>Go to list view</source>
+      <target state="translated">Die Listenansicht aufrufen</target></trans-unit>
+      <trans-unit id="clearCaches" xml:space="preserve">
+        <source>Clear caches</source>
+      <target></target></trans-unit>
+      <trans-unit id="clearCachesFlashMessage" xml:space="preserve">
+        <source>Caches successfully cleared.</source>
+      <target></target></trans-unit>
+      <trans-unit id="hallOfFame" xml:space="preserve">
+        <source>Hall of fame</source>
+      <target></target></trans-unit>
+      <trans-unit id="hallOfFameIntroText" xml:space="preserve">
+        <source>Thanks to everyone who supported further development of DCE!</source>
+      <target></target></trans-unit>
+      <trans-unit id="donate" xml:space="preserve" approved="yes">
+        <source>Donate</source>
+      <target state="translated">Spenden</target></trans-unit>
+      <trans-unit id="donateText" xml:space="preserve" approved="yes">
+        <source>If you like the dce extension, feel free to donate some funds to support further development.</source>
+      <target state="translated">Wenn Ihnen die DCE-Extension gefällt, können Sie die weitere Entwicklung der Extension mit einer Spende unterstützen.</target></trans-unit>
+      <trans-unit id="help" xml:space="preserve">
+        <source>Help</source>
+      <target></target></trans-unit>
+      <trans-unit id="help.manual" xml:space="preserve">
+        <source>Manual</source>
+      <target></target></trans-unit>
+      <trans-unit id="help.wiki" xml:space="preserve">
+        <source>Wiki</source>
+      <target></target></trans-unit>
+      <trans-unit id="help.facebook" xml:space="preserve">
+        <source>DCE Facebook Page</source>
+      <target></target></trans-unit>
+      <trans-unit id="help.bitbucket" xml:space="preserve">
+        <source>DCE on Bitbucket</source>
+      <target></target></trans-unit>
+      <trans-unit id="caution" xml:space="preserve">
+        <source>Caution!</source>
+      <target></target></trans-unit>
+      <trans-unit id="hideContentElementsBasedOnDce" xml:space="preserve">
+        <source>%s content elements based on this DCE have been also disabled, to avoid errors in frontned. These content items will not get re-enabled automatically!</source>
+      <target></target></trans-unit>
+      <trans-unit id="ok" xml:space="preserve">
+        <source>OK</source>
+      <target></target></trans-unit>
+      <trans-unit id="edit" xml:space="preserve">
+        <source>Edit</source>
+      <target></target></trans-unit>
+      <trans-unit id="info" xml:space="preserve">
+        <source>Info</source>
+      <target></target></trans-unit>
+      <trans-unit id="enabled" xml:space="preserve">
+        <source>Enabled</source>
+      <target></target></trans-unit>
+      <trans-unit id="disabled" xml:space="preserve">
+        <source>Disabled</source>
+      <target></target></trans-unit>
+      <trans-unit id="back" xml:space="preserve">
+        <source>Back</source>
+      <target></target></trans-unit>
+      <trans-unit id="noDcesFound" xml:space="preserve">
+        <source>No DCEs found!</source>
+      <target></target></trans-unit>
+      <trans-unit id="fields" xml:space="preserve">
+        <source>fields</source>
+      <target></target></trans-unit>
+      <trans-unit id="tca" xml:space="preserve">
+        <source>This DCE has fields which are mapped with TCA columns.</source>
+      <target></target></trans-unit>
+      <trans-unit id="tcaplus" xml:space="preserve">
+        <source>This DCE has fields which are mapped with TCA columns. Furthermore this DCE adds new columns to TCA and database!</source>
+      <target></target></trans-unit>
+      <trans-unit id="relatedContentElements" xml:space="preserve">
+        <source>%s content elements existing, based on this DCE.</source>
+      <target></target></trans-unit>
+      <trans-unit id="usage" xml:space="preserve">
+        <source>Usage (CEs)</source>
+      <target></target></trans-unit>
+      <trans-unit id="fieldStats" xml:space="preserve">
+        <source>Field infos</source>
+      <target></target></trans-unit>
+      <trans-unit id="dceStats" xml:space="preserve">
+        <source>DCE infos</source>
+      <target></target></trans-unit>
+      <trans-unit id="dceContainerEnabled" xml:space="preserve">
+        <source>Container</source>
+      <target></target></trans-unit>
+      <trans-unit id="limitedToItems" xml:space="preserve">
+        <source>limited to %s items</source>
+      <target></target></trans-unit>
+      <trans-unit id="actions" xml:space="preserve">
+        <source>Actions</source>
+      <target></target></trans-unit>
+      <trans-unit id="updateTcaMappings" xml:space="preserve">
+        <source>Update TCA Mappings</source>
+      <target></target></trans-unit>
+      <trans-unit id="updateTcaMappingsMessage" xml:space="preserve">
+        <source>You have %s content elements based on this DCE. Do you want to continue updating all TCA mappings?</source>
+      <target></target></trans-unit>
+      <trans-unit id="updateTcaMappingsDone" xml:space="preserve">
+        <source>TCA mappings has been updated successfully.</source>
+      <target></target></trans-unit>
+      <trans-unit id="updateOk" xml:space="preserve">
+        <source>Okay, proceed!</source>
+      <target></target></trans-unit>
+      <trans-unit id="updateAbort" xml:space="preserve">
+        <source>Cancel</source>
+      <target></target></trans-unit>
+    </body>
+  </file>
+</xliff>

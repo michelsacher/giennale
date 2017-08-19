@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:render partial="Header" arguments="{layout: contentObject.header_layout, header: contentObject.header, link: contentObject.header_link, default: tsSetup.razor.misc.defaultHeaderType, position: contentObject.header_position, style: contentObject.header_style}" />
+
+<v:variable.set name="noline" value="" />
+<f:if condition="{field.noline}">
+  <v:variable.set name="noline" value=" no-line" />
+</f:if>
+
+<v:variable.set name="theColor" value="" />
+<v:if stack="{0: field.color, 1: 'AND', 2: noline, 3: '==', 4: ''}">
+  <v:variable.set name="color" value="{v:content.resources(table:'tx_razor_domain_model_color', field:'value', uid:'{field.color}')}" />
+
+  <f:if condition="{color.0}">
+    <v:variable.set name="theColor" value=" razor--hr--color-{color.0}" />
+  </f:if>
+</v:if>
+
+<v:variable.set name="theTop" value="" />
+<f:if condition="{field.top}">
+  <v:variable.set name="top" value="{v:content.resources(table:'tx_razor_domain_model_padding', field:'title', uid:'{field.top}')}" />
+
+  <f:if condition="{top.0}">
+    <v:variable.set name="theTop" value=" razor--margin-top-{top.0}" />
+  </f:if>
+</f:if>
+
+<v:variable.set name="theBottom" value="" />
+<f:if condition="{field.bottom}">
+  <v:variable.set name="bottom" value="{v:content.resources(table:'tx_razor_domain_model_padding', field:'title', uid:'{field.bottom}')}" />
+
+  <f:if condition="{bottom.0}">
+    <v:variable.set name="theBottom" value=" razor--margin-bottom-{bottom.0}" />
+  </f:if>
+</f:if>
+
+<hr class="razor--hr{noline}{theColor}{theTop}{theBottom}" />
+</html>

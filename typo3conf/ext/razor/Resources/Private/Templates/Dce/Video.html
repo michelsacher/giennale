@@ -1,0 +1,134 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:render partial="Header" arguments="{layout: contentObject.header_layout, header: contentObject.header, link: contentObject.header_link, default: tsSetup.razor.misc.defaultHeaderType, position: contentObject.header_position, style: contentObject.header_style}" />
+
+<f:if condition="{field.autoplay} == 1">
+  <f:then>
+    <v:variable.set name="autoplay" value="1" />
+  </f:then>
+  <f:else>
+    <v:variable.set name="autoplay" value="0" />
+  </f:else>
+</f:if>
+
+<f:if condition="{field.title} == 1">
+  <f:then>
+    <v:variable.set name="title" value="1" />
+  </f:then>
+  <f:else>
+    <v:variable.set name="title" value="0" />
+  </f:else>
+</f:if>
+
+<f:if condition="{field.byline} == 1">
+  <f:then>
+    <v:variable.set name="byline" value="1" />
+  </f:then>
+  <f:else>
+    <v:variable.set name="byline" value="0" />
+  </f:else>
+</f:if>
+
+<f:if condition="{field.portrait} == 1">
+  <f:then>
+    <v:variable.set name="portrait" value="1" />
+  </f:then>
+  <f:else>
+    <v:variable.set name="portrait" value="0" />
+  </f:else>
+</f:if>
+
+<f:if condition="{field.loop} == 1">
+  <f:then>
+    <v:variable.set name="loop" value="1" />
+  </f:then>
+  <f:else>
+    <v:variable.set name="loop" value="0" />
+  </f:else>
+</f:if>
+
+<f:if condition="{field.hideinfo} == 1">
+  <f:then>
+    <v:variable.set name="hideinfo" value="1" />
+  </f:then>
+  <f:else>
+    <v:variable.set name="hideinfo" value="0" />
+  </f:else>
+</f:if>
+
+<f:if condition="{field.color}">
+  <v:variable.set name="color" value="{v:content.resources(table:'tx_razor_domain_model_color', field:'color', uid:'{field.color}')}" />
+</f:if>
+
+<f:if condition="{field.related} == 1">
+  <f:then>
+    <v:variable.set name="related" value="1" />
+  </f:then>
+  <f:else>
+    <v:variable.set name="related" value="0" />
+  </f:else>
+</f:if>
+
+<f:if condition="{field.cssClasses}">
+  <v:variable.set name="classes" value=" {field.cssClasses}" />
+</f:if>
+
+<f:switch expression="{field.ratio}">
+  <f:case value="1">
+    <v:variable.set name="ratio" value="16by9" />
+  </f:case>
+  <f:case value="2">
+    <v:variable.set name="ratio" value="4by3" />
+  </f:case>
+  <f:case value="3">
+    <f:if condition="{field.width}">
+      <v:variable.set name="width" value="{field.width}" />
+    </f:if>
+
+    <f:if condition="{field.height}">
+      <v:variable.set name="height" value="{field.height}" />
+    </f:if>
+  </f:case>
+</f:switch>
+
+<f:switch expression="{field.type}">
+  <f:case value="0">
+    <f:if condition="{field.ratio} == 3">
+      <f:then>
+        <f:render partial="Video/YouTube" arguments="{videoId: field.videoId, width: width, height: height, related: related, hideinfo: hideinfo, autoplay: autoplay, classes: classes}" />
+      </f:then>
+      <f:else>
+        <div class="embed-responsive embed-responsive-{ratio}">
+          <f:render partial="Video/YouTube" arguments="{videoId: field.videoId, width: width, height: height, related: related, hideinfo: hideinfo, autoplay: autoplay, classes: classes}" />
+        </div>
+      </f:else>
+    </f:if>
+  </f:case>
+  <f:case value="1">
+    <f:if condition="{field.ratio} == 3">
+      <f:then>
+        <f:render partial="Video/Vimeo" arguments="{videoId: field.videoId, width: width, height: height, title: title, byline: byline, portrait: portrait, autoplay: autoplay, loop: loop, color: color.0, classes: classes}" />
+      </f:then>
+      <f:else>
+        <div class="embed-responsive embed-responsive-{ratio}">
+          <f:render partial="Video/Vimeo" arguments="{videoId: field.videoId, width: width, height: height, title: title, byline: byline, portrait: portrait, autoplay: autoplay, loop: loop, color: color.0, classes: classes}" />
+        </div>
+      </f:else>
+    </f:if>
+  </f:case>
+  <f:case value="2">
+    <f:if condition="{field.ratio} == 3">
+      <f:then>
+        <f:render partial="Video/Video" arguments="{width: width, height: height, autoplay: autoplay, poster: field.poster, contentObject: contentObject, classes: classes}" />
+      </f:then>
+      <f:else>
+        <div class="embed-responsive embed-responsive-{ratio}">
+          <f:render partial="Video/Video" arguments="{width: width, height: height, autoplay: autoplay, poster: field.poster, contentObject: contentObject, classes: classes}" />
+        </div>
+      </f:else>
+    </f:if>
+  </f:case>
+</f:switch>
+</html>

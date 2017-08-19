@@ -1,0 +1,83 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+
+<f:layout name="Backend" />
+<f:section name="functions">
+	<dce:be.includeCssFile path="EXT:dce/Resources/Public/Css/dceModule.css" />
+</f:section>
+<f:section name="buttons">
+	<h4 class="dceHeader">
+		<f:image class="bg-pink bg-logo" src="{f:uri.resource(path:'Icons/ext_icon_white.png')}" alt="{f:translate(key:'LLL:EXT:dce/Resources/Private/Language/locallang_mod.xml:mlang_labels_tablabel')}" />
+		<span><f:translate key="LLL:EXT:dce/Resources/Private/Language/locallang_mod.xml:mlang_labels_tablabel" /></span>
+		<span class="dceVersion">{dce:be.version.dce()}</span>
+	</h4>
+</f:section>
+<f:section name="content">
+	<f:alias map="{lll: 'LLL:EXT:dce/Resources/Private/Language/locallang_mod.xml:'}">
+		<div class="row space-bottom">
+			<div class="col-lg-12">
+				<div class="nav-group">
+					<a href="{f:render(partial:'Module/NewDceLink') -> dce:format.tiny()}" class="btn btn-primary">{f:translate(key:'{lll}createNewDce')}</a>
+					<a href="{f:uri.page(additionalParams:'{M:\'web_list\', id:\'0\', table:\'tx_dce_domain_model_dce\', imagemode:\'1\'}')}" class="btn btn-default">{f:translate(key:'{lll}goToListView')}</a>
+					<f:link.action action="clearCaches" class="btn btn-default">{f:translate(key:'{lll}clearCaches')}</f:link.action>
+				</div>
+
+				<div class="nav-group">
+					<f:link.action action="hallOfFame" class="btn btn-default">{f:translate(key:'{lll}hallOfFame')}</f:link.action>
+					<f:render partial="Module/Donate" />
+				</div>
+
+				<div class="nav-group">
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							{f:translate(key:'{lll}help')} <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a target="_blank" href="https://docs.typo3.org/typo3cms/extensions/dce/">{f:translate(key:'{lll}help.manual')}</a></li>
+							<li><a target="_blank" href="https://forge.typo3.org/projects/extension-dce/wiki/">{f:translate(key:'{lll}help.wiki')}</a></li>
+							<li class="divider"></li>
+							<li><a target="_blank" href="https://www.facebook.com/TYPO3.DCE.Extension">{f:translate(key:'{lll}help.facebook')}</a></li>
+							<li><a target="_blank" href="https://bitbucket.org/ArminVieweg/dce/">{f:translate(key:'{lll}help.bitbucket')}</a></li>
+
+						</ul>
+					</div>
+				</div>
+
+				<f:if condition="{enableUpdateCheck}">
+					<div class="nav-group updateCheck">
+						<a href="http://dce.v.ieweg.de/versioncheck/update" target="_blank"><img src="http://dce.v.ieweg.de/versioncheck?t3={dce:be.version.typo3()}&amp;dce={dce:be.version.dce()}&amp;l={dce:be.currentLanguage()}" alt="" /></a>
+					</div>
+				</f:if>
+			</div>
+		</div>
+		<div class="row space-bottom">
+			<div class="col-lg-10">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>DCEs</th>
+							<th>Status</th>
+							<th>UID</th>
+							<th>{f:translate(key:'{lll}usage')}</th>
+							<th>{f:translate(key:'{lll}dceStats')}</th>
+							<th>{f:translate(key:'{lll}fieldStats')}</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<f:if condition="{dces -> f:count()} > 0">
+							<f:then>
+								<f:for each="{dces}" as="dce">
+									<f:render partial="Module/DceListItem" arguments="{dce:dce}" />
+								</f:for>
+							</f:then>
+							<f:else>
+								<tr><td colspan="7"><em><f:translate key="{lll}noDcesFound" /></em></td></tr>
+							</f:else>
+						</f:if>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</f:alias>
+</f:section>

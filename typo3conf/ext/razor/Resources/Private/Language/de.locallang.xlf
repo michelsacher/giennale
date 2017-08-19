@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-09-04T18:16:21Z" product-name="razor">
+    <header />
+    <body>
+      <!-- News -->
+      <trans-unit id="newsDetail">
+        <target>News Detail</target>
+      </trans-unit>
+      <trans-unit id="news.relatedFiles">
+        <target>Dateien</target>
+      </trans-unit>
+      <trans-unit id="news.relatedLinks">
+        <target>Mehr zu dieser News</target>
+      </trans-unit>
+      <!-- Tools module -->
+      <trans-unit id="headline">
+        <target>Tools Extension-Builder</target>
+      </trans-unit>
+      <trans-unit id="extensionName">
+        <target>Extension Name</target>
+      </trans-unit>
+      <trans-unit id="extensionNameLower">
+        <target>extensionname</target>
+      </trans-unit>
+      <trans-unit id="vendor">
+        <target>Vendor</target>
+      </trans-unit>
+      <trans-unit id="vendorUpper">
+        <target>VENDOR</target>
+      </trans-unit>
+      <trans-unit id="author">
+        <target>Autor</target>
+      </trans-unit>
+      <trans-unit id="email">
+        <target>Autor E-Mail</target>
+      </trans-unit>
+      <trans-unit id="desc">
+        <target>Beschreibung</target>
+      </trans-unit>
+      <trans-unit id="descLong">
+        <target>Das ist eine Beschreibung</target>
+      </trans-unit>
+      <trans-unit id="create">
+        <target>Extension erstellen</target>
+      </trans-unit>
+      <trans-unit id="success">
+        <target>Erfolg!</target>
+      </trans-unit>
+      <trans-unit id="error">
+        <target>Fehler!</target>
+      </trans-unit>
+      <trans-unit id="successMessage">
+        <target>Die Extension wurde erfolgreich erstellt. Sie müssen Sie nur noch im Erweiterungsmanager installieren.</target>
+      </trans-unit>
+      <trans-unit id="errorMessage">
+        <target>Es existiert bereits eine Extension mit diesem Namen. Bitte wählen Sie einen anderen Namen.</target>
+      </trans-unit>
+      <trans-unit id="version">
+        <target>Version</target>
+      </trans-unit>
+      <trans-unit id="state">
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="alpha">
+        <target>Alpha</target>
+      </trans-unit>
+      <trans-unit id="beta">
+        <target>Beta</target>
+      </trans-unit>
+      <trans-unit id="stable">
+        <target>Stabil</target>
+      </trans-unit>
+      <trans-unit id="experimental">
+        <target>Experimentell</target>
+      </trans-unit>
+      <trans-unit id="test">
+        <target>Test</target>
+      </trans-unit>
+      <trans-unit id="obsolete">
+        <target>Überholt</target>
+      </trans-unit>
+      <trans-unit id="excludeFromUpdates">
+        <target>Von Updates ausschließen</target>
+      </trans-unit>
+      <trans-unit id="viewhelper">
+        <target>Dummy ViewHelper erstellen?</target>
+      </trans-unit>
+      <!-- Clear cache -->
+      <trans-unit id="rm.clearCacheMenu_razor">
+        <target>Alle Caches löschen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

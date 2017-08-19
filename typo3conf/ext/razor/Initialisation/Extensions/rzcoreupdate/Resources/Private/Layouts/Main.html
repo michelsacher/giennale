@@ -1,0 +1,29 @@
+<f:be.container
+  pageTitle="foo"
+  enableClickMenu="false"
+  loadExtJs="true"
+  loadExtJsTheme="true"
+  enableExtJsDebug="false"
+  includeCssFiles="{0: '{f:uri.resource(path:\'Stylesheets/Updater/main.css\')}'}">
+
+  <div class="typo3-fullDoc">
+    <div id="typo3-docheader">
+      <div class="inner">
+        <div class="typo3-docheader-functions"></div>
+        <div class="typo3-docheader-buttons">
+          <div class="left"></div>
+          <div class="right">
+            <f:be.buttons.shortcut />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="typo3-docbody">
+      <div id="typo3-inner-docbody" class="typo3-extension-rzcoreupdate">
+        <div class="contentWrapper">
+          <f:render section="Content" />
+        </div>
+      </div>
+    </div>
+  </div>
+</f:be.container>

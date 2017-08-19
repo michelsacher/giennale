@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+<f:if condition="{mediaElement.hideindetail} == 0">
+  <div class="razor--news-image">
+    <f:if condition="{mediaElement.link}">
+      <f:then>
+        <f:link.page pageUid="{mediaElement.link}" target="{n:targetLink(link:mediaElement.link)}">
+          <f:image image="{mediaElement}" title="{mediaElement.title}" alt="{mediaElement.alternative}" class="img-responsive" />
+        </f:link.page>
+      </f:then>
+      <f:else>
+        <f:if condition="{settings.detail.media.image.lightbox.enabled}">
+          <f:then>
+            <a href="{f:uri.image(image:mediaElement, maxWidth:'800')}" title="{mediaElement.title}" class="fancybox" data-fancybox="gallery">
+              <f:image image="{mediaElement}" title="{mediaElement.title}" alt="{mediaElement.alternative}" class="img-responsive" />
+            </a>
+          </f:then>
+          <f:else>
+            <f:image image="{mediaElement}" title="{mediaElement.title}" alt="{mediaElement.alternative}" class="img-responsive" />
+          </f:else>
+        </f:if>
+      </f:else>
+    </f:if>
+
+    <f:if condition="{mediaElement.description}">
+      <div class="bs-callout">
+        <p class="razor--news-image-desc">
+          {mediaElement.description}
+        </p>
+      </div>
+    </f:if>
+  </div>
+</f:if>
+</html>

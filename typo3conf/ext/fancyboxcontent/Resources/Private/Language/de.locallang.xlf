@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2015-04-09T12:24:21Z" product-name="fancyboxcontent">
+        <header/>
+        <body>
+            <trans-unit id="tx_fancyboxcontent_domain_model_fancybox">
+                <target>Fancybox Content</target>
+            </trans-unit>
+            <trans-unit id="addJquery">
+                <target>jQuery einbinden</target>
+            </trans-unit>
+            <trans-unit id="addJsToFooter">
+                <target>JavaScript in den Footer auslagern</target>
+            </trans-unit>
+            <trans-unit id="addFancybox">
+                <target>fancybox einbinden</target>
+            </trans-unit>
+            <trans-unit id="linkTitle">
+                <target>Das ist ein Link</target>
+            </trans-unit>
+            <trans-unit id="close">
+                <target>Schließen</target>
+            </trans-unit>
+            <trans-unit id="prev">
+                <target>Voriges</target>
+            </trans-unit>
+            <trans-unit id="next">
+                <target>Nächstes</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

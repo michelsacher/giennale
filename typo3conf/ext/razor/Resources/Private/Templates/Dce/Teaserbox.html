@@ -1,0 +1,75 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:dce="http://typo3.org/ns/ArminVieweg/Dce/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:render partial="Header" arguments="{layout: contentObject.header_layout, header: contentObject.header, link: contentObject.header_link, default: tsSetup.razor.misc.defaultHeaderType, position: contentObject.header_position, style: contentObject.header_style}" />
+
+<v:variable.set name="pictureConfig" value="{tsSetup.razor.picture.teaserbox}" />
+
+<f:if condition="{field.linktitle}">
+  <f:then>
+    <v:variable.set name="title" value="{field.linktitle}" />
+  </f:then>
+  <f:else>
+    <v:variable.set name="title" value='<f:translate key="LLL:fileadmin/razor/Language/razor.xlf:more" />' />
+  </f:else>
+</f:if>
+
+<f:if condition="{field.icon}">
+  <v:variable.set name="icon" value="{v:content.resources(table:'tx_razor_domain_model_icon', field:'value', uid:'{field.icon}')}" />
+</f:if>
+
+<f:if condition="{field.classes}">
+  <f:then>
+    <v:variable.set name="classes" value=" {field.classes}" />
+  </f:then>
+  <f:else>
+    <v:variable.set name="classes" value="" />
+  </f:else>
+</f:if>
+
+<div class="teaserbox{classes}">
+  <div class="teaserbox__title">
+    <h2><f:format.nl2br>{field.title}</f:format.nl2br></h2>
+  </div>
+
+  <f:if condition="{field.icon}">
+    <div class="teaserbox__icon">
+      <i class="{icon.0}"></i>
+    </div>
+  </f:if>
+
+  <f:if condition="{field.image}">
+    <div class="teaserbox__image">
+      <f:for each="{field.image}" as="fileReference">
+        <f:if condition="{pictureConfig}">
+          <f:then>
+            <razor:media.picture src="{f:uri.image(src: '{fileReference.uid}', treatIdAsReference: 1)}" imageClass="img-responsive" width="{pictureConfig.defaultWidth}" height="{pictureConfig.defaultHeight}">
+              <f:for each="{pictureConfig.sources}" as="source">
+                <razor:media.source media="({source.media})" width="{source.width}" height="{source.height}" />
+              </f:for>
+            </razor:media.picture>
+          </f:then>
+          <f:else>
+            <f:image src="{fileReference.uid}" treatIdAsReference="1" class="img-responsive" />
+          </f:else>
+        </f:if>
+      </f:for>
+    </div>
+  </f:if>
+
+  <div class="teaserbox__text">
+    <f:format.html>{field.text}</f:format.html>
+  </div>
+
+  <f:if condition="{field.link}">
+    <div class="teaserbox__link">
+      <f:link.typolink parameter="{field.link}" class="btn btn-primary">
+        {title}
+      </f:link.typolink>
+    </div>
+  </f:if>
+</div>
+</html>

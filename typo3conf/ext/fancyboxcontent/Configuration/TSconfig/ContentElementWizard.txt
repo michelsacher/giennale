@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.plugins {
+  elements {
+    fancyboxcontent {
+      icon = ../typo3conf/ext/fancyboxcontent/Resources/Public/Icons/ce_wiz.svg
+      title = LLL:EXT:fancyboxcontent/Resources/Private/Language/locallang_be.xlf:pi1_title
+      description = LLL:EXT:fancyboxcontent/Resources/Private/Language/locallang_be.xlf:pi1_plus_wiz_description
+      tt_content_defValues {
+        CType = list
+        list_type = fancyboxcontent_fancybox
+      }
+    }
+  }
+}

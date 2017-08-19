@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-04-09T12:24:21Z" product-name="fancyboxcontent">
+		<header/>
+		<body>
+			<trans-unit id="tx_fancyboxcontent_domain_model_fancybox">
+				<source>Fancybox</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

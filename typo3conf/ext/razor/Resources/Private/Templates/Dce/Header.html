@@ -1,0 +1,86 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:dce="http://typo3.org/ns/ArminVieweg/Dce/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<f:if condition="{field.type} == 0">
+  <f:then>
+    <f:if condition="{field.image}">
+      <f:then>
+        <f:for each="{field.image}" as="fileReference">
+          <v:variable.set name="width" value="{field.width}" />
+          <v:variable.set name="height" value="{field.height}" />
+
+          <f:if condition="{field.crop}">
+            <v:variable.set name="crop" value="c" />
+          </f:if>
+
+          <v:variable.set name="widthCrop" value="{width}{crop}" />
+          <v:variable.set name="heightCrop" value="{height}{crop}" />
+
+          <v:variable.set name="type" value='<razor:path file="{f:uri.image(src: fileReference.uid, treatIdAsReference: 1)}" />' />
+
+          <f:if condition="{type} == 'svg'">
+            <f:then>
+              <v:variable.set name="image" value='{f:image(src: fileReference.uid, alt: "", treatIdAsReference: 1)}' />
+            </f:then>
+            <f:else>
+              <v:variable.set name="image" value='{f:image(src: fileReference.uid, width: wCrop, height: heightCrop, alt: "", treatIdAsReference: 1)}' />
+            </f:else>
+          </f:if>
+
+          <header>
+            <h{field.layout} class="{field.headerPos}{f:if(condition: field.cssClasses, then: ' {field.cssClasses}')}">
+              <f:if condition="{field.position} == 0">
+                <f:format.htmlentitiesDecode value="{image}" />
+              </f:if>
+
+              <f:format.nl2br>{field.header}</f:format.nl2br>
+
+              <f:if condition="{field.position} == 1">
+                <f:format.htmlentitiesDecode value="{image}" />
+              </f:if>
+            </h{field.layout}>
+          </header>
+        </f:for>
+      </f:then>
+      <f:else>
+        <header>
+          <h{field.layout} class="{field.headerPos}{f:if(condition: field.cssClasses, then: ' {field.cssClasses}')}">
+            <f:format.nl2br>{field.header}</f:format.nl2br>
+          </h{field.layout}>
+        </header>
+      </f:else>
+    </f:if>
+  </f:then>
+  <f:else>
+    <f:if condition="{field.icon}">
+      <f:then>
+        <v:variable.set name="icon" value="{v:content.resources(table:'tx_razor_domain_model_icon', field:'value', uid:'{field.icon}')}" />
+
+        <header>
+          <h{field.layout} class="{field.headerPos}{f:if(condition: field.cssClasses, then: ' {field.cssClasses}')}">
+            <f:if condition="{field.position} == 0">
+              <i class="{icon.0} razor--fa-left"></i>
+            </f:if>
+
+            <f:format.nl2br>{field.header}</f:format.nl2br>
+
+            <f:if condition="{field.position} == 1">
+              <i class="{icon.0} razor--fa-right"></i>
+            </f:if>
+          </h{field.layout}>
+        </header>
+      </f:then>
+      <f:else>
+        <header>
+          <h{field.layout} class="{field.headerPos}{f:if(condition: field.cssClasses, then: ' {field.cssClasses}')}">
+            <f:format.nl2br>{field.header}</f:format.nl2br>
+          </h{field.layout}>
+        </header>
+      </f:else>
+    </f:if>
+  </f:else>
+</f:if>
+</html>

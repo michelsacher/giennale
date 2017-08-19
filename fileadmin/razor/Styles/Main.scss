@@ -1,0 +1,405 @@
+/* --------------------------------------------------------
+Main
+
+version: 1.0
+last modified: 23.05.2017 by Michel Sacher
+author: Michel Sacher
+email: michelsacher@googlemail.com
+website: www.michelsacher.de
+----------------------------------------------------------*/
+
+/* Main styles BEGIN */
+
+body {
+	padding-top: 5rem;
+	font-family: $font-1;
+	font-size: $font-size-1;
+	color: $color-text;
+	background-color: $grey;
+}
+
+a {
+	@include buttonStates {
+		color: $color-ci-1;
+		text-decoration: none;
+		border-bottom: .1rem solid $color-ci-1;
+	}
+
+	color: $color-ci-1;
+	border-bottom: .1rem solid transparent;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.h2 {
+	padding: 1rem;
+	margin: 0;
+	color: $white;
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: $grey;
+
+	&::before {
+		display: inline-block;
+		width: 3rem;
+		border-bottom: .1rem solid $white;
+		content: "";
+	}
+}
+
+.btn-primary,
+.btn-default {
+	@include buttonStates {
+		border: .2rem solid $color-ci-1;
+		color: $color-ci-1;
+		background-color: $white;
+		outline: none;
+	}
+
+	color: $white;
+	border-radius: 0;
+	border: .2rem solid $color-ci-1;
+	background-color: $color-ci-1;
+	text-transform: uppercase;
+	outline: none;
+}
+
+.head--subpage {
+	padding-top: 1rem;
+}
+
+/* Main styles END */
+
+/* Nav styles BEGIN */
+
+.navbar-inverse {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: none;
+
+	.container {
+		width: 100%;
+	}
+
+	.navbar-header {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.navbar-nav>li>a {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: $font-size-2;
+		border: none;
+	}
+
+	.nav .open>a {
+		border-color: $color-ci-1;
+	}
+
+	.navbar-nav>.open>a {
+		@include buttonStates {
+			background-color: $color-ci-1;
+		}
+
+		background-color: $color-ci-1;		
+	}
+
+	.navbar-nav .open .dropdown-menu {
+		top: calc(100%);
+	}
+
+	.navbar-nav .open .dropdown-menu>li>a {
+		text-align: center;
+	}
+}
+
+.navbar-toggle {
+	float: none;
+	border-radius: 0;
+}
+
+.navbar-fixed-top .navbar-collapse, 
+.navbar-fixed-bottom .navbar-collapse {
+	max-height: 100%;
+}
+
+/* Nav styles END */
+
+/* Content styles BEGIN */
+
+.fetch {
+	display: flex;
+	align-items: stretch;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	.btn-primary {
+		@include buttonStates {
+			border: .2rem solid $white;
+			color: $color-ci-2;
+			background-color: $white;
+			outline: none;
+		}
+
+		border-radius: 0;
+		border: .2rem solid $white;
+		background-color: transparent;
+		text-transform: uppercase;
+		outline: none;
+	}
+
+	&__item {
+		overlflow: hidden;
+		backface-visibility: hidden;
+
+		&--left {
+			padding: 5rem;
+			width: 100%;
+			background: url("../Images/Fetch/fetch-background.jpg");
+			background-size: cover;
+			border-left: 1rem solid $grey;
+			border-right: 1rem solid $grey;
+
+			&__inner {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: all 0.2s ease;
+			}
+
+			svg {
+				max-width: 100%;
+				max-height: 30rem				
+			}
+		}
+
+		&--center {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;			
+			padding: 5rem;
+			width: 100%;
+			background: $color-ci-2-alpha;
+			overflow: hidden;
+			border-left: 1rem solid $grey;
+			border-right: 1rem solid $grey;
+
+			.video-bg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: auto;
+				width: 100%;
+				z-index: -50;
+			}
+
+			&__inner {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: $white;
+				text-align: center;
+
+				p {
+					span {
+						font-size: 3rem;
+					}
+
+					font-size: 2rem;
+				}
+			}
+		}		
+
+		&--right {
+			padding: 5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			background: $color-ci-1;
+			border-left: 1rem solid $grey;
+			border-right: 1rem solid $grey;
+
+			h2 {
+				color: $white;
+				text-align: center;
+
+				span {
+					font-size: 5rem;
+					color: $grey;
+					transition: all .5s ease;
+				}
+			}
+		}
+	}
+}
+
+.razor--news-list {
+	margin-bottom: 0;
+	background-color: $white;
+	color: $grey;
+
+	h3 {
+
+		a {
+			padding: 1rem;
+			color: $white;
+			font-size: 2rem;
+			line-height: 4rem;
+			background-color: $color-ci-1;
+
+			&::before {
+				display: inline-block;
+				width: 3rem;
+				border-bottom: .1rem solid $white;
+				content: "";
+			}			
+		}
+	}
+
+	&__item {
+
+		border: 1rem solid $grey;
+
+		.news-image {
+			position: relative;
+
+			h3 {
+				padding: 0 1rem;
+				color: $white;
+
+				a {
+					display: block;
+				}
+			}
+		}
+
+		.news-content {
+			padding: 1rem;
+		}
+	}
+}
+
+.razor--share {
+
+	a {
+		@include states {
+			color: $grey;
+			border-color: transparent;
+		}
+	}
+}
+
+.well {
+	color: $grey;
+	border: none;
+
+	h1, 
+	h2, 
+	h3, 
+	h4 {
+		color: $color-ci-1;
+	}
+
+	.h2 {
+		margin-bottom: 2rem;
+	}
+}
+
+.insta--wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.insta--item {
+	align-self: flex-start;
+	width: calc(100% / 2);
+
+	a {
+		@include buttonStates {
+			opacity: 0.8;
+		}
+
+		display: block;
+		opacity: 1;
+		border: none;
+		transition: all .2s ease;
+	}
+}
+
+.footer--menu {
+	padding: 1rem;
+	text-align: center;
+
+	a {
+		color: $white;
+	}
+
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+
+		li {
+
+			&:first-child {
+
+				&::after {
+					padding: 0 .5rem 0 .2rem;
+					content: "|";
+				}
+			}			
+		}
+	}
+}
+
+/* Content styles END */
+
+/* Various BEGIN */
+
+#animationWrap {
+	text-align: center;
+	background: url("../Images/Animation/animation-background.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	border-right: 1rem solid $grey;
+	border-bottom: 1rem solid $grey;
+	border-left: 1rem solid $grey;
+}
+
+#animationContainer {
+	display: inline-block;
+	width: 50vw;
+}
+
+.animation-controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	&__item {
+		width: calc(100% / 3);
+	}
+}
+
+/* Various END */

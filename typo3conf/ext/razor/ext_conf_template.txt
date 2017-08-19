@@ -1,0 +1,149 @@
+# customcategory=local=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:catLocal
+# customcategory=staging=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:catStaging
+# customcategory=live=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:catLive
+# customcategory=feature=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:catFeature
+# customcategory=options=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:catOptions
+
+# cat=local/100/001; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:basedomainLocal
+basedomain_local = ###LOCAL###
+
+# cat=local/100/002; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:basedomainLocalAdditional
+basedomain_local_additional =
+
+# cat=local/100/003; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:localName
+local_name = Local
+
+# cat=staging/200/004; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:basedomainStaging
+basedomain_staging = testproject.staging
+
+# cat=staging/200/005; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:stagingName
+staging_name = Staging
+
+# cat=staging/200/006; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:username
+staging_username =
+
+# cat=staging/200/007; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:password
+staging_password =
+
+# cat=staging/200/008; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:host
+staging_host =
+
+# cat=staging/200/009; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:database
+staging_database =
+
+# cat=staging/200/010; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:colorspace
+staging_colorspace = RGB
+
+# cat=staging/200/011; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:https
+staging_https = 0
+
+# cat=staging/200/012; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:hosteuropeFix
+staging_hefix = 0
+
+# cat=staging/200/013; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:hosteuropeFixMail
+staging_hefix_mail =
+
+# cat=staging/200/014; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:1and1Fix
+staging_1and1fix = 0
+
+# cat=staging/200/015; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:mittFix
+staging_mittfix = 0
+
+# cat=live/300/016; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:basedomainLive
+basedomain_live = testproject.live
+
+# cat=live/300/017; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:basedomainLiveAdditional
+basedomain_live_additional =
+
+# cat=live/300/018; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:liveName
+live_name = Live
+
+# cat=live/300/019; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:username
+live_username =
+
+# cat=live/300/020; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:password
+live_password =
+
+# cat=live/300/021; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:host
+live_host =
+
+# cat=live/300/022; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:database
+live_database =
+
+# cat=live/300/023; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:colorspace
+live_colorspace = RGB
+
+# cat=live/300/024; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:https
+live_https = 0
+
+# cat=live/300/025; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:hosteuropeFix
+live_hefix = 0
+
+# cat=live/300/026; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:hosteuropeFixMail
+live_hefix_mail =
+
+# cat=live/300/027; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:1and1Fix
+live_1and1fix = 0
+
+# cat=live/300/028; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:mittFix
+live_mittfix = 0
+
+# cat=feature/400/029; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:basedomainFeature
+basedomain_feature = testproject.feature
+
+# cat=feature/400/030; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:featureName
+feature_name = Feature
+
+# cat=feature/400/031; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:username
+feature_username =
+
+# cat=feature/400/032; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:password
+feature_password =
+
+# cat=feature/400/033; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:host
+feature_host =
+
+# cat=feature/400/034; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:database
+feature_database =
+
+# cat=feature/400/035; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:colorspace
+feature_colorspace = RGB
+
+# cat=feature/400/036; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:https
+feature_https = 0
+
+# cat=feature/400/037; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:hosteuropeFix
+feature_hefix = 0
+
+# cat=feature/400/038; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:hosteuropeFixMail
+feature_hefix_mail =
+
+# cat=feature/400/039; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:1and1Fix
+feature_1and1fix = 0
+
+# cat=feature/400/040; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:mittFix
+feature_mittfix = 0
+
+# cat=options/500/041; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:showModule
+show_module = 1
+
+# cat=options/500/042; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:showToolsModule
+show_tools_module = 1
+
+# cat=options/500/043; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:headlineRequired
+headline_required = 1
+
+# cat=options/500/044; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:headlineMulti
+headline_multi = 0
+
+# cat=options/500/045; type=int+; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:default404Page
+default404Page = 8
+
+# cat=options/500/046; type=boolean; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:tinyPng
+tinyPng = 0
+
+# cat=options/500/047; type=string; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:gridBackground
+gridBackground = razor_wrap
+
+# cat=options/500/048; type=int; label=LLL:EXT:razor/Resources/Private/Language/TypoScript/locallang.xlf:maxAge
+maxAge = 604800

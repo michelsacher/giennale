@@ -1,0 +1,52 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+    xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+    xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+<v:variable.set name="col" value="{tsSetup.razor.bootstrap.cols}" />
+
+<n:excludeDisplayedNews newsItem="{newsItem}"/>
+
+<f:if condition="{newsItem.sysLanguageUid} == {tsSetup.config.sys_language_uid}">
+  <article class="row razor--news-list">
+
+    <div class="col-md-24">
+
+      <div class="razor--news-list__item">
+        <div class="news-image">
+          <n:link newsItem="{newsItem}" settings="{settings}">
+            <f:alias map="{mediaElement: newsItem.falMediaPreviews.0}">
+              <f:image image="{mediaElement}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" class="img-responsive" />
+            </f:alias>
+          </n:link>
+
+          <h3>
+            <n:link newsItem="{newsItem}" settings="{settings}">
+              {newsItem.title}
+            </n:link>
+          </h3>
+          
+        </div>
+        <div class="news-content">
+
+          <f:if condition="{newsItem.teaser}">
+            <f:then>
+              {newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+            </f:then>
+            <f:else>
+              {newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+            </f:else>
+          </f:if>
+
+          <n:link newsItem="{newsItem}" settings="{settings}" class="btn btn-primary">
+            <f:translate key="more-link"/> <i class="fa fa-angle-right razor--fa-right"></i>
+          </n:link>
+        </div>
+      </div>
+
+    </div>
+  </article>
+</f:if>
+</html>

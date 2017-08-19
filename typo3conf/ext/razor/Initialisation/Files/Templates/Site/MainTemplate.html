@@ -1,0 +1,38 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+
+<f:render partial="Head/Head" arguments="{data: data}" />
+
+<f:render partial="MainMenu" arguments="{data: data}" />
+
+<f:if condition="{tsSetup.razor.site.breadcrumb}">
+  <f:if condition="{data.uid} != 1">
+    <f:then>
+      <f:render partial="Breadcrumb" />
+    </f:then>
+    <f:else>
+      <f:if condition="{tsSetup.razor.site.breadcrumbOnHomepage}">
+        <f:render partial="Breadcrumb" />
+      </f:if>
+    </f:else>
+  </f:if>
+</f:if>
+
+<div class="head">
+  <!--TYPO3SEARCH_begin-->
+    <f:cObject typoscriptObjectPath="lib.head" />
+  <!--TYPO3SEARCH_end-->
+</div>
+
+<div class="page">
+  <!--TYPO3SEARCH_begin-->
+    <f:cObject typoscriptObjectPath="lib.content" />
+  <!--TYPO3SEARCH_end-->
+</div>
+
+<f:render partial="Footer" />
+</html>

@@ -1,0 +1,17 @@
+config.tx_extbase {
+  persistence {
+    classes { 
+      GeorgRinger\News\Domain\Model\FileReference {
+        subclasses {
+          Tx_Razornews_FileReference = RZ\Razornews\Domain\Model\FileReference
+        }
+      }
+
+      RZ\Razornews\Domain\Model\FileReference {
+        mapping {
+          tableName = sys_file_reference
+        }
+      }
+    }
+  }
+}

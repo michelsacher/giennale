@@ -1,0 +1,50 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:fb="http://typo3.org/ns/RZ/Fancyboxcontent/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="labels" value="{close: '{f:translate(key: \'close\')}', prev: '{f:translate(key: \'prev\')}', next: '{f:translate(key: \'next\')}'}" />
+
+<f:switch expression="{settings.type}">
+  <f:case value="inline">
+    <v:variable.set name="href" value="#c{uid}-fancyboxcontent" />
+  </f:case>
+  <f:case value="iframe">
+    <v:variable.set name="href" value='<fb:uri.typolink configuration="{parameter: settings.link}" />' />
+  </f:case>
+  <f:case value="media">
+      <v:variable.set name="href" value='<fb:uri.typolink configuration="{parameter: settings.linkMedia}" />' />
+  </f:case>
+  <f:case value="html">
+    <v:variable.set name="href" value="#c{uid}-fancyboxcontent" />
+  </f:case>
+</f:switch>
+
+<f:if condition="{settings.linkType} == 'link'">
+  <f:then>
+    <a class="fancyboxcontent-{uid}{linkClasses}" data-src="{href}" href="javascript:;">
+      {f:if(condition: settings.linkTitle, then: settings.linkTitle, else: '{f:translate(key: \'linkTitle\')}')}
+    </a>
+  </f:then>
+  <f:else>
+    <a class="fancyboxcontent-{uid}{linkClasses}" data-src="{href}" href="javascript:;">
+      <f:image src="{settings.linkImage}" alt="" title="" treatIdAsReference="1" />
+    </a>
+  </f:else>
+</f:if>
+
+<f:if condition="{settings.type} == 'inline'">
+  <div id="c{uid}-fancyboxcontent" style="display:none;">
+    <f:for each="{contentElements}" as="contentElement">
+      <v:content.render contentUids="{uid: contentElement}" />
+    </f:for>
+  </div>
+</f:if>
+
+<f:if condition="{settings.type} == 'html'">
+  <div id="c{uid}-fancyboxcontent" style="display:none;">
+    <f:format.raw>{settings.html}</f:format.raw>
+  </div>
+</f:if>
+
+<fb:js uid="{uid}" settings="{settings}" addToFooter="{addToFooter}" labels="{labels}" />

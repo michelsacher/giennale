@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+  xmlns:razor="http://typo3.org/ns/RZ/Razor/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<v:variable.set name="tsSetup" value='<razor:ts />' />
+
+<f:if condition="{tsSetup.razor.misc.showWrap}">
+  <div id="c{data.uid}">
+</f:if>
+
+  <f:render partial="Header" arguments="{_all}" />
+  <f:render section="content" />
+  <f:render partial="Footer" arguments="{_all}" />
+
+<f:if condition="{tsSetup.razor.misc.showWrap}">
+  </div>
+</f:if>
+</html>

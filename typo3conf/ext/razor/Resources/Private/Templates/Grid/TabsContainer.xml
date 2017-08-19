@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <meta type="array">
+    <langDisable>1</langDisable>
+    <langDatabaseOverlay>1</langDatabaseOverlay>
+  </meta>
+  <sheets>
+    <general>
+      <ROOT type="array">
+        <TCEforms>
+          <sheetTitle>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:general</sheetTitle>
+        </TCEforms>
+        <el type="array">
+          <type>
+            <TCEforms>
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:type</label>
+              <config>
+                <type>select</type>
+                <renderType>selectSingle</renderType>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:tabs</numIndex>
+                    <numIndex index="1">nav-tabs</numIndex>
+                  </numIndex>
+                  <numIndex index="1" type="array">
+                    <numIndex index="0">LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:pills</numIndex>
+                    <numIndex index="1">nav-pills</numIndex>
+                  </numIndex>
+                </items>
+                <default>nav-tabs</default>
+              </config>
+            </TCEforms>
+          </type>
+          <fade>
+            <TCEforms>
+              <exclude>0</exclude>
+              <label>LLL:EXT:razor/Resources/Private/Language/Grid/locallang.xlf:fade</label>
+              <config>
+                <type>check</type>
+                <size>0</size>
+              </config>
+            </TCEforms>
+          </fade>
+        </el>
+      </ROOT>
+    </general>
+  </sheets>
+</T3DataStructure>
