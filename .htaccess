@@ -37,8 +37,8 @@ RewriteRule .* browser-support.html [L]
 # | Forcing the `www.` at the beginning of URLs                        |
 # ----------------------------------------------------------------------
 
-# RewriteCond %{HTTP_HOST} ^mywebsite\.com$ [NC]
-# RewriteRule ^(.*)$ http://www\.mywebsite\.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^giennale\.de$ [NC]
+RewriteRule ^(.*)$ http://www\.giennale\.de/$1 [R=301,L]
 
 # ----------------------------------------------------------------------
 # | Forcing `https://`                                                 |
